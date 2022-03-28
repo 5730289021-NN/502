@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="panda_arm_ros2_control" params="ns robot_ip use_fake_hardware:=^|false fake_sensor_commands:=^|false">
+
+    <ros2_control name="GazeboSystem" type="system">
+      <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      </hardware>
+
+      <xacro:macro name="configure_joint" params="joint_name initial_position">
+        <joint name="${joint_name}">
+          <param name="initial_position">${initial_position}</param>
+          <command_interface name="position"/>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </joint>
+      </xacro:macro>
+      
+      <xacro:configure_joint joint_name="${ns}_joint1" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint2" initial_position="-0.785"/>
+      <xacro:configure_joint joint_name="${ns}_joint3" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint4" initial_position="-2.355"/>
+      <xacro:configure_joint joint_name="${ns}_joint5" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint6" initial_position="1.57"/>
+      <xacro:configure_joint joint_name="${ns}_joint7" initial_position="0.785"/>
+
+      <!-- <xacro:configure_joint joint_name="${ns}_joint1" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint2" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint3" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint4" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint5" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint6" initial_position="0.0"/>
+      <xacro:configure_joint joint_name="${ns}_joint7" initial_position="0.0"/> -->
+    </ros2_control>
+
+    <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <parameters>$(find panda_gazebo)/config/panda_ros_controllers.yaml</parameters>
+      </plugin>
+    </gazebo>
+
+  </xacro:macro>
+</robot>
