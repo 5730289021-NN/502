@@ -1,0 +1,2 @@
+char obj_class
+float64 bound_coor

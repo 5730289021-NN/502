@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from detection_interfaces/msg/Dect.msg
+// generated code does not contain a copyright notice
+
+
+module detection_interfaces {
+  module msg {
+    struct Dect {
+      string obj_class;
+
+      double bounding_x;
+
+      double bounding_y;
+
+      double bounding_w;
+
+      double bounding_h;
+
+      double bounding_d;
+    };
+  };
+};

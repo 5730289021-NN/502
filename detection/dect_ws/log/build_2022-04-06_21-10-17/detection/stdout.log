@@ -1,0 +1,52 @@
+running egg_info
+creating ../../build/detection/detection.egg-info
+writing ../../build/detection/detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt
+writing entry points to ../../build/detection/detection.egg-info/entry_points.txt
+writing requirements to ../../build/detection/detection.egg-info/requires.txt
+writing top-level names to ../../build/detection/detection.egg-info/top_level.txt
+writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/amejiyo/ros2_ws/build/detection/build
+creating /home/amejiyo/ros2_ws/build/detection/build/lib
+creating /home/amejiyo/ros2_ws/build/detection/build/lib/detection
+copying detection/__init__.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection
+copying detection/fine_detect_publisher.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection
+creating /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+copying detection/detection_lib/main_debug.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+copying detection/detection_lib/runfil.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+copying detection/detection_lib/detect.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+copying detection/detection_lib/try.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+copying detection/detection_lib/main.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+running install
+running install_lib
+creating /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection
+creating /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib/main_debug.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib/runfil.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib/detect.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib/try.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib/main.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/__init__.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection
+copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/fine_detect_publisher.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib/main_debug.py to main_debug.cpython-38.pyc
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib/runfil.py to runfil.cpython-38.pyc
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib/detect.py to detect.cpython-38.pyc
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib/try.py to try.cpython-38.pyc
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib/main.py to main.cpython-38.pyc
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/fine_detect_publisher.py to fine_detect_publisher.cpython-38.pyc
+running install_data
+creating /home/amejiyo/ros2_ws/install/detection/share/ament_index
+creating /home/amejiyo/ros2_ws/install/detection/share/ament_index/resource_index
+creating /home/amejiyo/ros2_ws/install/detection/share/ament_index/resource_index/packages
+copying resource/detection -> /home/amejiyo/ros2_ws/install/detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/amejiyo/ros2_ws/install/detection/share/detection
+running install_egg_info
+Copying ../../build/detection/detection.egg-info to /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info
+running install_scripts
+Installing detect_talker script to /home/amejiyo/ros2_ws/install/detection/lib/detection
+writing list of installed files to '/home/amejiyo/ros2_ws/build/detection/install.log'

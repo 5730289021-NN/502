@@ -1,0 +1,22 @@
+[0.978s] Invoking command in '/home/amejiyo/ros2_ws/src/py_pubsub': PYTHONPATH=/home/amejiyo/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/amejiyo/ros2_ws/build/py_pubsub/build install --prefix /home/amejiyo/ros2_ws/install/py_pubsub --record /home/amejiyo/ros2_ws/build/py_pubsub/install.log --single-version-externally-managed
+[1.198s] running egg_info
+[1.199s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[1.199s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[1.199s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[1.199s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[1.199s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[1.231s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.232s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.232s] running build
+[1.233s] running build_py
+[1.233s] running install
+[1.234s] running install_lib
+[1.235s] running install_data
+[1.235s] running install_egg_info
+[1.237s] removing '/home/amejiyo/ros2_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.238s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/amejiyo/ros2_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[1.238s] running install_scripts
+[1.254s] Installing listener script to /home/amejiyo/ros2_ws/install/py_pubsub/lib/py_pubsub
+[1.255s] Installing talker script to /home/amejiyo/ros2_ws/install/py_pubsub/lib/py_pubsub
+[1.255s] writing list of installed files to '/home/amejiyo/ros2_ws/build/py_pubsub/install.log'
+[1.285s] Invoked command in '/home/amejiyo/ros2_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/amejiyo/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/amejiyo/ros2_ws/build/py_pubsub/build install --prefix /home/amejiyo/ros2_ws/install/py_pubsub --record /home/amejiyo/ros2_ws/build/py_pubsub/install.log --single-version-externally-managed

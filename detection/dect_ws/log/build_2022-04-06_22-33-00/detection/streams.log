@@ -1,0 +1,22 @@
+[0.892s] Invoking command in '/home/amejiyo/GitHub/502/detection/dect_ws/src/detection': PYTHONPATH=/home/amejiyo/GitHub/502/detection/dect_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/amejiyo/GitHub/502/detection/dect_ws/build/detection/build install --prefix /home/amejiyo/GitHub/502/detection/dect_ws/install/detection --record /home/amejiyo/GitHub/502/detection/dect_ws/build/detection/install.log --single-version-externally-managed
+[1.094s] running egg_info
+[1.095s] writing ../../build/detection/detection.egg-info/PKG-INFO
+[1.095s] writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt
+[1.095s] writing entry points to ../../build/detection/detection.egg-info/entry_points.txt
+[1.095s] writing requirements to ../../build/detection/detection.egg-info/requires.txt
+[1.095s] writing top-level names to ../../build/detection/detection.egg-info/top_level.txt
+[1.126s] package init file 'detection/detection_lib/__init__.py' not found (or not a regular file)
+[1.126s] reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[1.127s] writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[1.128s] running build
+[1.128s] running build_py
+[1.128s] running install
+[1.129s] running install_lib
+[1.130s] running install_data
+[1.131s] running install_egg_info
+[1.133s] removing '/home/amejiyo/GitHub/502/detection/dect_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info' (and everything under it)
+[1.134s] Copying ../../build/detection/detection.egg-info to /home/amejiyo/GitHub/502/detection/dect_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info
+[1.134s] running install_scripts
+[1.149s] Installing detect_talker script to /home/amejiyo/GitHub/502/detection/dect_ws/install/detection/lib/detection
+[1.150s] writing list of installed files to '/home/amejiyo/GitHub/502/detection/dect_ws/build/detection/install.log'
+[1.179s] Invoked command in '/home/amejiyo/GitHub/502/detection/dect_ws/src/detection' returned '0': PYTHONPATH=/home/amejiyo/GitHub/502/detection/dect_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/amejiyo/GitHub/502/detection/dect_ws/build/detection/build install --prefix /home/amejiyo/GitHub/502/detection/dect_ws/install/detection --record /home/amejiyo/GitHub/502/detection/dect_ws/build/detection/install.log --single-version-externally-managed

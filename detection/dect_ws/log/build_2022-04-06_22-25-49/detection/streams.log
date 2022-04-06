@@ -1,0 +1,28 @@
+[0.895s] Invoking command in '/home/amejiyo/ros2_ws/src/detection': PYTHONPATH=/home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/amejiyo/ros2_ws/build/detection/build install --prefix /home/amejiyo/ros2_ws/install/detection --record /home/amejiyo/ros2_ws/build/detection/install.log --single-version-externally-managed
+[1.092s] running egg_info
+[1.092s] writing ../../build/detection/detection.egg-info/PKG-INFO
+[1.093s] writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt
+[1.093s] writing entry points to ../../build/detection/detection.egg-info/entry_points.txt
+[1.094s] writing requirements to ../../build/detection/detection.egg-info/requires.txt
+[1.094s] writing top-level names to ../../build/detection/detection.egg-info/top_level.txt
+[1.122s] package init file 'detection/detection_lib/__init__.py' not found (or not a regular file)
+[1.122s] reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[1.123s] writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[1.123s] running build
+[1.123s] running build_py
+[1.124s] copying detection/fine_detect_publisher.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection
+[1.124s] copying detection/detection_lib/main_debug.py -> /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib
+[1.124s] running install
+[1.125s] running install_lib
+[1.126s] copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/detection_lib/main_debug.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib
+[1.126s] copying /home/amejiyo/ros2_ws/build/detection/build/lib/detection/fine_detect_publisher.py -> /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection
+[1.126s] byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/detection_lib/main_debug.py to main_debug.cpython-38.pyc
+[1.129s] byte-compiling /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection/fine_detect_publisher.py to fine_detect_publisher.cpython-38.pyc
+[1.129s] running install_data
+[1.130s] running install_egg_info
+[1.132s] removing '/home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info' (and everything under it)
+[1.132s] Copying ../../build/detection/detection.egg-info to /home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info
+[1.133s] running install_scripts
+[1.148s] Installing detect_talker script to /home/amejiyo/ros2_ws/install/detection/lib/detection
+[1.148s] writing list of installed files to '/home/amejiyo/ros2_ws/build/detection/install.log'
+[1.178s] Invoked command in '/home/amejiyo/ros2_ws/src/detection' returned '0': PYTHONPATH=/home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/amejiyo/ros2_ws/build/detection/build install --prefix /home/amejiyo/ros2_ws/install/detection --record /home/amejiyo/ros2_ws/build/detection/install.log --single-version-externally-managed
