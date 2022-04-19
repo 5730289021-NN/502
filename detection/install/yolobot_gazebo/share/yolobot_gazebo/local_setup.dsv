@@ -1,0 +1,2 @@
+source;share/yolobot_gazebo/environment/ament_prefix_path.sh
+source;share/yolobot_gazebo/environment/path.sh

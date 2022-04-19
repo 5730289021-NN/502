@@ -1,0 +1,4 @@
+source;share/yolobot_control/local_setup.bash
+source;share/yolobot_control/local_setup.dsv
+source;share/yolobot_control/local_setup.sh
+source;share/yolobot_control/local_setup.zsh

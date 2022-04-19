@@ -1,6 +1,0 @@
-{
-  "package_name": "detection_interfaces",
-  "non_idl_tuples": [
-    "/home/amejiyo/ros2_ws/src/detection_interfaces:msg/Dect.msg"
-  ]
-}

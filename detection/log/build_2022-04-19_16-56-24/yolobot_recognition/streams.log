@@ -1,0 +1,20 @@
+[0.039s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_recognition -- -j16 -l16
+[0.063s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.104s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.304s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.305s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.326s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.328s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.585s] -- Found cv_bridge: 3.0.3 (/home/amejiyo/ros2_ws/install/cv_bridge/share/cv_bridge/cmake)
+[0.607s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.607s]   ament_target_dependencies() the passed package name 'rclcpy' was not found
+[0.607s]   before
+[0.607s] Call Stack (most recent call first):
+[0.608s]   CMakeLists.txt:25 (ament_target_dependencies)
+[0.608s] 
+[0.608s] 
+[0.608s] -- Configuring incomplete, errors occurred!
+[0.608s] See also "/home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles/CMakeOutput.log".
+[0.614s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.617s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_recognition' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_recognition -- -j16 -l16

@@ -1,3 +1,0 @@
-[console_scripts]
-detect_talker = detection.fine_detect_publisher:main
-

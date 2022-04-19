@@ -1,0 +1,26 @@
+[0.048s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_description -- -j16 -l16
+[0.094s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_description -- -j16 -l16
+[0.139s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_description
+[0.155s] -- Install configuration: ""
+[0.155s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//launch
+[0.155s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//launch/spawn_yolobot.py
+[0.155s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//launch/spawn_yolobot_launch.launch.py
+[0.155s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//robot
+[0.155s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//robot/yolobot.urdf
+[0.155s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/lib/yolobot_description/spawn_yolobot.py
+[0.156s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/ament_index/resource_index/package_run_dependencies/yolobot_description
+[0.156s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/ament_index/resource_index/parent_prefix_path/yolobot_description
+[0.156s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/ament_prefix_path.sh
+[0.156s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/ament_prefix_path.dsv
+[0.157s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/path.sh
+[0.157s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/path.dsv
+[0.157s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.bash
+[0.157s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.sh
+[0.157s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.zsh
+[0.158s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.dsv
+[0.158s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/package.dsv
+[0.159s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/ament_index/resource_index/packages/yolobot_description
+[0.159s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/cmake/yolobot_descriptionConfig.cmake
+[0.159s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/cmake/yolobot_descriptionConfig-version.cmake
+[0.159s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/package.xml
+[0.174s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_description

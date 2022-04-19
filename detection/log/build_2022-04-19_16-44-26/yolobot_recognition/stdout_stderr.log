@@ -1,0 +1,15 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+CMake Error at CMakeLists.txt:35 (install):
+  install DIRECTORY given unknown argument "DIRECTORY".
+
+
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring incomplete, errors occurred!
+See also "/home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles/CMakeOutput.log".
+make: *** [Makefile:222: cmake_check_build_system] Error 1

@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.000779] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.001054] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.015414] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.016163] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/amejiyo/yolobot/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/src/interfaces/install/interfaces'], 'cwd': '/home/amejiyo/yolobot/src/interfaces/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'amejiyo'), ('LC_TIME', 'th_TH.UTF-8'), ('SSH_AGENT_PID', '1370'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/amejiyo/ros2_ws/install/image_geometry/lib:/home/amejiyo/ros2_ws/install/detection_interfaces/lib:/home/amejiyo/ros2_ws/install/detection_interface/lib:/home/amejiyo/ros2_ws/install/cv_bridge/lib:/home/amejiyo/ros2_ws/install/camera_calibration_parsers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/amejiyo'), ('OLDPWD', '/home/amejiyo/yolobot/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('MANAGERPID', '1088'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/amejiyo/yolobot/install:/home/amejiyo/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'amejiyo'), ('JOURNAL_STREAM', '8:34562'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'amejiyo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/home/amejiyo/ros2_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.1/bin:/usr/local/cuda-10.1/bin:/home/amejiyo/.local/bin:/home/amejiyo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ameji-ubuntu:@/tmp/.ICE-unix/1449,unix/Ameji-ubuntu:/tmp/.ICE-unix/1449'), ('INVOCATION_ID', '06c15625e9e741309339a6f2bbb0b6e7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8707996e_11f8_4dfa_b0f2_1d7bef1d14b3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/home/amejiyo/ros2_ws/install/dolly_ignition/share/dolly_ignition/worlds:/home/amejiyo/ros2_ws/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1098'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/amejiyo/ros2_ws/install/vision_opencv:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/my_package:/home/amejiyo/ros2_ws/install/image_geometry:/home/amejiyo/ros2_ws/install/gazebo_dev:/home/amejiyo/ros2_ws/install/dolly:/home/amejiyo/ros2_ws/install/dolly_ignition:/home/amejiyo/ros2_ws/install/dolly_gazebo:/home/amejiyo/ros2_ws/install/dolly_follow:/home/amejiyo/ros2_ws/install/detection_interfaces:/home/amejiyo/ros2_ws/install/detection_interface:/home/amejiyo/ros2_ws/install/detection:/home/amejiyo/ros2_ws/install/cv_bridge:/home/amejiyo/ros2_ws/install/camera_calibration_parsers:/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/amejiyo/ros2_ws/install/dolly_ignition/share/dolly_ignition/worlds:/home/amejiyo/ros2_ws/install/dolly_ignition/share/dolly_ignition/models'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/home/amejiyo/ros2_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/amejiyo/yolobot/src/interfaces/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SDF_PATH', '/home/amejiyo/ros2_ws/install/dolly_ignition/share/dolly_ignition/worlds:/home/amejiyo/ros2_ws/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/home/amejiyo/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/amejiyo/ros2_ws/install/opencv_tests/lib/python3.8/site-packages:/home/amejiyo/ros2_ws/install/image_geometry/lib/python3.8/site-packages:/home/amejiyo/ros2_ws/install/detection_interfaces/lib/python3.8/site-packages:/home/amejiyo/ros2_ws/install/detection_interface/lib/python3.8/site-packages:/home/amejiyo/ros2_ws/install/detection/lib/python3.8/site-packages:/home/amejiyo/ros2_ws/install/cv_bridge/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/amejiyo/ros2_ws/install/vision_opencv:/home/amejiyo/ros2_ws/install/my_package:/home/amejiyo/ros2_ws/install/image_geometry:/home/amejiyo/ros2_ws/install/gazebo_dev:/home/amejiyo/ros2_ws/install/dolly:/home/amejiyo/ros2_ws/install/dolly_ignition:/home/amejiyo/ros2_ws/install/dolly_gazebo:/home/amejiyo/ros2_ws/install/dolly_follow:/home/amejiyo/ros2_ws/install/detection_interfaces:/home/amejiyo/ros2_ws/install/detection_interface:/home/amejiyo/ros2_ws/install/cv_bridge:/home/amejiyo/ros2_ws/install/camera_calibration_parsers:/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy')]), 'shell': False}
+[0.078164] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[0.098371] (-) TimerEvent: {}
+[0.130164] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[0.134912] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.198624] (-) TimerEvent: {}
+[0.205869] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.207594] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.287939] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.296992] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.297470] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.298731] (-) TimerEvent: {}
+[0.299645] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.379226] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.381039] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.398862] (-) TimerEvent: {}
+[0.461463] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.470931] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.471403] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.473884] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.498997] (-) TimerEvent: {}
+[0.514322] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.514988] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.599123] (-) TimerEvent: {}
+[0.699494] (-) TimerEvent: {}
+[0.732954] (interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.799635] (-) TimerEvent: {}
+[0.853023] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.858927] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.866537] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.899770] (-) TimerEvent: {}
+[0.999454] (interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.999858] (-) TimerEvent: {}
+[1.035927] (interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.100017] (-) TimerEvent: {}
+[1.114407] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.166266] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.200149] (-) TimerEvent: {}
+[1.300516] (-) TimerEvent: {}
+[1.313205] (interfaces) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[1.313467] (interfaces) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name\n'}
+[1.313571] (interfaces) StderrLine: {'line': b'  interfaces --arguments-file\n'}
+[1.313664] (interfaces) StderrLine: {'line': b'  /home/amejiyo/yolobot/src/interfaces/build/interfaces/rosidl_adapter__arguments__interfaces.json\n'}
+[1.313757] (interfaces) StderrLine: {'line': b'  --output-dir\n'}
+[1.313848] (interfaces) StderrLine: {'line': b'  /home/amejiyo/yolobot/src/interfaces/build/interfaces/rosidl_adapter/interfaces\n'}
+[1.313959] (interfaces) StderrLine: {'line': b'  --output-file\n'}
+[1.314091] (interfaces) StderrLine: {'line': b'  /home/amejiyo/yolobot/src/interfaces/build/interfaces/rosidl_adapter/interfaces.idls)\n'}
+[1.314217] (interfaces) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.314344] (interfaces) StderrLine: {'line': b'\n'}
+[1.314558] (interfaces) StderrLine: {'line': b"  Error processing 'string objClass' of 'interfaces/Dect': ''objClass' is an\n"}
+[1.314727] (interfaces) StderrLine: {'line': b'  invalid field name.  It should have the pattern\n'}
+[1.314857] (interfaces) StderrLine: {'line': b"  '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''\n"}
+[1.314984] (interfaces) StderrLine: {'line': b'\n'}
+[1.315112] (interfaces) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.315238] (interfaces) StderrLine: {'line': b'\n'}
+[1.315365] (interfaces) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main\n'}
+[1.315494] (interfaces) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[1.315622] (interfaces) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 87, in _run_code\n'}
+[1.316098] (interfaces) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[1.316285] (interfaces) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[1.316424] (interfaces) StderrLine: {'line': b'      sys.exit(main())\n'}
+[1.316555] (interfaces) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[1.316683] (interfaces) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[1.316812] (interfaces) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[1.316940] (interfaces) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[1.317040] (interfaces) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[1.317130] (interfaces) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[1.317219] (interfaces) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 515, in parse_message_string\n'}
+[1.317308] (interfaces) StderrLine: {'line': b'      fields.append(Field(\n'}
+[1.317397] (interfaces) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 353, in __init__\n'}
+[1.317497] (interfaces) StderrLine: {'line': b'      raise NameError(\n'}
+[1.317587] (interfaces) StderrLine: {'line': b'\n'}
+[1.317676] (interfaces) StderrLine: {'line': b"  NameError: 'objClass' is an invalid field name.  It should have the pattern\n"}
+[1.317765] (interfaces) StderrLine: {'line': b"  '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'\n"}
+[1.317854] (interfaces) StderrLine: {'line': b'\n'}
+[1.317956] (interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.318084] (interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.318210] (interfaces) StderrLine: {'line': b'  CMakeLists.txt:37 (rosidl_generate_interfaces)\n'}
+[1.318336] (interfaces) StderrLine: {'line': b'\n'}
+[1.318634] (interfaces) StderrLine: {'line': b'\n'}
+[1.318835] (interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.318976] (interfaces) StdoutLine: {'line': b'See also "/home/amejiyo/yolobot/src/interfaces/build/interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[1.325034] (interfaces) CommandEnded: {'returncode': 1}
+[1.353673] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 1}
+[1.364388] (-) EventReactorShutdown: {}

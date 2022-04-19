@@ -1,0 +1,21 @@
+-- Install configuration: ""
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//launch
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//launch/start_world_launch.py
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//launch/yolobot_launch.py
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//worlds
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//worlds/yolo_test.world
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/ament_index/resource_index/package_run_dependencies/yolobot_gazebo
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/ament_index/resource_index/parent_prefix_path/yolobot_gazebo
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/path.sh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/path.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.bash
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.sh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.zsh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/package.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/ament_index/resource_index/packages/yolobot_gazebo
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/cmake/yolobot_gazeboConfig.cmake
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/cmake/yolobot_gazeboConfig-version.cmake
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/package.xml

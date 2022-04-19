@@ -1,0 +1,25 @@
+[0.056s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_gazebo -- -j16 -l16
+[0.407s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_gazebo -- -j16 -l16
+[0.465s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_gazebo
+[0.479s] -- Install configuration: ""
+[0.479s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//launch
+[0.480s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//launch/start_world_launch.py
+[0.480s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//launch/yolobot_launch.py
+[0.480s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//worlds
+[0.480s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo//worlds/yolo_test.world
+[0.480s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/ament_index/resource_index/package_run_dependencies/yolobot_gazebo
+[0.480s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/ament_index/resource_index/parent_prefix_path/yolobot_gazebo
+[0.481s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/ament_prefix_path.sh
+[0.481s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/ament_prefix_path.dsv
+[0.481s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/path.sh
+[0.481s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/environment/path.dsv
+[0.481s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.bash
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.sh
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.zsh
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/local_setup.dsv
+[0.482s] -- Installing: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/package.dsv
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/ament_index/resource_index/packages/yolobot_gazebo
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/cmake/yolobot_gazeboConfig.cmake
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/cmake/yolobot_gazeboConfig-version.cmake
+[0.482s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_gazebo/share/yolobot_gazebo/package.xml
+[0.508s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_gazebo

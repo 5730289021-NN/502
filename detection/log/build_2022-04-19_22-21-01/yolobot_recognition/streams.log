@@ -1,0 +1,24 @@
+[0.860s] Invoking command in '/home/amejiyo/yolobot/src/yolobot_recognition': PYTHONPATH=/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolobot_recognition build --build-base /home/amejiyo/yolobot/build/yolobot_recognition/build install --prefix /home/amejiyo/yolobot/install/yolobot_recognition --record /home/amejiyo/yolobot/build/yolobot_recognition/install.log --single-version-externally-managed
+[1.101s] running egg_info
+[1.102s] writing ../../build/yolobot_recognition/yolobot_recognition.egg-info/PKG-INFO
+[1.102s] writing dependency_links to ../../build/yolobot_recognition/yolobot_recognition.egg-info/dependency_links.txt
+[1.102s] writing entry points to ../../build/yolobot_recognition/yolobot_recognition.egg-info/entry_points.txt
+[1.103s] writing requirements to ../../build/yolobot_recognition/yolobot_recognition.egg-info/requires.txt
+[1.103s] writing top-level names to ../../build/yolobot_recognition/yolobot_recognition.egg-info/top_level.txt
+[1.136s] reading manifest file '../../build/yolobot_recognition/yolobot_recognition.egg-info/SOURCES.txt'
+[1.137s] writing manifest file '../../build/yolobot_recognition/yolobot_recognition.egg-info/SOURCES.txt'
+[1.137s] running build
+[1.137s] running build_py
+[1.137s] copying yolobot_recognition/fine_detect_publisher.py -> /home/amejiyo/yolobot/build/yolobot_recognition/build/lib/yolobot_recognition
+[1.138s] running install
+[1.140s] running install_lib
+[1.142s] copying /home/amejiyo/yolobot/build/yolobot_recognition/build/lib/yolobot_recognition/fine_detect_publisher.py -> /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/yolobot_recognition
+[1.142s] byte-compiling /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/yolobot_recognition/fine_detect_publisher.py to fine_detect_publisher.cpython-38.pyc
+[1.144s] running install_data
+[1.145s] running install_egg_info
+[1.146s] removing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/yolobot_recognition-0.0.0-py3.8.egg-info' (and everything under it)
+[1.147s] Copying ../../build/yolobot_recognition/yolobot_recognition.egg-info to /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/yolobot_recognition-0.0.0-py3.8.egg-info
+[1.148s] running install_scripts
+[1.165s] Installing detect_talker script to /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition
+[1.166s] writing list of installed files to '/home/amejiyo/yolobot/build/yolobot_recognition/install.log'
+[1.200s] Invoked command in '/home/amejiyo/yolobot/src/yolobot_recognition' returned '0': PYTHONPATH=/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolobot_recognition build --build-base /home/amejiyo/yolobot/build/yolobot_recognition/build install --prefix /home/amejiyo/yolobot/install/yolobot_recognition --record /home/amejiyo/yolobot/build/yolobot_recognition/install.log --single-version-externally-managed

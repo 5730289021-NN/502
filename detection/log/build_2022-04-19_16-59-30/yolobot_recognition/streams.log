@@ -1,0 +1,506 @@
+[0.042s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_recognition -- -j16 -l16
+[0.076s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.112s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.308s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.308s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.327s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.330s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.463s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.599s] -- Found cv_bridge: 3.0.3 (/home/amejiyo/ros2_ws/install/cv_bridge/share/cv_bridge/cmake)
+[0.620s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.741s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.747s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.748s] -- Added test 'lint_cmake' to check CMake code style
+[0.749s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.753s] -- Added test 'xmllint' to check XML markup files
+[0.754s] -- Configuring done
+[0.756s] -- Generating done
+[0.757s] -- Build files have been written to: /home/amejiyo/yolobot/build/yolobot_recognition
+[0.791s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_recognition -- -j16 -l16
+[0.827s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_recognition
+[0.835s] -- Install configuration: ""
+[0.836s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/environment/pythonpath.sh
+[0.836s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/environment/pythonpath.dsv
+[0.836s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts
+[0.836s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/export.py
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/ros_recognition_yolo.py
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/tutorial.ipynb
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_app_engine
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_app_engine/app.yaml
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_app_engine/Dockerfile
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_app_engine/additional_requirements.txt
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/loss.py
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/general.py
+[0.837s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/plots.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/activations.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api/restapi.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api/README.md
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api/example_request.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging/log_dataset.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging/wandb_utils.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging/__init__.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/datasets.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/autoanchor.py
+[0.838s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/__init__.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/augmentations.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/torch_utils.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/metrics.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws/mime.sh
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws/__init__.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws/userdata.sh
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws/resume.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_utils.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/.gitignore
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/requirements.txt
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/LICENSE
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/hubconf.py
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/.dockerignore
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/VisDrone.yaml
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/coco.yaml
+[0.839s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/hyps
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/hyps/hyp.scratch-p6.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/hyps/hyp.finetune_objects365.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/hyps/hyp.scratch.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/hyps/hyp.finetune.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/coco128.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/scripts
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/scripts/get_coco128.sh
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/scripts/download_weights.sh
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/scripts/get_coco.sh
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/GlobalWheat2020.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/Argoverse_HD.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/Objects365.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/images
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/images/bus.jpg
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/images/zidane.jpg
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/SKU-110K.yaml
+[0.840s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/xView.yaml
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/VOC.yaml
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/CONTRIBUTING.md
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/detect_video.py
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/detect.py
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/.gitattributes
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/__init__.py
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/README.md
+[0.841s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/yolov5s.pt
+[0.850s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/Dockerfile
+[0.850s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/test.py
+[0.850s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs
+[0.851s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect
+[0.851s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp
+[0.851s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp/0.mp4
+[0.861s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp17
+[0.862s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp13
+[0.862s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp19
+[0.862s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp12
+[0.863s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp2
+[0.863s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp2/test_image1.png
+[0.863s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp16
+[0.863s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp10
+[0.863s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp3
+[0.863s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp3/0.mp4
+[0.873s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp9
+[0.873s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp9/0.mp4
+[0.878s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp6
+[0.878s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp6/0.mp4
+[0.883s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp20
+[0.883s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp15
+[0.884s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp4
+[0.884s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp8
+[0.884s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp8/0.mp4
+[0.886s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp7
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp7/bus.jpg
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp7/zidane.jpg
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp11
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp18
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp5
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp14
+[0.887s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/train.py
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/yolov5x.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov3-tiny.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov3-spp.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/anchors.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5s6.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5-p6.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5-p7.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5-p2.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5-fpn.yaml
+[0.888s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5-panet.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5l6.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5x6.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov3.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5s-transformer.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub/yolov5m6.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/common.py
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/yolov5l.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/yolo.py
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/__init__.py
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/yolov5m.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/yolov5s.yaml
+[0.889s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/experimental.py
+[0.976s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts'...
+[0.976s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/__init__.py'...
+[0.976s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data'...
+[0.976s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/hyps'...
+[0.976s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/images'...
+[0.976s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/data/scripts'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/detect.py'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/detect_video.py'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/export.py'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/hubconf.py'...
+[0.977s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/__init__.py'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/common.py'...
+[0.977s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/experimental.py'...
+[0.977s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/hub'...
+[0.978s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/models/yolo.py'...
+[0.978s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/ros_recognition_yolo.py'...
+[0.978s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs'...
+[0.978s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect'...
+[0.978s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp'...
+[0.978s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp10'...
+[0.978s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp11'...
+[0.978s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp12'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp13'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp14'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp15'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp16'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp17'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp18'...
+[0.979s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp19'...
+[0.980s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp2'...
+[0.980s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp20'...
+[0.980s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp3'...
+[0.981s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp4'...
+[0.981s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp5'...
+[0.982s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp6'...
+[0.982s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp7'...
+[0.982s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp8'...
+[0.982s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/runs/detect/exp9'...
+[0.982s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/test.py'...
+[0.982s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/train.py'...
+[0.982s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils'...
+[0.983s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/__init__.py'...
+[0.983s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/activations.py'...
+[0.983s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/augmentations.py'...
+[0.983s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/autoanchor.py'...
+[0.983s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws/__init__.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/aws/resume.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/datasets.py'...
+[0.984s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api/example_request.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/flask_rest_api/restapi.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/general.py'...
+[0.984s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_app_engine'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/google_utils.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/loss.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/metrics.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/plots.py'...
+[0.984s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/torch_utils.py'...
+[0.985s] Listing '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging'...
+[0.985s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging/__init__.py'...
+[0.985s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging/log_dataset.py'...
+[0.985s] Compiling '/home/amejiyo/yolobot/install/yolobot_recognition/lib/python3.8/site-packages/scripts/utils/wandb_logging/wandb_utils.py'...
+[0.985s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts
+[0.985s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/export.py
+[0.985s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/ros_recognition_yolo.py
+[0.986s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/tutorial.ipynb
+[0.986s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils
+[0.986s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/google_app_engine
+[0.986s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/google_app_engine/app.yaml
+[0.986s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/google_app_engine/Dockerfile
+[0.986s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/google_app_engine/additional_requirements.txt
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/loss.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/general.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/plots.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/activations.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/flask_rest_api
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/flask_rest_api/restapi.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/flask_rest_api/README.md
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/flask_rest_api/example_request.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/wandb_logging
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/wandb_logging/log_dataset.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/wandb_logging/wandb_utils.py
+[0.987s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/wandb_logging/__init__.py
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/metrics.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/general.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/__init__.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/datasets.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/google_utils.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/autoanchor.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/augmentations.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/torch_utils.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__pycache__/plots.cpython-38.pyc
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/datasets.py
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/autoanchor.py
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/__init__.py
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/augmentations.py
+[0.988s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/torch_utils.py
+[0.989s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/metrics.py
+[0.992s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/aws
+[0.992s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/aws/mime.sh
+[0.992s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/aws/__init__.py
+[0.993s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/aws/userdata.sh
+[0.993s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/aws/resume.py
+[0.993s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/utils/google_utils.py
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitignore
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/requirements.txt
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/LICENSE
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/hubconf.py
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/.dockerignore
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/VisDrone.yaml
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/coco.yaml
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/hyps
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/hyps/hyp.scratch-p6.yaml
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/hyps/hyp.finetune_objects365.yaml
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/hyps/hyp.scratch.yaml
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/hyps/hyp.finetune.yaml
+[0.994s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/coco128.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/scripts
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/scripts/get_coco128.sh
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/scripts/download_weights.sh
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/scripts/get_coco.sh
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/GlobalWheat2020.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/Argoverse_HD.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/Objects365.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/images
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/images/bus.jpg
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/images/zidane.jpg
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/SKU-110K.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/xView.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/data/VOC.yaml
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/CONTRIBUTING.md
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/detect_video.py
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/detect.py
+[0.995s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitattributes
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/__init__.py
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/README.md
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov5s.pt
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/Dockerfile
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/test.py
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp/0.mp4
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp17
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp13
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp19
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp12
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp2
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp2/test_image1.png
+[0.996s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp16
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp10
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp3
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp3/0.mp4
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp9
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp9/0.mp4
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp6
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp6/0.mp4
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp20
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp15
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp4
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp8
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp8/0.mp4
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp7
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp7/bus.jpg
+[0.997s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp7/zidane.jpg
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp11
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp18
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp5
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/runs/detect/exp14
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/train.py
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/yolov5x.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov3-tiny.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov3-spp.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/anchors.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5s6.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5-p6.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5-p7.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5-p2.yaml
+[0.998s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5-fpn.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5-panet.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5l6.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5x6.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov3.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5s-transformer.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/hub/yolov5m6.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/common.py
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/yolov5l.yaml
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/__pycache__
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/__pycache__/__init__.cpython-38.pyc
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/__pycache__/yolo.cpython-38.pyc
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/__pycache__/experimental.cpython-38.pyc
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/__pycache__/common.cpython-38.pyc
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/yolo.py
+[0.999s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/__init__.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/yolov5m.yaml
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/yolov5s.yaml
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition//scripts/models/experimental.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/export.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/ros_recognition_yolo.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/tutorial.ipynb
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/google_app_engine
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/google_app_engine/app.yaml
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/google_app_engine/Dockerfile
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/google_app_engine/additional_requirements.txt
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/loss.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/general.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/plots.py
+[1.000s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/activations.py
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/flask_rest_api
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/flask_rest_api/restapi.py
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/flask_rest_api/README.md
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/flask_rest_api/example_request.py
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/wandb_logging
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/wandb_logging/log_dataset.py
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/wandb_logging/wandb_utils.py
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/wandb_logging/__init__.py
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/metrics.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/general.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/__init__.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/datasets.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/google_utils.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/autoanchor.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/augmentations.cpython-38.pyc
+[1.001s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/torch_utils.cpython-38.pyc
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__pycache__/plots.cpython-38.pyc
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/datasets.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/autoanchor.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/__init__.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/augmentations.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/torch_utils.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/metrics.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/aws
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/aws/mime.sh
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/aws/__init__.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/aws/userdata.sh
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/aws/resume.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/utils/google_utils.py
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/.gitignore
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/requirements.txt
+[1.002s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/LICENSE
+[1.003s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/hubconf.py
+[1.003s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/.dockerignore
+[1.003s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data
+[1.003s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/VisDrone.yaml
+[1.004s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/coco.yaml
+[1.004s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/hyps
+[1.004s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/hyps/hyp.scratch-p6.yaml
+[1.004s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/hyps/hyp.finetune_objects365.yaml
+[1.004s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/hyps/hyp.scratch.yaml
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/hyps/hyp.finetune.yaml
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/coco128.yaml
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/scripts
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/scripts/get_coco128.sh
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/scripts/download_weights.sh
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/scripts/get_coco.sh
+[1.005s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/GlobalWheat2020.yaml
+[1.006s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/Argoverse_HD.yaml
+[1.006s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/Objects365.yaml
+[1.006s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/images
+[1.006s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/images/bus.jpg
+[1.006s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/images/zidane.jpg
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/SKU-110K.yaml
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/xView.yaml
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/data/VOC.yaml
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/CONTRIBUTING.md
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/detect_video.py
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/detect.py
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/.gitattributes
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/__init__.py
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/README.md
+[1.007s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/yolov5s.pt
+[1.008s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/Dockerfile
+[1.008s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/test.py
+[1.008s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs
+[1.008s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect
+[1.009s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp
+[1.009s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp/0.mp4
+[1.009s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp17
+[1.009s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp13
+[1.009s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp19
+[1.010s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp12
+[1.010s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp2
+[1.010s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp2/test_image1.png
+[1.010s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp16
+[1.010s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp10
+[1.011s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp3
+[1.011s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp3/0.mp4
+[1.012s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp9
+[1.012s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp9/0.mp4
+[1.012s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp6
+[1.012s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp6/0.mp4
+[1.012s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp20
+[1.012s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp15
+[1.013s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp4
+[1.013s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp8
+[1.013s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp8/0.mp4
+[1.013s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp7
+[1.013s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp7/bus.jpg
+[1.013s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp7/zidane.jpg
+[1.014s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp11
+[1.014s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp18
+[1.014s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp5
+[1.014s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/runs/detect/exp14
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/train.py
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/yolov5x.yaml
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov3-tiny.yaml
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov3-spp.yaml
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/anchors.yaml
+[1.015s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5s6.yaml
+[1.016s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5-p6.yaml
+[1.016s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5-p7.yaml
+[1.017s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5-p2.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5-fpn.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5-panet.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5l6.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5x6.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov3.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5s-transformer.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/hub/yolov5m6.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/common.py
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/yolov5l.yaml
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/__pycache__
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/__pycache__/__init__.cpython-38.pyc
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/__pycache__/yolo.cpython-38.pyc
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/__pycache__/experimental.cpython-38.pyc
+[1.018s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/__pycache__/common.cpython-38.pyc
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/yolo.py
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/__init__.py
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/yolov5m.yaml
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/yolov5s.yaml
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/yolobot_recognition/scripts/models/experimental.py
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/lib/scripts/yolobot_recognition/ros_recognition_yolo.py
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/ament_index/resource_index/package_run_dependencies/yolobot_recognition
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/ament_index/resource_index/parent_prefix_path/yolobot_recognition
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.sh
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.dsv
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/environment/path.sh
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/environment/path.dsv
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/local_setup.bash
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/local_setup.sh
+[1.019s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/local_setup.zsh
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/local_setup.dsv
+[1.019s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/package.dsv
+[1.020s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/ament_index/resource_index/packages/yolobot_recognition
+[1.020s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig.cmake
+[1.020s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig-version.cmake
+[1.020s] -- Installing: /home/amejiyo/yolobot/install/yolobot_recognition/share/yolobot_recognition/package.xml
+[1.020s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_recognition

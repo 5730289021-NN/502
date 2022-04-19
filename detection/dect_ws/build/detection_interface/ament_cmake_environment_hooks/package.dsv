@@ -1,4 +1,0 @@
-source;share/detection_interface/local_setup.bash
-source;share/detection_interface/local_setup.dsv
-source;share/detection_interface/local_setup.sh
-source;share/detection_interface/local_setup.zsh

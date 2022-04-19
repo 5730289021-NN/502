@@ -1,0 +1,54 @@
+[0.047s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/yolobot_control -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/yolobot_control
+[0.162s] -- The C compiler identification is GNU 8.4.0
+[0.263s] -- The CXX compiler identification is GNU 8.4.0
+[0.270s] -- Check for working C compiler: /usr/bin/cc
+[0.345s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.347s] -- Detecting C compiler ABI info
+[0.420s] -- Detecting C compiler ABI info - done
+[0.431s] -- Detecting C compile features
+[0.432s] -- Detecting C compile features - done
+[0.435s] -- Check for working CXX compiler: /usr/bin/c++
+[0.519s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.521s] -- Detecting CXX compiler ABI info
+[0.599s] -- Detecting CXX compiler ABI info - done
+[0.610s] -- Detecting CXX compile features
+[0.610s] -- Detecting CXX compile features - done
+[0.614s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.652s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.652s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.892s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.037s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.039s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.041s] -- Added test 'lint_cmake' to check CMake code style
+[1.041s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.042s] -- Added test 'xmllint' to check XML markup files
+[1.044s] -- Configuring done
+[1.046s] -- Generating done
+[1.047s] -- Build files have been written to: /home/amejiyo/yolobot/build/yolobot_control
+[1.058s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/yolobot_control -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/yolobot_control
+[1.061s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_control -- -j16 -l16
+[1.105s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_control -- -j16 -l16
+[1.148s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_control
+[1.160s] -- Install configuration: ""
+[1.160s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//scripts
+[1.160s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//scripts/robot_control.py
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//launch
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//launch/yolobot_control.launch.py
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/lib/yolobot_control/robot_control.py
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/lib/yolobot_control/yolobot_control.launch.py
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/package_run_dependencies/yolobot_control
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/parent_prefix_path/yolobot_control
+[1.161s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/ament_prefix_path.sh
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/ament_prefix_path.dsv
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/path.sh
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/path.dsv
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.bash
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.sh
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.zsh
+[1.162s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.dsv
+[1.163s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/package.dsv
+[1.163s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/packages/yolobot_control
+[1.163s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/cmake/yolobot_controlConfig.cmake
+[1.163s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/cmake/yolobot_controlConfig-version.cmake
+[1.163s] -- Installing: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/package.xml
+[1.198s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_control

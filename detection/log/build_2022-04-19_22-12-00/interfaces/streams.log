@@ -1,0 +1,222 @@
+[0.052s] Invoking command in '/home/amejiyo/yolobot/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/interfaces
+[0.175s] -- The C compiler identification is GNU 8.4.0
+[0.278s] -- The CXX compiler identification is GNU 8.4.0
+[0.282s] -- Check for working C compiler: /usr/bin/cc
+[0.357s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.359s] -- Detecting C compiler ABI info
+[0.431s] -- Detecting C compiler ABI info - done
+[0.441s] -- Detecting C compile features
+[0.442s] -- Detecting C compile features - done
+[0.444s] -- Check for working CXX compiler: /usr/bin/c++
+[0.526s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.527s] -- Detecting CXX compiler ABI info
+[0.611s] -- Detecting CXX compiler ABI info - done
+[0.624s] -- Detecting CXX compile features
+[0.624s] -- Detecting CXX compile features - done
+[0.627s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.664s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.664s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.904s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.047s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.057s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.069s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.214s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.249s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.348s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.408s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.474s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.600s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.607s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.636s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.642s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.682s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.683s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.683s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.683s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.706s] -- Found PythonExtra: .so  
+[1.762s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.797s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.797s] -- Configured cppcheck include dirs: 
+[1.798s] -- Configured cppcheck exclude dirs and/or files: 
+[1.812s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.812s] -- Configured cpplint exclude dirs and/or files: 
+[1.815s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.819s] -- Added test 'lint_cmake' to check CMake code style
+[1.822s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.837s] -- Added test 'uncrustify' to check C / C++ code style
+[1.837s] -- Configured uncrustify additional arguments: 
+[1.839s] -- Added test 'xmllint' to check XML markup files
+[1.849s] -- Configuring done
+[1.869s] -- Generating done
+[1.871s] -- Build files have been written to: /home/amejiyo/yolobot/build/interfaces
+[1.877s] Invoked command in '/home/amejiyo/yolobot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/interfaces
+[1.882s] Invoking command in '/home/amejiyo/yolobot/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/interfaces -- -j16 -l16
+[1.930s] [35m[1mScanning dependencies of target interfaces__cpp[0m
+[1.932s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.942s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.156s] [35m[1mScanning dependencies of target interfaces__rosidl_generator_c[0m
+[2.159s] [  6%] Built target interfaces__cpp
+[2.170s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.173s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.174s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.174s] [ 19%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/dect__functions.c.o[0m
+[2.219s] [ 22%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[2.262s] [ 22%] Built target interfaces__rosidl_generator_c
+[2.273s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.275s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.391s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_cpp[0m
+[2.394s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.404s] [ 32%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/dect__type_support.cpp.o[0m
+[2.409s] [ 35%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect__type_support.cpp.o[0m
+[2.409s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.426s] [ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/dect__type_support.cpp.o[0m
+[2.495s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_c[0m
+[2.503s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_introspection_c[0m
+[2.507s] [ 41%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/dect__type_support.cpp.o[0m
+[2.515s] [ 45%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/dect__type_support.c.o[0m
+[2.534s] [ 48%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[2.543s] [ 51%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[2.570s] [ 51%] Built target interfaces__rosidl_typesupport_c
+[2.577s] [ 51%] Built target interfaces__rosidl_typesupport_introspection_c
+[2.641s] [ 54%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[2.653s] [ 58%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.682s] [ 58%] Built target interfaces__rosidl_typesupport_cpp
+[2.720s] [ 61%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.725s] [ 61%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[2.813s] [ 61%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[2.827s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.027s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.046s] [ 67%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect__type_support_c.cpp.o[0m
+[3.265s] [ 70%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.364s] [ 70%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[3.374s] [35m[1mScanning dependencies of target interfaces[0m
+[3.388s] [ 70%] Built target interfaces
+[3.397s] [35m[1mScanning dependencies of target interfaces__py[0m
+[3.407s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.772s] [ 74%] Built target interfaces__py
+[3.781s] [35m[1mScanning dependencies of target interfaces__python[0m
+[3.816s] [ 77%] [32mBuilding C object CMakeFiles/interfaces__python.dir/rosidl_generator_py/interfaces/msg/_dect_s.c.o[0m
+[3.906s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__python.so[0m
+[3.955s] [ 80%] Built target interfaces__python
+[3.964s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.964s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.968s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_c__pyext[0m
+[3.981s] [ 83%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.986s] [ 87%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.989s] [ 90%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.047s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.047s] [ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.051s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.084s] [100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[4.093s] [100%] Built target interfaces__rosidl_typesupport_c__pyext
+[4.105s] [100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.116s] Invoked command in '/home/amejiyo/yolobot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/interfaces -- -j16 -l16
+[4.188s] Invoking command in '/home/amejiyo/yolobot/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/interfaces
+[4.199s] -- Install configuration: ""
+[4.200s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[4.200s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces
+[4.200s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg
+[4.200s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.200s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail
+[4.200s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__functions.c
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__type_support.h
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__struct.h
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__functions.h
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/dect.h
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/library_path.sh
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/library_path.dsv
+[4.201s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[4.202s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""
+[4.202s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces
+[4.202s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg
+[4.202s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail
+[4.202s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_fastrtps_c.h
+[4.202s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.202s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[4.202s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[4.203s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces
+[4.203s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg
+[4.203s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dds_fastrtps
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_fastrtps_cpp.hpp
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.203s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.203s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces
+[4.203s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg
+[4.203s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_introspection_c.h
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__type_support.c
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.203s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[4.203s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[4.204s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""
+[4.204s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces
+[4.204s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg
+[4.204s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__struct.hpp
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__traits.hpp
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__builder.hpp
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/dect.hpp
+[4.204s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces
+[4.204s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg
+[4.204s] -- Up-to-date: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_introspection_cpp.hpp
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/include/interfaces/msg/detail/dect__type_support.cpp
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[4.204s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[4.204s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/pythonpath.sh
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[4.204s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/__init__.py
+[4.233s] Compiling '/home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/__init__.py'...
+[4.237s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/msg
+[4.238s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_dect_s.c
+[4.238s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/msg/__init__.py
+[4.238s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_dect.py
+[4.239s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[4.239s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.239s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[4.239s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.239s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[4.240s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__python.so
+[4.240s] -- Set runtime path of "/home/amejiyo/yolobot/install/interfaces/lib/libinterfaces__python.so" to ""
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/msg/Dect.idl
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/msg/Dect.msg
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/path.sh
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/environment/path.dsv
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/local_setup.bash
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/local_setup.sh
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/local_setup.zsh
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/local_setup.dsv
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/package.dsv
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[4.240s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cppExport.cmake
+[4.241s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[4.242s] -- Installing: /home/amejiyo/yolobot/install/interfaces/share/interfaces/package.xml
+[4.246s] Invoked command in '/home/amejiyo/yolobot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/ros2_ws/install/py_pubsub:/home/amejiyo/ros2_ws/install/opencv_tests:/home/amejiyo/ros2_ws/install/detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/interfaces
