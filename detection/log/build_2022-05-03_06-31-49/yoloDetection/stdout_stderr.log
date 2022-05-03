@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/yoloDetection/yoloDetection.egg-info/PKG-INFO
+writing dependency_links to ../../build/yoloDetection/yoloDetection.egg-info/dependency_links.txt
+writing entry points to ../../build/yoloDetection/yoloDetection.egg-info/entry_points.txt
+writing requirements to ../../build/yoloDetection/yoloDetection.egg-info/requires.txt
+writing top-level names to ../../build/yoloDetection/yoloDetection.egg-info/top_level.txt
+reading manifest file '../../build/yoloDetection/yoloDetection.egg-info/SOURCES.txt'
+writing manifest file '../../build/yoloDetection/yoloDetection.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/amejiyo/yolobot/install/yoloDetection/lib/python3.8/site-packages/yoloDetection-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/yoloDetection/yoloDetection.egg-info to /home/amejiyo/yolobot/install/yoloDetection/lib/python3.8/site-packages/yoloDetection-0.0.0-py3.8.egg-info
+running install_scripts
+Installing detect_talker script to /home/amejiyo/yolobot/install/yoloDetection/lib/yoloDetection
+writing list of installed files to '/home/amejiyo/yolobot/build/yoloDetection/install.log'

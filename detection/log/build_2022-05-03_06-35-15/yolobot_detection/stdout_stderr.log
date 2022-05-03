@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/yolobot_detection/yolobot_detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/yolobot_detection/yolobot_detection.egg-info/dependency_links.txt
+writing entry points to ../../build/yolobot_detection/yolobot_detection.egg-info/entry_points.txt
+writing requirements to ../../build/yolobot_detection/yolobot_detection.egg-info/requires.txt
+writing top-level names to ../../build/yolobot_detection/yolobot_detection.egg-info/top_level.txt
+reading manifest file '../../build/yolobot_detection/yolobot_detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/yolobot_detection/yolobot_detection.egg-info/SOURCES.txt'
+running build
+running build_py
+copying yolobot_detection/detect.py -> /home/amejiyo/yolobot/build/yolobot_detection/build/lib/yolobot_detection
+running install
+running install_lib
+copying /home/amejiyo/yolobot/build/yolobot_detection/build/lib/yolobot_detection/detect.py -> /home/amejiyo/yolobot/install/yolobot_detection/lib/python3.8/site-packages/yolobot_detection
+byte-compiling /home/amejiyo/yolobot/install/yolobot_detection/lib/python3.8/site-packages/yolobot_detection/detect.py to detect.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/amejiyo/yolobot/install/yolobot_detection/lib/python3.8/site-packages/yolobot_detection-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/yolobot_detection/yolobot_detection.egg-info to /home/amejiyo/yolobot/install/yolobot_detection/lib/python3.8/site-packages/yolobot_detection-0.0.0-py3.8.egg-info
+running install_scripts
+Installing detect_talker script to /home/amejiyo/yolobot/install/yolobot_detection/lib/yoloDetection
+writing list of installed files to '/home/amejiyo/yolobot/build/yolobot_detection/install.log'

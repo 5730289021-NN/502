@@ -1,0 +1,4 @@
+Invoking command in '/home/amejiyo/yolobot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/interfaces -- -j16 -l16
+Invoked command in '/home/amejiyo/yolobot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/interfaces -- -j16 -l16
+Invoking command in '/home/amejiyo/yolobot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/interfaces
+Invoked command in '/home/amejiyo/yolobot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/interfaces

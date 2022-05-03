@@ -1,0 +1,6 @@
+source;share/yolobot_detection/hook/pythonpath.ps1
+source;share/yolobot_detection/hook/pythonpath.dsv
+source;share/yolobot_detection/hook/pythonpath.sh
+source;share/yolobot_detection/hook/ament_prefix_path.ps1
+source;share/yolobot_detection/hook/ament_prefix_path.dsv
+source;share/yolobot_detection/hook/ament_prefix_path.sh

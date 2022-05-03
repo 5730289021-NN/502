@@ -1,0 +1,21 @@
+[0.582s] Invoking command in '/home/amejiyo/yolobot/src/yoloDetection': PYTHONPATH=/home/amejiyo/yolobot/install/yoloDetection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yoloDetection build --build-base /home/amejiyo/yolobot/build/yoloDetection/build install --prefix /home/amejiyo/yolobot/install/yoloDetection --record /home/amejiyo/yolobot/build/yoloDetection/install.log --single-version-externally-managed
+[0.761s] running egg_info
+[0.762s] writing ../../build/yoloDetection/yoloDetection.egg-info/PKG-INFO
+[0.762s] writing dependency_links to ../../build/yoloDetection/yoloDetection.egg-info/dependency_links.txt
+[0.763s] writing entry points to ../../build/yoloDetection/yoloDetection.egg-info/entry_points.txt
+[0.763s] writing requirements to ../../build/yoloDetection/yoloDetection.egg-info/requires.txt
+[0.763s] writing top-level names to ../../build/yoloDetection/yoloDetection.egg-info/top_level.txt
+[0.789s] reading manifest file '../../build/yoloDetection/yoloDetection.egg-info/SOURCES.txt'
+[0.790s] writing manifest file '../../build/yoloDetection/yoloDetection.egg-info/SOURCES.txt'
+[0.790s] running build
+[0.790s] running build_py
+[0.791s] running install
+[0.791s] running install_lib
+[0.792s] running install_data
+[0.792s] running install_egg_info
+[0.794s] removing '/home/amejiyo/yolobot/install/yoloDetection/lib/python3.8/site-packages/yoloDetection-0.0.0-py3.8.egg-info' (and everything under it)
+[0.795s] Copying ../../build/yoloDetection/yoloDetection.egg-info to /home/amejiyo/yolobot/install/yoloDetection/lib/python3.8/site-packages/yoloDetection-0.0.0-py3.8.egg-info
+[0.795s] running install_scripts
+[0.808s] Installing detect_talker script to /home/amejiyo/yolobot/install/yoloDetection/lib/yoloDetection
+[0.809s] writing list of installed files to '/home/amejiyo/yolobot/build/yoloDetection/install.log'
+[0.833s] Invoked command in '/home/amejiyo/yolobot/src/yoloDetection' returned '0': PYTHONPATH=/home/amejiyo/yolobot/install/yoloDetection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yoloDetection build --build-base /home/amejiyo/yolobot/build/yoloDetection/build install --prefix /home/amejiyo/yolobot/install/yoloDetection --record /home/amejiyo/yolobot/build/yoloDetection/install.log --single-version-externally-managed

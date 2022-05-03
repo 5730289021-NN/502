@@ -1,0 +1,3 @@
+[console_scripts]
+detect_talker = yolobot_detection.detect:main
+
