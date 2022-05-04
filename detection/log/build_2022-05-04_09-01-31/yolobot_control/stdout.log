@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//scripts
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//scripts/robot_control.py
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//launch
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//launch/yolobot_control.launch.py
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/lib/yolobot_control/robot_control.py
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/lib/yolobot_control/yolobot_control.launch.py
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/package_run_dependencies/yolobot_control
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/parent_prefix_path/yolobot_control
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/path.sh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/path.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.bash
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.sh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.zsh
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/package.dsv
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/packages/yolobot_control
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/cmake/yolobot_controlConfig.cmake
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/cmake/yolobot_controlConfig-version.cmake
+-- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/package.xml

@@ -1,1 +1,1 @@
-rclpy:sensor_msgs
+interfaces:rclpy:sensor_msgs

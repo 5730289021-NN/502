@@ -14,19 +14,10 @@ model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 model.conf = 0.5
 bridge = CvBridge()
 
-def dectrun():
-    # Convert images to numpy arrays
-    cap = cv2.VideoCapture(capture_index)
-    ret, frame = cap.read()
-
-    results = model(frame)
-    labels, cord = results.xyxyn[0][:,-1],results.xyxyn[0][:,:-1] #get label and bounding coordinates
-    return labels,cord, frame
-
 class FineDetect(Node):
     def __init__(self):
         super().__init__('camera_subscriber')
-        self.publisher_ = self.create_publisher(Dect, 'topic', 10)
+        self.publisher_ = self.create_publisher(Dect, 'detection/yolov5', 10)
         timer_period = 0.1  # seconds
         # self.timer = self.create_timer(timer_period, self.timer_callback)
         self.capture_index = 0
