@@ -20,8 +20,11 @@ detection <br />
  3. go to /yolobot/src/yolobot_recognition/scripts/ <br/>
  4. run python3 ros_recognition_yolo.py </br>
 
-open gazebo
+
+# unit run
+
+open gazebo<br/>
 ros2 launch yolobot_gazebo yolobot_launch.py
 
-run node
+run node<br/>
 ros2 run yoloboy_detection detect_talker
