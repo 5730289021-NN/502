@@ -1,4 +1,0 @@
-Invoking command in '/home/amejiyo/yolobot/build/yolobot_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_control -- -j16 -l16
-Invoked command in '/home/amejiyo/yolobot/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_control -- -j16 -l16
-Invoking command in '/home/amejiyo/yolobot/build/yolobot_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_control
-Invoked command in '/home/amejiyo/yolobot/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_control

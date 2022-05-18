@@ -1,4 +1,0 @@
-Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
-Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
-Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/interfaces
-Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/interfaces

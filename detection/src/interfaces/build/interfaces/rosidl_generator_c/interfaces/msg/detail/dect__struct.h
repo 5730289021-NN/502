@@ -25,10 +25,11 @@ extern "C"
 typedef struct interfaces__msg__Dect
 {
   rosidl_runtime_c__String obj_class;
-  double x1;
-  double y1;
-  double x2;
-  double y2;
+  double cam_x;
+  double cam_y;
+  double robot_x;
+  double robot_y;
+  double robot_yaw;
 } interfaces__msg__Dect;
 
 // Struct for a sequence of interfaces__msg__Dect.

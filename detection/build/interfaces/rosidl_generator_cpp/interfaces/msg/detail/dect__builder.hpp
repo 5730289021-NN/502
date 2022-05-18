@@ -20,15 +20,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Dect_y2
+class Init_Dect_robot_yaw
 {
 public:
-  explicit Init_Dect_y2(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_robot_yaw(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  ::interfaces::msg::Dect y2(::interfaces::msg::Dect::_y2_type arg)
+  ::interfaces::msg::Dect robot_yaw(::interfaces::msg::Dect::_robot_yaw_type arg)
   {
-    msg_.y2 = std::move(arg);
+    msg_.robot_yaw = std::move(arg);
     return std::move(msg_);
   }
 
@@ -36,48 +36,64 @@ private:
   ::interfaces::msg::Dect msg_;
 };
 
-class Init_Dect_x2
+class Init_Dect_robot_y
 {
 public:
-  explicit Init_Dect_x2(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_robot_y(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  Init_Dect_y2 x2(::interfaces::msg::Dect::_x2_type arg)
+  Init_Dect_robot_yaw robot_y(::interfaces::msg::Dect::_robot_y_type arg)
   {
-    msg_.x2 = std::move(arg);
-    return Init_Dect_y2(msg_);
+    msg_.robot_y = std::move(arg);
+    return Init_Dect_robot_yaw(msg_);
   }
 
 private:
   ::interfaces::msg::Dect msg_;
 };
 
-class Init_Dect_y1
+class Init_Dect_robot_x
 {
 public:
-  explicit Init_Dect_y1(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_robot_x(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  Init_Dect_x2 y1(::interfaces::msg::Dect::_y1_type arg)
+  Init_Dect_robot_y robot_x(::interfaces::msg::Dect::_robot_x_type arg)
   {
-    msg_.y1 = std::move(arg);
-    return Init_Dect_x2(msg_);
+    msg_.robot_x = std::move(arg);
+    return Init_Dect_robot_y(msg_);
   }
 
 private:
   ::interfaces::msg::Dect msg_;
 };
 
-class Init_Dect_x1
+class Init_Dect_cam_y
 {
 public:
-  explicit Init_Dect_x1(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_cam_y(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  Init_Dect_y1 x1(::interfaces::msg::Dect::_x1_type arg)
+  Init_Dect_robot_x cam_y(::interfaces::msg::Dect::_cam_y_type arg)
   {
-    msg_.x1 = std::move(arg);
-    return Init_Dect_y1(msg_);
+    msg_.cam_y = std::move(arg);
+    return Init_Dect_robot_x(msg_);
+  }
+
+private:
+  ::interfaces::msg::Dect msg_;
+};
+
+class Init_Dect_cam_x
+{
+public:
+  explicit Init_Dect_cam_x(::interfaces::msg::Dect & msg)
+  : msg_(msg)
+  {}
+  Init_Dect_cam_y cam_x(::interfaces::msg::Dect::_cam_x_type arg)
+  {
+    msg_.cam_x = std::move(arg);
+    return Init_Dect_cam_y(msg_);
   }
 
 private:
@@ -90,10 +106,10 @@ public:
   Init_Dect_obj_class()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Dect_x1 obj_class(::interfaces::msg::Dect::_obj_class_type arg)
+  Init_Dect_cam_x obj_class(::interfaces::msg::Dect::_obj_class_type arg)
   {
     msg_.obj_class = std::move(arg);
-    return Init_Dect_x1(msg_);
+    return Init_Dect_cam_x(msg_);
   }
 
 private:

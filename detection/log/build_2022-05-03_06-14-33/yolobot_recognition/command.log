@@ -1,6 +1,0 @@
-Invoking command in '/home/amejiyo/yolobot/build/yolobot_recognition': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/yolobot_recognition
-Invoked command in '/home/amejiyo/yolobot/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/yolobot_recognition
-Invoking command in '/home/amejiyo/yolobot/build/yolobot_recognition': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_recognition -- -j16 -l16
-Invoked command in '/home/amejiyo/yolobot/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_recognition -- -j16 -l16
-Invoking command in '/home/amejiyo/yolobot/build/yolobot_recognition': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_recognition
-Invoked command in '/home/amejiyo/yolobot/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_recognition

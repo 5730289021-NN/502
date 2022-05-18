@@ -1,2 +1,0 @@
-yolobot_recognition
-yolobot_recognition/detection_lib

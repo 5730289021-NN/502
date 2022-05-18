@@ -1,3 +1,0 @@
-[console_scripts]
-detect_talker = yolobot_recognition.fine_detect_publisher:main
-

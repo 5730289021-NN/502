@@ -65,24 +65,29 @@ static bool _Dect__cdr_serialize(
     cdr << str->data;
   }
 
-  // Field name: x1
+  // Field name: cam_x
   {
-    cdr << ros_message->x1;
+    cdr << ros_message->cam_x;
   }
 
-  // Field name: y1
+  // Field name: cam_y
   {
-    cdr << ros_message->y1;
+    cdr << ros_message->cam_y;
   }
 
-  // Field name: x2
+  // Field name: robot_x
   {
-    cdr << ros_message->x2;
+    cdr << ros_message->robot_x;
   }
 
-  // Field name: y2
+  // Field name: robot_y
   {
-    cdr << ros_message->y2;
+    cdr << ros_message->robot_y;
+  }
+
+  // Field name: robot_yaw
+  {
+    cdr << ros_message->robot_yaw;
   }
 
   return true;
@@ -113,24 +118,29 @@ static bool _Dect__cdr_deserialize(
     }
   }
 
-  // Field name: x1
+  // Field name: cam_x
   {
-    cdr >> ros_message->x1;
+    cdr >> ros_message->cam_x;
   }
 
-  // Field name: y1
+  // Field name: cam_y
   {
-    cdr >> ros_message->y1;
+    cdr >> ros_message->cam_y;
   }
 
-  // Field name: x2
+  // Field name: robot_x
   {
-    cdr >> ros_message->x2;
+    cdr >> ros_message->robot_x;
   }
 
-  // Field name: y2
+  // Field name: robot_y
   {
-    cdr >> ros_message->y2;
+    cdr >> ros_message->robot_y;
+  }
+
+  // Field name: robot_yaw
+  {
+    cdr >> ros_message->robot_yaw;
   }
 
   return true;
@@ -154,27 +164,33 @@ size_t get_serialized_size_interfaces__msg__Dect(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->obj_class.size + 1);
-  // field.name x1
+  // field.name cam_x
   {
-    size_t item_size = sizeof(ros_message->x1);
+    size_t item_size = sizeof(ros_message->cam_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name y1
+  // field.name cam_y
   {
-    size_t item_size = sizeof(ros_message->y1);
+    size_t item_size = sizeof(ros_message->cam_y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name x2
+  // field.name robot_x
   {
-    size_t item_size = sizeof(ros_message->x2);
+    size_t item_size = sizeof(ros_message->robot_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name y2
+  // field.name robot_y
   {
-    size_t item_size = sizeof(ros_message->y2);
+    size_t item_size = sizeof(ros_message->robot_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name robot_yaw
+  {
+    size_t item_size = sizeof(ros_message->robot_yaw);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -213,28 +229,35 @@ size_t max_serialized_size_interfaces__msg__Dect(
         1;
     }
   }
-  // member: x1
+  // member: cam_x
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: y1
+  // member: cam_y
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: x2
+  // member: robot_x
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: y2
+  // member: robot_y
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: robot_yaw
   {
     size_t array_size = 1;
 

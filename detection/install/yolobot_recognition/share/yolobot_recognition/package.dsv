@@ -1,9 +1,6 @@
 source;share/yolobot_recognition/hook/cmake_prefix_path.ps1
 source;share/yolobot_recognition/hook/cmake_prefix_path.dsv
 source;share/yolobot_recognition/hook/cmake_prefix_path.sh
-source;share/yolobot_recognition/hook/pythonpath.ps1
-source;share/yolobot_recognition/hook/pythonpath.dsv
-source;share/yolobot_recognition/hook/pythonpath.sh
 source;share/yolobot_recognition/local_setup.bash
 source;share/yolobot_recognition/local_setup.dsv
 source;share/yolobot_recognition/local_setup.ps1

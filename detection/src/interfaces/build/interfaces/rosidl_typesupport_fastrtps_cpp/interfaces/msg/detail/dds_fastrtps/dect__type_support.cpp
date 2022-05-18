@@ -34,14 +34,16 @@ cdr_serialize(
 {
   // Member: obj_class
   cdr << ros_message.obj_class;
-  // Member: x1
-  cdr << ros_message.x1;
-  // Member: y1
-  cdr << ros_message.y1;
-  // Member: x2
-  cdr << ros_message.x2;
-  // Member: y2
-  cdr << ros_message.y2;
+  // Member: cam_x
+  cdr << ros_message.cam_x;
+  // Member: cam_y
+  cdr << ros_message.cam_y;
+  // Member: robot_x
+  cdr << ros_message.robot_x;
+  // Member: robot_y
+  cdr << ros_message.robot_y;
+  // Member: robot_yaw
+  cdr << ros_message.robot_yaw;
   return true;
 }
 
@@ -54,17 +56,20 @@ cdr_deserialize(
   // Member: obj_class
   cdr >> ros_message.obj_class;
 
-  // Member: x1
-  cdr >> ros_message.x1;
+  // Member: cam_x
+  cdr >> ros_message.cam_x;
 
-  // Member: y1
-  cdr >> ros_message.y1;
+  // Member: cam_y
+  cdr >> ros_message.cam_y;
 
-  // Member: x2
-  cdr >> ros_message.x2;
+  // Member: robot_x
+  cdr >> ros_message.robot_x;
 
-  // Member: y2
-  cdr >> ros_message.y2;
+  // Member: robot_y
+  cdr >> ros_message.robot_y;
+
+  // Member: robot_yaw
+  cdr >> ros_message.robot_yaw;
 
   return true;
 }
@@ -86,27 +91,33 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.obj_class.size() + 1);
-  // Member: x1
+  // Member: cam_x
   {
-    size_t item_size = sizeof(ros_message.x1);
+    size_t item_size = sizeof(ros_message.cam_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: y1
+  // Member: cam_y
   {
-    size_t item_size = sizeof(ros_message.y1);
+    size_t item_size = sizeof(ros_message.cam_y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: x2
+  // Member: robot_x
   {
-    size_t item_size = sizeof(ros_message.x2);
+    size_t item_size = sizeof(ros_message.robot_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: y2
+  // Member: robot_y
   {
-    size_t item_size = sizeof(ros_message.y2);
+    size_t item_size = sizeof(ros_message.robot_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: robot_yaw
+  {
+    size_t item_size = sizeof(ros_message.robot_yaw);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -141,7 +152,7 @@ max_serialized_size_Dect(
     }
   }
 
-  // Member: x1
+  // Member: cam_x
   {
     size_t array_size = 1;
 
@@ -149,7 +160,7 @@ max_serialized_size_Dect(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: y1
+  // Member: cam_y
   {
     size_t array_size = 1;
 
@@ -157,7 +168,7 @@ max_serialized_size_Dect(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: x2
+  // Member: robot_x
   {
     size_t array_size = 1;
 
@@ -165,7 +176,15 @@ max_serialized_size_Dect(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: y2
+  // Member: robot_y
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: robot_yaw
   {
     size_t array_size = 1;
 

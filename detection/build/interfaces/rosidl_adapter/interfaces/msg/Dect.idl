@@ -8,13 +8,15 @@ module interfaces {
     struct Dect {
       string obj_class;
 
-      double x1;
+      double cam_x;
 
-      double y1;
+      double cam_y;
 
-      double x2;
+      double robot_x;
 
-      double y2;
+      double robot_y;
+
+      double robot_yaw;
     };
   };
 };

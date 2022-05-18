@@ -1,0 +1,55 @@
+[0.049s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yoloDetection:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/yolobot_description -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/yolobot_description
+[0.359s] -- The C compiler identification is GNU 8.4.0
+[0.359s] -- The CXX compiler identification is GNU 8.4.0
+[0.359s] -- Check for working C compiler: /usr/bin/cc
+[0.359s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.360s] -- Detecting C compiler ABI info
+[0.360s] -- Detecting C compiler ABI info - done
+[0.361s] -- Detecting C compile features
+[0.361s] -- Detecting C compile features - done
+[0.362s] -- Check for working CXX compiler: /usr/bin/c++
+[0.421s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.422s] -- Detecting CXX compiler ABI info
+[0.521s] -- Detecting CXX compiler ABI info - done
+[0.532s] -- Detecting CXX compile features
+[0.532s] -- Detecting CXX compile features - done
+[0.535s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.569s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.569s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.838s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[0.881s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.041s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.043s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.044s] -- Added test 'lint_cmake' to check CMake code style
+[1.045s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.046s] -- Added test 'xmllint' to check XML markup files
+[1.050s] -- Configuring done
+[1.053s] -- Generating done
+[1.054s] -- Build files have been written to: /home/amejiyo/yolobot/build/yolobot_description
+[1.063s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yoloDetection:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/yolobot/src/yolobot_description -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/yolobot_description
+[1.066s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yoloDetection:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_description -- -j16 -l16
+[1.128s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yoloDetection:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/yolobot/build/yolobot_description -- -j16 -l16
+[1.157s] Invoking command in '/home/amejiyo/yolobot/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yoloDetection:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_description
+[1.171s] -- Install configuration: ""
+[1.171s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//launch
+[1.171s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//launch/spawn_yolobot.py
+[1.171s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//launch/spawn_yolobot_launch.launch.py
+[1.172s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//robot
+[1.172s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description//robot/yolobot.urdf
+[1.172s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/lib/yolobot_description/spawn_yolobot.py
+[1.172s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/ament_index/resource_index/package_run_dependencies/yolobot_description
+[1.172s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/ament_index/resource_index/parent_prefix_path/yolobot_description
+[1.172s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/ament_prefix_path.sh
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/ament_prefix_path.dsv
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/path.sh
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/environment/path.dsv
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.bash
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.sh
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.zsh
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/local_setup.dsv
+[1.173s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/package.dsv
+[1.174s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/ament_index/resource_index/packages/yolobot_description
+[1.174s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/cmake/yolobot_descriptionConfig.cmake
+[1.174s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/cmake/yolobot_descriptionConfig-version.cmake
+[1.174s] -- Installing: /home/amejiyo/yolobot/install/yolobot_description/share/yolobot_description/package.xml
+[1.179s] Invoked command in '/home/amejiyo/yolobot/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yoloDetection:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/yolobot/build/yolobot_description

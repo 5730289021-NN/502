@@ -1,0 +1,2 @@
+/home/amejiyo/yolobot/install/yolobot_detection/lib/python3.8/site-packages/yolobot_detection/detect.py:74: SyntaxWarning: 'int' object is not subscriptable; perhaps you missed a comma?
+  self.get_logger().info(str(depth/1000[:4]))

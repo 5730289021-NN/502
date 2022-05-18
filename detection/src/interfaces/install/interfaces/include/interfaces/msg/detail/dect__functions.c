@@ -24,10 +24,11 @@ interfaces__msg__Dect__init(interfaces__msg__Dect * msg)
     interfaces__msg__Dect__fini(msg);
     return false;
   }
-  // x1
-  // y1
-  // x2
-  // y2
+  // cam_x
+  // cam_y
+  // robot_x
+  // robot_y
+  // robot_yaw
   return true;
 }
 
@@ -39,10 +40,11 @@ interfaces__msg__Dect__fini(interfaces__msg__Dect * msg)
   }
   // obj_class
   rosidl_runtime_c__String__fini(&msg->obj_class);
-  // x1
-  // y1
-  // x2
-  // y2
+  // cam_x
+  // cam_y
+  // robot_x
+  // robot_y
+  // robot_yaw
 }
 
 interfaces__msg__Dect *

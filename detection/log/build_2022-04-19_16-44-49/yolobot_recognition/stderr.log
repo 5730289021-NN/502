@@ -1,6 +1,0 @@
-CMake Error at cmake_install.cmake:49 (file):
-  file INSTALL cannot find
-  "/home/amejiyo/yolobot/src/yolobot_recognition/launch/ros_recognition_yolo.py":
-  No such file or directory.
-
-

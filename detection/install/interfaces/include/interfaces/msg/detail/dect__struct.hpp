@@ -38,10 +38,11 @@ struct Dect_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->obj_class = "";
-      this->x1 = 0.0;
-      this->y1 = 0.0;
-      this->x2 = 0.0;
-      this->y2 = 0.0;
+      this->cam_x = 0.0;
+      this->cam_y = 0.0;
+      this->robot_x = 0.0;
+      this->robot_y = 0.0;
+      this->robot_yaw = 0.0;
     }
   }
 
@@ -52,10 +53,11 @@ struct Dect_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->obj_class = "";
-      this->x1 = 0.0;
-      this->y1 = 0.0;
-      this->x2 = 0.0;
-      this->y2 = 0.0;
+      this->cam_x = 0.0;
+      this->cam_y = 0.0;
+      this->robot_x = 0.0;
+      this->robot_y = 0.0;
+      this->robot_yaw = 0.0;
     }
   }
 
@@ -63,18 +65,21 @@ struct Dect_
   using _obj_class_type =
     std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _obj_class_type obj_class;
-  using _x1_type =
+  using _cam_x_type =
     double;
-  _x1_type x1;
-  using _y1_type =
+  _cam_x_type cam_x;
+  using _cam_y_type =
     double;
-  _y1_type y1;
-  using _x2_type =
+  _cam_y_type cam_y;
+  using _robot_x_type =
     double;
-  _x2_type x2;
-  using _y2_type =
+  _robot_x_type robot_x;
+  using _robot_y_type =
     double;
-  _y2_type y2;
+  _robot_y_type robot_y;
+  using _robot_yaw_type =
+    double;
+  _robot_yaw_type robot_yaw;
 
   // setters for named parameter idiom
   Type & set__obj_class(
@@ -83,28 +88,34 @@ struct Dect_
     this->obj_class = _arg;
     return *this;
   }
-  Type & set__x1(
+  Type & set__cam_x(
     const double & _arg)
   {
-    this->x1 = _arg;
+    this->cam_x = _arg;
     return *this;
   }
-  Type & set__y1(
+  Type & set__cam_y(
     const double & _arg)
   {
-    this->y1 = _arg;
+    this->cam_y = _arg;
     return *this;
   }
-  Type & set__x2(
+  Type & set__robot_x(
     const double & _arg)
   {
-    this->x2 = _arg;
+    this->robot_x = _arg;
     return *this;
   }
-  Type & set__y2(
+  Type & set__robot_y(
     const double & _arg)
   {
-    this->y2 = _arg;
+    this->robot_y = _arg;
+    return *this;
+  }
+  Type & set__robot_yaw(
+    const double & _arg)
+  {
+    this->robot_yaw = _arg;
     return *this;
   }
 
@@ -153,16 +164,19 @@ struct Dect_
     if (this->obj_class != other.obj_class) {
       return false;
     }
-    if (this->x1 != other.x1) {
+    if (this->cam_x != other.cam_x) {
       return false;
     }
-    if (this->y1 != other.y1) {
+    if (this->cam_y != other.cam_y) {
       return false;
     }
-    if (this->x2 != other.x2) {
+    if (this->robot_x != other.robot_x) {
       return false;
     }
-    if (this->y2 != other.y2) {
+    if (this->robot_y != other.robot_y) {
+      return false;
+    }
+    if (this->robot_yaw != other.robot_yaw) {
       return false;
     }
     return true;

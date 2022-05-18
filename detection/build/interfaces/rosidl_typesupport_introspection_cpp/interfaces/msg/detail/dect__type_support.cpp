@@ -37,7 +37,7 @@ void Dect_fini_function(void * message_memory)
   typed_message->~Dect();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_member_array[5] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_member_array[6] = {
   {
     "obj_class",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -54,14 +54,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "x1",  // name
+    "cam_x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, x1),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, cam_x),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -69,14 +69,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "y1",  // name
+    "cam_y",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, y1),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, cam_y),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -84,14 +84,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "x2",  // name
+    "robot_x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, x2),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, robot_x),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -99,14 +99,29 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "y2",  // name
+    "robot_y",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, y2),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, robot_y),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "robot_yaw",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interfaces::msg::Dect, robot_yaw),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -118,7 +133,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Dect_message_members = {
   "interfaces::msg",  // message namespace
   "Dect",  // message name
-  5,  // number of fields
+  6,  // number of fields
   sizeof(interfaces::msg::Dect),
   Dect_message_member_array,  // message members
   Dect_init_function,  // function to initialize message memory (memory has to be allocated)
