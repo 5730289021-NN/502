@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from cmath import sqrt
+from turtle import right
 from cv2 import Rodrigues
 import rclpy
 from rclpy.node import Node
@@ -38,11 +39,12 @@ class FineDetect(Node):
         distance_list_right = []
         center = 0
         mid_pos = [(box[0].numpy() + box[2].numpy() )//2, (box[1].numpy()  + box[3].numpy() )//2] #确定索引深度的中心像素位置
+        right_pose = mid_pos = [(box[0].numpy() + box[2].numpy() )//2 +1, (box[1].numpy()  + box[3].numpy() )//2]
         if mid_pos[0] == 320:
             center = 1
         min_val = min(abs(box[2].numpy()  - box[0].numpy() ), abs(box[3].numpy()  - box[1].numpy() )) #确定深度搜索范围
         # print(mid_pos)
-        # print(depth_data)
+        print(depth_data)
         for i in range(randnum):
             bias = random.randint(-min_val//4, min_val//4)
             dist = depth_data[int(mid_pos[1] + bias), int(mid_pos[0] + bias)]
@@ -96,10 +98,10 @@ class FineDetect(Node):
                 msg = Dect()
                 msg.cam_x, msg.cam_y = float((row[0]+row[2])*x_shape/2), float((row[1]+row[3])*y_shape/2)
                 # print(msg.cam_x, msg.cam_y)
-                depth = self.get_mid_pos([row[0]*x_shape,row[1]*y_shape,row[2]*x_shape,row[3]*y_shape],self.depth_img,24)
+                depth, yaw = self.get_mid_pos([row[0]*x_shape,row[1]*y_shape,row[2]*x_shape,row[3]*y_shape],self.depth_img,24)
                 msg.obj_class = names[int(labels[i])]
                 self.publisher_.publish(msg)
-                self.get_logger().info(msg.obj_class + ": " + str(depth))
+                self.get_logger().info(msg.obj_class + ": " + str(depth) + "---" + str(yaw))
 
 def main(args=None):
     rclpy.init(args=args)
