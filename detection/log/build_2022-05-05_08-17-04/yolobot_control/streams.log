@@ -1,0 +1,27 @@
+[0.051s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_control -- -j16 -l16
+[0.083s] CMake Error: The current CMakeCache.txt directory /home/amejiyo/GitHub/502/detection/build/yolobot_control/CMakeCache.txt is different than the directory /home/amejiyo/yolobot/build/yolobot_control where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.132s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_control -- -j16 -l16
+[0.182s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_control
+[0.203s] -- Install configuration: ""
+[0.204s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//scripts
+[0.205s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//scripts/robot_control.py
+[0.205s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//launch
+[0.205s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control//launch/yolobot_control.launch.py
+[0.207s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/lib/yolobot_control/robot_control.py
+[0.207s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/lib/yolobot_control/yolobot_control.launch.py
+[0.208s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/package_run_dependencies/yolobot_control
+[0.208s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/parent_prefix_path/yolobot_control
+[0.209s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/ament_prefix_path.sh
+[0.209s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/ament_prefix_path.dsv
+[0.209s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/path.sh
+[0.209s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/environment/path.dsv
+[0.209s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.bash
+[0.209s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.sh
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.zsh
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/local_setup.dsv
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/package.dsv
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/ament_index/resource_index/packages/yolobot_control
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/cmake/yolobot_controlConfig.cmake
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/cmake/yolobot_controlConfig-version.cmake
+[0.210s] -- Up-to-date: /home/amejiyo/yolobot/install/yolobot_control/share/yolobot_control/package.xml
+[0.215s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_control

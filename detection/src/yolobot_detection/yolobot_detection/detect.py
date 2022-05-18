@@ -8,9 +8,9 @@ import numpy as np
 import torch
 import cv2
 
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+# model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 # load model
-# model = torch.hub.load('ultralytics/yolov5', 'yolov5m6')
+model = torch.hub.load('ultralytics/yolov5', 'yolov5m6')
 model.conf = 0.5
 bridge = CvBridge()
 
