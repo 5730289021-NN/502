@@ -29,5 +29,5 @@ ros2 launch yolobot_gazebo yolobot_launch.py
 run node (during maintenance)<br/>
 ros2 run yolobot_detection detect_talker
 
-go to ~/detection/src/yolobot_detection/yolobot_detection
+go to ~/detection/src/yolobot_detection/yolobot_detection </br>
 run python detect.py
