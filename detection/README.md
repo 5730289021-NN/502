@@ -27,4 +27,4 @@ open gazebo<br/>
 ros2 launch yolobot_gazebo yolobot_launch.py
 
 run node<br/>
-ros2 run yoloboy_detection detect_talker
+ros2 run yolobot_detection detect_talker
