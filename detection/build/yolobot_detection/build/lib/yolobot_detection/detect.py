@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 from cmath import sqrt
-from turtle import right
+from turtle import right, shape
 from cv2 import Rodrigues
 import rclpy
 from rclpy.node import Node
-import rosidl_runtime_py
-from sensor_msgs.msg import Image, CompressedImage
+from sensor_msgs.msg import Image, CompressedImage, PointCloud2
 import random
 from cv_bridge import CvBridge, CvBridgeError
 from interfaces.msg import Dect
 import numpy as np
 import torch
-import cv2
+# import pcl
+# import pcl_helper
 import numpy as np
 import math
 
@@ -20,6 +20,10 @@ model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 # model = torch.hub.load('ultralytics/yolov5', 'yolov5m6')
 model.conf = 0.5
 bridge = CvBridge()
+
+k = [[381.36246688113556, 0.0, 320.5],
+     [0.0, 381.36246688113556, 240.5],
+     [0.0, 0.0, 1.0]]
 
 
 class FineDetect(Node):
@@ -31,53 +35,39 @@ class FineDetect(Node):
         self.color = self.create_subscription(Image,'rgb_cam/image_raw',self.camera_callback,10)
         self.color
         self.depth = self.create_subscription(Image,'rgb_cam/depth/image_raw',self.camera_callback_depth,10)
+        # self.depth = self.create_subscription(PointCloud2,'rgb_cam/points',self.camera_callback_depth,10)
         self.depth
         self.depth_img = 0
 
     def get_mid_pos(self,box,depth_data,randnum):
-        distance_list = []
-        distance_list_right = []
-        center = 0
-        mid_pos = [(box[0].numpy() + box[2].numpy() )//2, (box[1].numpy()  + box[3].numpy() )//2] #确定索引深度的中心像素位置
-        right_pose = mid_pos = [(box[0].numpy() + box[2].numpy() )//2 +1, (box[1].numpy()  + box[3].numpy() )//2]
-        if mid_pos[0] == 320:
-            center = 1
-        min_val = min(abs(box[2].numpy()  - box[0].numpy() ), abs(box[3].numpy()  - box[1].numpy() )) #确定深度搜索范围
-        # print(mid_pos)
         # print(depth_data)
-        for i in range(randnum):
-            bias = random.randint(-min_val//4, min_val//4)
-            dist = depth_data[int(mid_pos[1] + bias), int(mid_pos[0] + bias)]
-            try:
-                dist_b = depth_data[int(right_pose[1] + bias), int(right_pose[0] + bias)]
-            except:
-                dist_b = depth_data[int(right_pose[1] + bias), int(right_pose[0] + bias)]
-            #print(int(mid_pos[1] + bias), int(mid_pos[0] + bias))
-            if dist:
-                distance_list.append(dist)
-            if dist_b:
-                distance_list_right.append(dist_b)
-        distance_list = np.array(distance_list)
-        distance_list = np.sort(distance_list)[randnum//2-randnum//4:randnum//2+randnum//4] #冒泡排序+中值滤波
-        if center:
-            return round(np.mean(distance_list),4), 0
-        distance_list_right = np.array(distance_list_right)
-        distance_list_right = np.sort(distance_list_right)[randnum//2-randnum//4:randnum//2+randnum//4]
-        depth = np.mean(distance_list)
-        depth_x = np.mean(distance_list_right)
-        #print(distance_list, np.mean(distance_list))
-        if depth > depth_x:
-            arc = math.acos(depth_x/depth)
-        else:
-            arc = math.acos(depth/depth_x)
-        # print(arc, round(arc*(320-mid_pos[0])*180/math.pi,4))
+        # if (type(depth_data) != "int"):
+        distance_list = []
+        center = 0
         try:
-            return round(np.mean(distance_list),4), round(arc*(320-mid_pos[0])*180/math.pi,4)
+            mid_pos = [(box[0].numpy() + box[2].numpy() )//2, (box[1].numpy()  + box[3].numpy() )//2] #确定索引深度的中心像素位置
+            if mid_pos[0] == 320:
+                center = 1
+            min_val = min(abs(box[2].numpy()  - box[0].numpy() ), abs(box[3].numpy()  - box[1].numpy() )) #确定深度搜索范围
+            # print(mid_pos)
+            # print(depth_data)
+            for i in range(randnum):
+                bias = random.randint(-min_val//4, min_val//4)
+                dist = depth_data[int(mid_pos[1] + bias), int(mid_pos[0] + bias)]
+                if dist:
+                    distance_list.append(dist)
+            distance_list = np.array(distance_list)
+            distance_list = np.sort(distance_list)[randnum//2-randnum//4:randnum//2+randnum//4] #冒泡排序+中值滤波
+            depth = round(np.mean(distance_list),4)
+            if center:
+                return 0.0,0.0,0.0
+            else:
+                return (mid_pos[0]-320)*depth/381.36246688113556, (mid_pos[1]-240)*depth/381.36246688113556, float(depth)
         except:
-            return round(np.mean(distance_list),4), 0
+            return 0.0,0.0,0.0
 
-    
     def camera_callback_depth(self,data):
+        # print(data.fields)
         # self.depth_img = np.asanyarray(data)
         self.depth_img = bridge.imgmsg_to_cv2(data, "32FC1")
 
@@ -96,12 +86,12 @@ class FineDetect(Node):
             row = cord[i]
             if row[4] >= 0.3:
                 msg = Dect()
-                msg.cam_x, msg.cam_y = float((row[0]+row[2])*x_shape/2), float((row[1]+row[3])*y_shape/2)
+                # msg.cam_x, msg.cam_y = float((row[0]+row[2])*x_shape/2), float((row[1]+row[3])*y_shape/2)
                 # print(msg.cam_x, msg.cam_y)
-                depth, yaw = self.get_mid_pos([row[0]*x_shape,row[1]*y_shape,row[2]*x_shape,row[3]*y_shape],self.depth_img,24)
+                msg.cam_x, msg.cam_y,msg.cam_z= self.get_mid_pos(row,self.depth_img,24)
                 msg.obj_class = names[int(labels[i])]
                 self.publisher_.publish(msg)
-                self.get_logger().info(msg.obj_class + ": " + str(depth) + "---" + str(yaw))
+                self.get_logger().info(msg.obj_class + ": " + str([msg.cam_x, msg.cam_y,msg.cam_z]))
 
 def main(args=None):
     rclpy.init(args=args)

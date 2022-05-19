@@ -1,9 +1,10 @@
 {
   "package_name": "interfaces",
-  "output_dir": "/home/amejiyo/yolobot/build/interfaces/rosidl_generator_c/interfaces",
+  "output_dir": "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/amejiyo/yolobot/build/interfaces/rosidl_adapter/interfaces:msg/Dect.idl"
+    "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_adapter/interfaces:msg/Dect.idl",
+    "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_adapter/interfaces:msg/Dect2.idl"
   ],
   "target_dependencies": [
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +20,7 @@
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/amejiyo/yolobot/build/interfaces/rosidl_adapter/interfaces/msg/Dect.idl"
+    "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_adapter/interfaces/msg/Dect.idl",
+    "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_adapter/interfaces/msg/Dect2.idl"
   ]
 }

@@ -38,12 +38,8 @@ cdr_serialize(
   cdr << ros_message.cam_x;
   // Member: cam_y
   cdr << ros_message.cam_y;
-  // Member: robot_x
-  cdr << ros_message.robot_x;
-  // Member: robot_y
-  cdr << ros_message.robot_y;
-  // Member: robot_yaw
-  cdr << ros_message.robot_yaw;
+  // Member: cam_z
+  cdr << ros_message.cam_z;
   return true;
 }
 
@@ -62,14 +58,8 @@ cdr_deserialize(
   // Member: cam_y
   cdr >> ros_message.cam_y;
 
-  // Member: robot_x
-  cdr >> ros_message.robot_x;
-
-  // Member: robot_y
-  cdr >> ros_message.robot_y;
-
-  // Member: robot_yaw
-  cdr >> ros_message.robot_yaw;
+  // Member: cam_z
+  cdr >> ros_message.cam_z;
 
   return true;
 }
@@ -103,21 +93,9 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: robot_x
+  // Member: cam_z
   {
-    size_t item_size = sizeof(ros_message.robot_x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: robot_y
-  {
-    size_t item_size = sizeof(ros_message.robot_y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: robot_yaw
-  {
-    size_t item_size = sizeof(ros_message.robot_yaw);
+    size_t item_size = sizeof(ros_message.cam_z);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -168,23 +146,7 @@ max_serialized_size_Dect(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: robot_x
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: robot_y
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: robot_yaw
+  // Member: cam_z
   {
     size_t array_size = 1;
 

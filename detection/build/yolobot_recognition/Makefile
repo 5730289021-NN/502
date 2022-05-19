@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/yolobot_recognition
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/yolobot_recognition
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_recognition
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

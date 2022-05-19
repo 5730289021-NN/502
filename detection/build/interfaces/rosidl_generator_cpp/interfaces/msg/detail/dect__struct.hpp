@@ -40,9 +40,7 @@ struct Dect_
       this->obj_class = "";
       this->cam_x = 0.0;
       this->cam_y = 0.0;
-      this->robot_x = 0.0;
-      this->robot_y = 0.0;
-      this->robot_yaw = 0.0;
+      this->cam_z = 0.0;
     }
   }
 
@@ -55,9 +53,7 @@ struct Dect_
       this->obj_class = "";
       this->cam_x = 0.0;
       this->cam_y = 0.0;
-      this->robot_x = 0.0;
-      this->robot_y = 0.0;
-      this->robot_yaw = 0.0;
+      this->cam_z = 0.0;
     }
   }
 
@@ -71,15 +67,9 @@ struct Dect_
   using _cam_y_type =
     double;
   _cam_y_type cam_y;
-  using _robot_x_type =
+  using _cam_z_type =
     double;
-  _robot_x_type robot_x;
-  using _robot_y_type =
-    double;
-  _robot_y_type robot_y;
-  using _robot_yaw_type =
-    double;
-  _robot_yaw_type robot_yaw;
+  _cam_z_type cam_z;
 
   // setters for named parameter idiom
   Type & set__obj_class(
@@ -100,22 +90,10 @@ struct Dect_
     this->cam_y = _arg;
     return *this;
   }
-  Type & set__robot_x(
+  Type & set__cam_z(
     const double & _arg)
   {
-    this->robot_x = _arg;
-    return *this;
-  }
-  Type & set__robot_y(
-    const double & _arg)
-  {
-    this->robot_y = _arg;
-    return *this;
-  }
-  Type & set__robot_yaw(
-    const double & _arg)
-  {
-    this->robot_yaw = _arg;
+    this->cam_z = _arg;
     return *this;
   }
 
@@ -170,13 +148,7 @@ struct Dect_
     if (this->cam_y != other.cam_y) {
       return false;
     }
-    if (this->robot_x != other.robot_x) {
-      return false;
-    }
-    if (this->robot_y != other.robot_y) {
-      return false;
-    }
-    if (this->robot_yaw != other.robot_yaw) {
+    if (this->cam_z != other.cam_z) {
       return false;
     }
     return true;

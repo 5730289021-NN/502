@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/realsense_gazebo_plugin
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/realsense_gazebo_plugin
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/amejiyo/yolobot/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/realsense_gazebo_plugin /home/amejiyo/yolobot/src/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

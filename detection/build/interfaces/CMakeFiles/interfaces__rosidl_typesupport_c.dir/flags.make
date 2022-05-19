@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -std=gnu++14
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"interfaces\" -Dinterfaces__rosidl_typesupport_c_EXPORTS
 
-CXX_INCLUDES = -I/home/amejiyo/yolobot/build/interfaces/rosidl_generator_c -I/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c -I/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/realsense_gazebo_plugin
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/realsense_gazebo_plugin
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/realsense_gazebo_plugin.dir/depend.make
@@ -58,30 +58,30 @@ include CMakeFiles/realsense_gazebo_plugin.dir/progress.make
 include CMakeFiles/realsense_gazebo_plugin.dir/flags.make
 
 CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o: CMakeFiles/realsense_gazebo_plugin.dir/flags.make
-CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o: /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o -c /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp
+CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o: /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o -c /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp
 
 CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp > CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp > CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.i
 
 CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp -o CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp -o CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.s
 
 CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o: CMakeFiles/realsense_gazebo_plugin.dir/flags.make
-CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o: /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o -c /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp
+CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o: /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o -c /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp
 
 CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp > CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp > CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.i
 
 CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp -o CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp -o CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.s
 
 # Object files for target realsense_gazebo_plugin
 realsense_gazebo_plugin_OBJECTS = \
@@ -312,7 +312,7 @@ librealsense_gazebo_plugin.so: /opt/ros/foxy/lib/x86_64-linux-gnu/libconsole_bri
 librealsense_gazebo_plugin.so: /opt/ros/foxy/lib/librcpputils.so
 librealsense_gazebo_plugin.so: /opt/ros/foxy/lib/librcutils.so
 librealsense_gazebo_plugin.so: CMakeFiles/realsense_gazebo_plugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library librealsense_gazebo_plugin.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library librealsense_gazebo_plugin.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/realsense_gazebo_plugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -325,6 +325,6 @@ CMakeFiles/realsense_gazebo_plugin.dir/clean:
 .PHONY : CMakeFiles/realsense_gazebo_plugin.dir/clean
 
 CMakeFiles/realsense_gazebo_plugin.dir/depend:
-	cd /home/amejiyo/yolobot/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/realsense_gazebo_plugin /home/amejiyo/yolobot/src/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/realsense_gazebo_plugin.dir/depend
 

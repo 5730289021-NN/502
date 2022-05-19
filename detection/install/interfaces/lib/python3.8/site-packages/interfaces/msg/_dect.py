@@ -56,24 +56,18 @@ class Dect(metaclass=Metaclass_Dect):
         '_obj_class',
         '_cam_x',
         '_cam_y',
-        '_robot_x',
-        '_robot_y',
-        '_robot_yaw',
+        '_cam_z',
     ]
 
     _fields_and_field_types = {
         'obj_class': 'string',
         'cam_x': 'double',
         'cam_y': 'double',
-        'robot_x': 'double',
-        'robot_y': 'double',
-        'robot_yaw': 'double',
+        'cam_z': 'double',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
@@ -86,9 +80,7 @@ class Dect(metaclass=Metaclass_Dect):
         self.obj_class = kwargs.get('obj_class', str())
         self.cam_x = kwargs.get('cam_x', float())
         self.cam_y = kwargs.get('cam_y', float())
-        self.robot_x = kwargs.get('robot_x', float())
-        self.robot_y = kwargs.get('robot_y', float())
-        self.robot_yaw = kwargs.get('robot_yaw', float())
+        self.cam_z = kwargs.get('cam_z', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -125,11 +117,7 @@ class Dect(metaclass=Metaclass_Dect):
             return False
         if self.cam_y != other.cam_y:
             return False
-        if self.robot_x != other.robot_x:
-            return False
-        if self.robot_y != other.robot_y:
-            return False
-        if self.robot_yaw != other.robot_yaw:
+        if self.cam_z != other.cam_z:
             return False
         return True
 
@@ -178,40 +166,14 @@ class Dect(metaclass=Metaclass_Dect):
         self._cam_y = value
 
     @property
-    def robot_x(self):
-        """Message field 'robot_x'."""
-        return self._robot_x
+    def cam_z(self):
+        """Message field 'cam_z'."""
+        return self._cam_z
 
-    @robot_x.setter
-    def robot_x(self, value):
+    @cam_z.setter
+    def cam_z(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'robot_x' field must be of type 'float'"
-        self._robot_x = value
-
-    @property
-    def robot_y(self):
-        """Message field 'robot_y'."""
-        return self._robot_y
-
-    @robot_y.setter
-    def robot_y(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'robot_y' field must be of type 'float'"
-        self._robot_y = value
-
-    @property
-    def robot_yaw(self):
-        """Message field 'robot_yaw'."""
-        return self._robot_yaw
-
-    @robot_yaw.setter
-    def robot_yaw(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'robot_yaw' field must be of type 'float'"
-        self._robot_yaw = value
+                "The 'cam_z' field must be of type 'float'"
+        self._cam_z = value

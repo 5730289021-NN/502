@@ -43,17 +43,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/interfaces
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/interfaces
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/interfaces
 
 # Utility rule file for interfaces.
 
 # Include the progress variables for this target.
 include CMakeFiles/interfaces.dir/progress.make
 
-CMakeFiles/interfaces: /home/amejiyo/yolobot/src/interfaces/msg/Dect.msg
+CMakeFiles/interfaces: /home/amejiyo/GitHub/502/detection/src/interfaces/msg/Dect.msg
+CMakeFiles/interfaces: /home/amejiyo/GitHub/502/detection/src/interfaces/msg/Dect2.msg
 
 
 interfaces: CMakeFiles/interfaces
@@ -71,6 +72,6 @@ CMakeFiles/interfaces.dir/clean:
 .PHONY : CMakeFiles/interfaces.dir/clean
 
 CMakeFiles/interfaces.dir/depend:
-	cd /home/amejiyo/yolobot/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/interfaces /home/amejiyo/yolobot/src/interfaces /home/amejiyo/yolobot/build/interfaces /home/amejiyo/yolobot/build/interfaces /home/amejiyo/yolobot/build/interfaces/CMakeFiles/interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/interfaces /home/amejiyo/GitHub/502/detection/src/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces/CMakeFiles/interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/interfaces.dir/depend
 

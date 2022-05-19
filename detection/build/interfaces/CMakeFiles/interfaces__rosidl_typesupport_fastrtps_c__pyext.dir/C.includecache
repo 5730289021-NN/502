@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 Python.h
 -
 stdbool.h
@@ -14,19 +14,25 @@ stdbool.h
 stdint.h
 -
 rosidl_runtime_c/visibility_control.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/visibility_control.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/visibility_control.h
 rosidl_runtime_c/message_type_support_struct.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/message_type_support_struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/service_type_support_struct.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/service_type_support_struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/service_type_support_struct.h
 rosidl_runtime_c/action_type_support_struct.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/action_type_support_struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/rosidl_runtime_c/action_type_support_struct.h
 interfaces/msg/detail/dect__type_support.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect__type_support.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect__type_support.h
 interfaces/msg/detail/dect__struct.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect__struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect__struct.h
 interfaces/msg/detail/dect__functions.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect__functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect__functions.h
+interfaces/msg/detail/dect2__type_support.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect2__type_support.h
+interfaces/msg/detail/dect2__struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect2__struct.h
+interfaces/msg/detail/dect2__functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/interfaces/msg/detail/dect2__functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
 rosidl_runtime_c/message_type_support_struct.h
@@ -569,6 +575,34 @@ cpython/unicodeobject.h
 /usr/include/python3.8/warnings.h
 
 /usr/include/python3.8/weakrefobject.h
+
+rosidl_generator_c/interfaces/msg/detail/dect2__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/interfaces/msg/detail/interfaces/msg/rosidl_generator_c__visibility_control.h
+interfaces/msg/detail/dect2__struct.h
+rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect2__struct.h
+
+rosidl_generator_c/interfaces/msg/detail/dect2__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/interfaces/msg/detail/dect2__type_support.h
+rosidl_typesupport_interface/macros.h
+rosidl_generator_c/interfaces/msg/detail/rosidl_typesupport_interface/macros.h
+interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/interfaces/msg/detail/interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 
 rosidl_generator_c/interfaces/msg/detail/dect__functions.h
 stdbool.h

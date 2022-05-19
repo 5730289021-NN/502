@@ -12,11 +12,7 @@ module interfaces {
 
       double cam_y;
 
-      double robot_x;
-
-      double robot_y;
-
-      double robot_yaw;
+      double cam_z;
     };
   };
 };

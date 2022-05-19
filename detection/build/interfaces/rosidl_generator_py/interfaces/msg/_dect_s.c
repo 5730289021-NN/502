@@ -86,31 +86,13 @@ bool interfaces__msg__dect__convert_from_py(PyObject * _pymsg, void * _ros_messa
     ros_message->cam_y = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // robot_x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "robot_x");
+  {  // cam_z
+    PyObject * field = PyObject_GetAttrString(_pymsg, "cam_z");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->robot_x = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // robot_y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "robot_y");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->robot_y = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // robot_yaw
-    PyObject * field = PyObject_GetAttrString(_pymsg, "robot_yaw");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->robot_yaw = PyFloat_AS_DOUBLE(field);
+    ros_message->cam_z = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -174,33 +156,11 @@ PyObject * interfaces__msg__dect__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // robot_x
+  {  // cam_z
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->robot_x);
+    field = PyFloat_FromDouble(ros_message->cam_z);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "robot_x", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // robot_y
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->robot_y);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "robot_y", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // robot_yaw
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->robot_yaw);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "robot_yaw", field);
+      int rc = PyObject_SetAttrString(_pymessage, "cam_z", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/yolobot_recognition
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/yolobot_recognition
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_recognition
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -75,14 +75,14 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/yolobot_recognition_uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/yolobot_recognition_uninstall.dir/build.make CMakeFiles/yolobot_recognition_uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/yolobot_recognition_uninstall.dir/build.make CMakeFiles/yolobot_recognition_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles --progress-num= "Built target yolobot_recognition_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles --progress-num= "Built target yolobot_recognition_uninstall"
 .PHONY : CMakeFiles/yolobot_recognition_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/yolobot_recognition_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yolobot_recognition_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles 0
 .PHONY : CMakeFiles/yolobot_recognition_uninstall.dir/rule
 
 # Convenience name for target.
@@ -102,14 +102,14 @@ CMakeFiles/yolobot_recognition_uninstall.dir/clean:
 CMakeFiles/uninstall.dir/all: CMakeFiles/yolobot_recognition_uninstall.dir/all
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.

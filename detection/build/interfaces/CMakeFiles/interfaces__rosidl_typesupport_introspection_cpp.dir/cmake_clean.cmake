@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect2__type_support.cpp.o"
   "CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect__type_support.cpp.o"
   "libinterfaces__rosidl_typesupport_introspection_cpp.pdb"
   "libinterfaces__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect2__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect2__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect__type_support.cpp"
 )

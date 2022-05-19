@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp" "/home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o"
-  "/home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp" "/home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o"
+  "/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp" "/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o"
+  "/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp" "/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -32,7 +32,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/foxy/opt/yaml_cpp_vendor/include"
-  "/home/amejiyo/yolobot/src/realsense_gazebo_plugin/include"
+  "/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/include"
   "/usr/include/gazebo-11"
   "/usr/include/bullet"
   "/usr/include/simbody"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/include/realsense_gazebo_plugin/RealSensePlugin.h
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/include/realsense_gazebo_plugin/RealSensePlugin.h
 gazebo/common/Plugin.hh
 -
 gazebo/common/common.hh
@@ -26,9 +26,9 @@ memory
 string
 -
 
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/include/realsense_gazebo_plugin/gazebo_ros_realsense.h
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/include/realsense_gazebo_plugin/gazebo_ros_realsense.h
 realsense_gazebo_plugin/RealSensePlugin.h
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/include/realsense_gazebo_plugin/realsense_gazebo_plugin/RealSensePlugin.h
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/include/realsense_gazebo_plugin/realsense_gazebo_plugin/RealSensePlugin.h
 rclcpp/rclcpp.hpp
 -
 sensor_msgs/msg/camera_info.hpp
@@ -46,9 +46,9 @@ memory
 string
 -
 
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp
 realsense_gazebo_plugin/RealSensePlugin.h
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/realsense_gazebo_plugin/RealSensePlugin.h
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/realsense_gazebo_plugin/RealSensePlugin.h
 gazebo/physics/physics.hh
 -
 gazebo/rendering/DepthCamera.hh
@@ -56,9 +56,9 @@ gazebo/rendering/DepthCamera.hh
 gazebo/sensors/sensors.hh
 -
 
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp
 realsense_gazebo_plugin/gazebo_ros_realsense.h
-/home/amejiyo/yolobot/src/realsense_gazebo_plugin/src/realsense_gazebo_plugin/gazebo_ros_realsense.h
+/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin/src/realsense_gazebo_plugin/gazebo_ros_realsense.h
 sensor_msgs/fill_image.hpp
 -
 sensor_msgs/image_encodings.hpp

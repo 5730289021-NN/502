@@ -26,9 +26,7 @@ interfaces__msg__Dect__init(interfaces__msg__Dect * msg)
   }
   // cam_x
   // cam_y
-  // robot_x
-  // robot_y
-  // robot_yaw
+  // cam_z
   return true;
 }
 
@@ -42,9 +40,7 @@ interfaces__msg__Dect__fini(interfaces__msg__Dect * msg)
   rosidl_runtime_c__String__fini(&msg->obj_class);
   // cam_x
   // cam_y
-  // robot_x
-  // robot_y
-  // robot_yaw
+  // cam_z
 }
 
 interfaces__msg__Dect *

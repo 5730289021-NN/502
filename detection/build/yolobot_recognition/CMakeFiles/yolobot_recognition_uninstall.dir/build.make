@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/yolobot_recognition
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/yolobot_recognition
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_recognition
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
 
 # Utility rule file for yolobot_recognition_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_recognition
 include CMakeFiles/yolobot_recognition_uninstall.dir/progress.make
 
 CMakeFiles/yolobot_recognition_uninstall:
-	/usr/bin/cmake -P /home/amejiyo/yolobot/build/yolobot_recognition/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 yolobot_recognition_uninstall: CMakeFiles/yolobot_recognition_uninstall
 yolobot_recognition_uninstall: CMakeFiles/yolobot_recognition_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/yolobot_recognition_uninstall.dir/clean:
 .PHONY : CMakeFiles/yolobot_recognition_uninstall.dir/clean
 
 CMakeFiles/yolobot_recognition_uninstall.dir/depend:
-	cd /home/amejiyo/yolobot/build/yolobot_recognition && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/yolobot_recognition /home/amejiyo/yolobot/src/yolobot_recognition /home/amejiyo/yolobot/build/yolobot_recognition /home/amejiyo/yolobot/build/yolobot_recognition /home/amejiyo/yolobot/build/yolobot_recognition/CMakeFiles/yolobot_recognition_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/yolobot_recognition && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/yolobot_recognition /home/amejiyo/GitHub/502/detection/src/yolobot_recognition /home/amejiyo/GitHub/502/detection/build/yolobot_recognition /home/amejiyo/GitHub/502/detection/build/yolobot_recognition /home/amejiyo/GitHub/502/detection/build/yolobot_recognition/CMakeFiles/yolobot_recognition_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yolobot_recognition_uninstall.dir/depend
 

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/interfaces/msg/__init__.py"
   "../rosidl_generator_py/interfaces/msg/_dect.py"
+  "../rosidl_generator_py/interfaces/msg/_dect2.py"
+  "../rosidl_generator_py/interfaces/msg/_dect2_s.c"
   "../rosidl_generator_py/interfaces/msg/_dect_s.c"
   "CMakeFiles/interfaces__py"
 )

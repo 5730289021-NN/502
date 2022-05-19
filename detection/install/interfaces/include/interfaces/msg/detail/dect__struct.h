@@ -27,9 +27,7 @@ typedef struct interfaces__msg__Dect
   rosidl_runtime_c__String obj_class;
   double cam_x;
   double cam_y;
-  double robot_x;
-  double robot_y;
-  double robot_yaw;
+  double cam_z;
 } interfaces__msg__Dect;
 
 // Struct for a sequence of interfaces__msg__Dect.

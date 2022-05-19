@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/yolobot_control
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/yolobot_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_control
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/yolobot_control
 
 # Utility rule file for yolobot_control_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_control
 include CMakeFiles/yolobot_control_uninstall.dir/progress.make
 
 CMakeFiles/yolobot_control_uninstall:
-	/usr/bin/cmake -P /home/amejiyo/yolobot/build/yolobot_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/amejiyo/GitHub/502/detection/build/yolobot_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 yolobot_control_uninstall: CMakeFiles/yolobot_control_uninstall
 yolobot_control_uninstall: CMakeFiles/yolobot_control_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/yolobot_control_uninstall.dir/clean:
 .PHONY : CMakeFiles/yolobot_control_uninstall.dir/clean
 
 CMakeFiles/yolobot_control_uninstall.dir/depend:
-	cd /home/amejiyo/yolobot/build/yolobot_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/yolobot_control /home/amejiyo/yolobot/src/yolobot_control /home/amejiyo/yolobot/build/yolobot_control /home/amejiyo/yolobot/build/yolobot_control /home/amejiyo/yolobot/build/yolobot_control/CMakeFiles/yolobot_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/yolobot_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/yolobot_control /home/amejiyo/GitHub/502/detection/src/yolobot_control /home/amejiyo/GitHub/502/detection/build/yolobot_control /home/amejiyo/GitHub/502/detection/build/yolobot_control /home/amejiyo/GitHub/502/detection/build/yolobot_control/CMakeFiles/yolobot_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yolobot_control_uninstall.dir/depend
 

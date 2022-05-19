@@ -1,8 +1,8 @@
-# Install script for directory: /home/amejiyo/yolobot/src/yolobot_gazebo
+# Install script for directory: /home/amejiyo/GitHub/502/detection/src/yolobot_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/amejiyo/yolobot/install/yolobot_gazebo")
+  set(CMAKE_INSTALL_PREFIX "/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,17 +39,17 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo/" TYPE DIRECTORY FILES
-    "/home/amejiyo/yolobot/src/yolobot_gazebo/launch"
-    "/home/amejiyo/yolobot/src/yolobot_gazebo/worlds"
+    "/home/amejiyo/GitHub/502/detection/src/yolobot_gazebo/launch"
+    "/home/amejiyo/GitHub/502/detection/src/yolobot_gazebo/worlds"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolobot_gazebo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolobot_gazebo")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolobot_gazebo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolobot_gazebo")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -57,7 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo/environment" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo/environment" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -65,42 +65,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo/environment" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo/environment" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/yolobot_gazebo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/yolobot_gazebo")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo/cmake" TYPE FILE FILES
-    "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_core/yolobot_gazeboConfig.cmake"
-    "/home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_core/yolobot_gazeboConfig-version.cmake"
+    "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_core/yolobot_gazeboConfig.cmake"
+    "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_core/yolobot_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/yolobot/src/yolobot_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_gazebo" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/src/yolobot_gazebo/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -111,5 +111,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/amejiyo/yolobot/build/yolobot_gazebo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

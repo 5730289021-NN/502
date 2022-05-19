@@ -1,0 +1,240 @@
+[0.057s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/GitHub/502/detection/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/amejiyo/GitHub/502/detection/install/interfaces
+[0.387s] -- The C compiler identification is GNU 8.4.0
+[0.387s] -- The CXX compiler identification is GNU 8.4.0
+[0.391s] -- Check for working C compiler: /usr/bin/cc
+[0.391s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.391s] -- Detecting C compiler ABI info
+[0.392s] -- Detecting C compiler ABI info - done
+[0.392s] -- Detecting C compile features
+[0.392s] -- Detecting C compile features - done
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++
+[0.456s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.457s] -- Detecting CXX compiler ABI info
+[0.564s] -- Detecting CXX compiler ABI info - done
+[0.578s] -- Detecting CXX compile features
+[0.579s] -- Detecting CXX compile features - done
+[0.582s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.616s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.616s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.892s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.055s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.061s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.071s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.224s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.265s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.361s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.421s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.499s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.611s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.645s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.648s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.683s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.683s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.683s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.684s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.709s] -- Found PythonExtra: .so  
+[1.757s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.759s] -- Added test 'lint_cmake' to check CMake code style
+[1.760s] -- Added test 'xmllint' to check XML markup files
+[1.766s] -- Configuring done
+[1.795s] -- Generating done
+[1.798s] -- Build files have been written to: /home/amejiyo/GitHub/502/detection/build/interfaces
+[1.805s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/GitHub/502/detection/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/amejiyo/GitHub/502/detection/install/interfaces
+[1.809s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
+[1.850s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.852s] [35m[1mScanning dependencies of target interfaces__cpp[0m
+[1.865s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.141s] [  5%] Built target interfaces__cpp
+[2.145s] [35m[1mScanning dependencies of target interfaces__rosidl_generator_c[0m
+[2.152s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.152s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.153s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.158s] [ 17%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/dect__functions.c.o[0m
+[2.158s] [ 17%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/dect2__functions.c.o[0m
+[2.198s] [ 20%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[2.243s] [ 20%] Built target interfaces__rosidl_generator_c
+[2.253s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.254s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.409s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_cpp[0m
+[2.425s] [ 30%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/dect2__type_support.cpp.o[0m
+[2.425s] [ 30%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/dect__type_support.cpp.o[0m
+[2.445s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.448s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.459s] [ 35%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect__type_support.cpp.o[0m
+[2.459s] [ 35%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/dect2__type_support.cpp.o[0m
+[2.465s] [ 41%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/dect__type_support.cpp.o[0m
+[2.465s] [ 41%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/dect2__type_support.cpp.o[0m
+[2.562s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_c[0m
+[2.567s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_introspection_c[0m
+[2.579s] [ 43%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/dect2__type_support.cpp.o[0m
+[2.579s] [ 46%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/dect__type_support.cpp.o[0m
+[2.587s] [ 48%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/dect2__type_support.c.o[0m
+[2.588s] [ 51%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/dect__type_support.c.o[0m
+[2.617s] [ 53%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[2.636s] [ 56%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[2.665s] [ 56%] Built target interfaces__rosidl_typesupport_c
+[2.675s] [ 56%] Built target interfaces__rosidl_typesupport_introspection_c
+[2.685s] [ 58%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[2.734s] [ 58%] Built target interfaces__rosidl_typesupport_cpp
+[2.758s] [ 61%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.845s] [ 61%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[2.871s] [ 64%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.973s] [ 64%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[2.983s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.237s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.252s] [ 71%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect2__type_support_c.cpp.o[0m
+[3.252s] [ 71%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect__type_support_c.cpp.o[0m
+[3.513s] [ 74%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.620s] [ 74%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[3.635s] [35m[1mScanning dependencies of target interfaces[0m
+[3.646s] [ 74%] Built target interfaces
+[3.658s] [35m[1mScanning dependencies of target interfaces__py[0m
+[3.671s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.090s] [ 76%] Built target interfaces__py
+[4.105s] [35m[1mScanning dependencies of target interfaces__python[0m
+[4.130s] [ 79%] [32mBuilding C object CMakeFiles/interfaces__python.dir/rosidl_generator_py/interfaces/msg/_dect2_s.c.o[0m
+[4.132s] [ 82%] [32mBuilding C object CMakeFiles/interfaces__python.dir/rosidl_generator_py/interfaces/msg/_dect_s.c.o[0m
+[4.213s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__python.so[0m
+[4.257s] [ 84%] Built target interfaces__python
+[4.268s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.271s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[4.271s] [35m[1mScanning dependencies of target interfaces__rosidl_typesupport_c__pyext[0m
+[4.287s] [ 87%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.289s] [ 89%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.289s] [ 92%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.362s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.368s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.372s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.400s] [100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[4.407s] [100%] Built target interfaces__rosidl_typesupport_c__pyext
+[4.444s] [100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.458s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
+[4.542s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/interfaces
+[4.551s] -- Install configuration: ""
+[4.551s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[4.551s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__struct.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__functions.c
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__type_support.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__type_support.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__struct.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__functions.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__functions.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__functions.c
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/dect.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/dect2.h
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/library_path.sh
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/library_path.dsv
+[4.552s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[4.553s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""
+[4.553s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces
+[4.553s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg
+[4.553s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__rosidl_typesupport_fastrtps_c.h
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_fastrtps_c.h
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[4.553s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[4.553s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces
+[4.553s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg
+[4.553s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dds_fastrtps
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_fastrtps_cpp.hpp
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__rosidl_typesupport_fastrtps_cpp.hpp
+[4.553s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.554s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.554s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces
+[4.554s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg
+[4.554s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__rosidl_typesupport_introspection_c.h
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_introspection_c.h
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__type_support.c
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__type_support.c
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.554s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[4.555s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""
+[4.555s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[4.555s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""
+[4.555s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces
+[4.555s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg
+[4.555s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail
+[4.555s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__struct.hpp
+[4.555s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__traits.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__traits.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__struct.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__builder.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__builder.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/dect.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/dect2.hpp
+[4.556s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces
+[4.556s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg
+[4.556s] -- Up-to-date: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__type_support.cpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__rosidl_typesupport_introspection_cpp.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect__type_support.cpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/include/interfaces/msg/detail/dect2__rosidl_typesupport_introspection_cpp.hpp
+[4.556s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[4.557s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[4.557s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[4.557s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""
+[4.557s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/pythonpath.sh
+[4.557s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[4.557s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/__init__.py
+[4.591s] Compiling '/home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/__init__.py'...
+[4.598s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/msg
+[4.599s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_dect_s.c
+[4.599s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_dect2_s.c
+[4.599s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/msg/__init__.py
+[4.599s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_dect2.py
+[4.599s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/msg/_dect.py
+[4.599s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[4.599s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.600s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[4.600s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.600s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[4.600s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[4.600s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__python.so
+[4.601s] -- Set runtime path of "/home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__python.so" to ""
+[4.601s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect.idl
+[4.601s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect2.idl
+[4.601s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect.msg
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect2.msg
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/path.sh
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/path.dsv
+[4.602s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/local_setup.bash
+[4.603s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/local_setup.sh
+[4.603s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/local_setup.zsh
+[4.603s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/local_setup.dsv
+[4.604s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.dsv
+[4.604s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_generator_cppExport.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.605s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.606s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.606s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[4.606s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[4.606s] -- Installing: /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.xml
+[4.609s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/interfaces

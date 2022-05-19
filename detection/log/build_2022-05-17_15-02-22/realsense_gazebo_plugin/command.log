@@ -1,6 +1,0 @@
-Invoking command in '/home/amejiyo/yolobot/build/realsense_gazebo_plugin': /usr/bin/cmake /home/amejiyo/yolobot/src/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/realsense_gazebo_plugin
-Invoked command in '/home/amejiyo/yolobot/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake /home/amejiyo/yolobot/src/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/amejiyo/yolobot/install/realsense_gazebo_plugin
-Invoking command in '/home/amejiyo/yolobot/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/amejiyo/yolobot/build/realsense_gazebo_plugin -- -j16 -l16
-Invoked command in '/home/amejiyo/yolobot/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/amejiyo/yolobot/build/realsense_gazebo_plugin -- -j16 -l16
-Invoking command in '/home/amejiyo/yolobot/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/amejiyo/yolobot/build/realsense_gazebo_plugin
-Invoked command in '/home/amejiyo/yolobot/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/amejiyo/yolobot/build/realsense_gazebo_plugin

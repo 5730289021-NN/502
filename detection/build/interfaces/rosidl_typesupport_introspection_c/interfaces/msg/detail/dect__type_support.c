@@ -35,7 +35,7 @@ void Dect__rosidl_typesupport_introspection_c__Dect_fini_function(void * message
   interfaces__msg__Dect__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[6] = {
+static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[4] = {
   {
     "obj_class",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -82,44 +82,14 @@ static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesuppor
     NULL  // resize(index) function pointer
   },
   {
-    "robot_x",  // name
+    "cam_z",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces__msg__Dect, robot_x),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "robot_y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(interfaces__msg__Dect, robot_y),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "robot_yaw",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(interfaces__msg__Dect, robot_yaw),  // bytes offset in struct
+    offsetof(interfaces__msg__Dect, cam_z),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -131,7 +101,7 @@ static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesuppor
 static const rosidl_typesupport_introspection_c__MessageMembers Dect__rosidl_typesupport_introspection_c__Dect_message_members = {
   "interfaces__msg",  // message namespace
   "Dect",  // message name
-  6,  // number of fields
+  4,  // number of fields
   sizeof(interfaces__msg__Dect),
   Dect__rosidl_typesupport_introspection_c__Dect_message_member_array,  // message members
   Dect__rosidl_typesupport_introspection_c__Dect_init_function,  // function to initialize message memory (memory has to be allocated)

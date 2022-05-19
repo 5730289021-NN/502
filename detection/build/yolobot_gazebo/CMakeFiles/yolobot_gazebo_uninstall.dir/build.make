@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/yolobot_gazebo
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/yolobot_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_gazebo
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo
 
 # Utility rule file for yolobot_gazebo_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/yolobot_gazebo
 include CMakeFiles/yolobot_gazebo_uninstall.dir/progress.make
 
 CMakeFiles/yolobot_gazebo_uninstall:
-	/usr/bin/cmake -P /home/amejiyo/yolobot/build/yolobot_gazebo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 yolobot_gazebo_uninstall: CMakeFiles/yolobot_gazebo_uninstall
 yolobot_gazebo_uninstall: CMakeFiles/yolobot_gazebo_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/yolobot_gazebo_uninstall.dir/clean:
 .PHONY : CMakeFiles/yolobot_gazebo_uninstall.dir/clean
 
 CMakeFiles/yolobot_gazebo_uninstall.dir/depend:
-	cd /home/amejiyo/yolobot/build/yolobot_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/yolobot_gazebo /home/amejiyo/yolobot/src/yolobot_gazebo /home/amejiyo/yolobot/build/yolobot_gazebo /home/amejiyo/yolobot/build/yolobot_gazebo /home/amejiyo/yolobot/build/yolobot_gazebo/CMakeFiles/yolobot_gazebo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/yolobot_gazebo /home/amejiyo/GitHub/502/detection/src/yolobot_gazebo /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo/CMakeFiles/yolobot_gazebo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yolobot_gazebo_uninstall.dir/depend
 

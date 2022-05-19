@@ -1,8 +1,8 @@
-# Install script for directory: /home/amejiyo/yolobot/src/yolobot_description
+# Install script for directory: /home/amejiyo/GitHub/502/detection/src/yolobot_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/amejiyo/yolobot/install/yolobot_description")
+  set(CMAKE_INSTALL_PREFIX "/home/amejiyo/GitHub/502/detection/install/yolobot_description")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,21 +39,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description/" TYPE DIRECTORY FILES
-    "/home/amejiyo/yolobot/src/yolobot_description/launch"
-    "/home/amejiyo/yolobot/src/yolobot_description/robot"
+    "/home/amejiyo/GitHub/502/detection/src/yolobot_description/launch"
+    "/home/amejiyo/GitHub/502/detection/src/yolobot_description/robot"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/yolobot_description" TYPE PROGRAM FILES "/home/amejiyo/yolobot/src/yolobot_description/launch/spawn_yolobot.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/yolobot_description" TYPE PROGRAM FILES "/home/amejiyo/GitHub/502/detection/src/yolobot_description/launch/spawn_yolobot.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolobot_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolobot_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolobot_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolobot_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -61,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description/environment" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description/environment" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -69,42 +69,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description/environment" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description/environment" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_index/share/ament_index/resource_index/packages/yolobot_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_index/share/ament_index/resource_index/packages/yolobot_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description/cmake" TYPE FILE FILES
-    "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_core/yolobot_descriptionConfig.cmake"
-    "/home/amejiyo/yolobot/build/yolobot_description/ament_cmake_core/yolobot_descriptionConfig-version.cmake"
+    "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_core/yolobot_descriptionConfig.cmake"
+    "/home/amejiyo/GitHub/502/detection/build/yolobot_description/ament_cmake_core/yolobot_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/yolobot/src/yolobot_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolobot_description" TYPE FILE FILES "/home/amejiyo/GitHub/502/detection/src/yolobot_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -115,5 +115,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/amejiyo/yolobot/build/yolobot_description/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/amejiyo/GitHub/502/detection/build/yolobot_description/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

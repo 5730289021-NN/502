@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/realsense_gazebo_plugin
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/realsense_gazebo_plugin
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin
 
 # Utility rule file for realsense_gazebo_plugin_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/realsense_gazebo_plugin
 include CMakeFiles/realsense_gazebo_plugin_uninstall.dir/progress.make
 
 CMakeFiles/realsense_gazebo_plugin_uninstall:
-	/usr/bin/cmake -P /home/amejiyo/yolobot/build/realsense_gazebo_plugin/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 realsense_gazebo_plugin_uninstall: CMakeFiles/realsense_gazebo_plugin_uninstall
 realsense_gazebo_plugin_uninstall: CMakeFiles/realsense_gazebo_plugin_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/realsense_gazebo_plugin_uninstall.dir/clean:
 .PHONY : CMakeFiles/realsense_gazebo_plugin_uninstall.dir/clean
 
 CMakeFiles/realsense_gazebo_plugin_uninstall.dir/depend:
-	cd /home/amejiyo/yolobot/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/realsense_gazebo_plugin /home/amejiyo/yolobot/src/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin /home/amejiyo/yolobot/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/realsense_gazebo_plugin_uninstall.dir/depend
 

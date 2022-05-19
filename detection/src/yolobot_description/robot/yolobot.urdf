@@ -99,7 +99,7 @@
 	</joint>
 
 
-  <!-- <link name="laser_link_frame">
+  <link name="laser_link_frame">
   </link>
 
   <joint name="laser_frame_joint" type="fixed">
@@ -144,7 +144,7 @@
         <frame_name>laser_link</frame_name>
       </plugin>
     </sensor>
-  </gazebo> -->
+  </gazebo>
 
   <gazebo>
     <plugin filename="libgazebo_ros_imu.so" name="gazebo_ros_imu_controller">
@@ -233,7 +233,7 @@
           </image>
           <clip>
               <near>0.005</near>
-              <far>10.0</far>
+              <far>30.0</far>
           </clip>
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">

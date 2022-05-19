@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_c/interfaces/msg/detail/dect__functions.c
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/dect2__functions.c
+interfaces/msg/detail/dect2__functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect2__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/dect__functions.c
 interfaces/msg/detail/dect__functions.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect__functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect__functions.h
 assert.h
 -
 stdbool.h
@@ -18,7 +30,7 @@ stdlib.h
 string.h
 -
 rosidl_runtime_c/string_functions.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/string_functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/string_functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h
@@ -43,6 +55,26 @@ rosidl_runtime_c/visibility_control.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+
+rosidl_generator_c/interfaces/msg/detail/dect2__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/interfaces/msg/detail/interfaces/msg/rosidl_generator_c__visibility_control.h
+interfaces/msg/detail/dect2__struct.h
+rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect2__struct.h
+
+rosidl_generator_c/interfaces/msg/detail/dect2__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/interfaces/msg/detail/dect__functions.h
 stdbool.h

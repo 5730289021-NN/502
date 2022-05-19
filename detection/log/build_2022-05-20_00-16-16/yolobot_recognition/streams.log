@@ -1,0 +1,48 @@
+[0.328s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/GitHub/502/detection/src/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition
+[0.403s] -- The C compiler identification is GNU 8.4.0
+[0.469s] -- The CXX compiler identification is GNU 8.4.0
+[0.476s] -- Check for working C compiler: /usr/bin/cc
+[0.562s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.563s] -- Detecting C compiler ABI info
+[0.646s] -- Detecting C compiler ABI info - done
+[0.657s] -- Detecting C compile features
+[0.657s] -- Detecting C compile features - done
+[0.660s] -- Check for working CXX compiler: /usr/bin/c++
+[0.748s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.749s] -- Detecting CXX compiler ABI info
+[0.846s] -- Detecting CXX compiler ABI info - done
+[0.858s] -- Detecting CXX compile features
+[0.858s] -- Detecting CXX compile features - done
+[0.861s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.891s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.891s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.164s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.309s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.320s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.322s] -- Added test 'lint_cmake' to check CMake code style
+[1.323s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.330s] -- Added test 'xmllint' to check XML markup files
+[1.332s] -- Configuring done
+[1.334s] -- Generating done
+[1.335s] -- Build files have been written to: /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
+[1.342s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake /home/amejiyo/GitHub/502/detection/src/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition
+[1.347s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_recognition -- -j16 -l16
+[1.396s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_recognition -- -j16 -l16
+[1.425s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
+[1.433s] -- Install configuration: ""
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/ament_index/resource_index/package_run_dependencies/yolobot_recognition
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/ament_index/resource_index/parent_prefix_path/yolobot_recognition
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.sh
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.dsv
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/environment/path.sh
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/environment/path.dsv
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/local_setup.bash
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/local_setup.sh
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/local_setup.zsh
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/local_setup.dsv
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.dsv
+[1.434s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/ament_index/resource_index/packages/yolobot_recognition
+[1.435s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig.cmake
+[1.435s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig-version.cmake
+[1.435s] -- Installing: /home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.xml
+[1.441s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/yolobot/install/yolobot_recognition:/home/amejiyo/yolobot/install/yolobot_gazebo:/home/amejiyo/yolobot/install/yolobot_detection:/home/amejiyo/yolobot/install/yolobot_description:/home/amejiyo/yolobot/install/yolobot_control:/home/amejiyo/yolobot/install/realsense_gazebo_plugin:/home/amejiyo/yolobot/install/interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_recognition

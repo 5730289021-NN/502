@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/interfaces
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/interfaces
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/interfaces
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/amejiyo/yolobot/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/interfaces /home/amejiyo/yolobot/src/interfaces /home/amejiyo/yolobot/build/interfaces /home/amejiyo/yolobot/build/interfaces /home/amejiyo/yolobot/build/interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/interfaces /home/amejiyo/GitHub/502/detection/src/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

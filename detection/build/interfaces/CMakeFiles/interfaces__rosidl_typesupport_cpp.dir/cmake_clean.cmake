@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/dect2__type_support.cpp.o"
   "CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/dect__type_support.cpp.o"
   "libinterfaces__rosidl_typesupport_cpp.pdb"
   "libinterfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/interfaces/msg/dect2__type_support.cpp"
   "rosidl_typesupport_cpp/interfaces/msg/dect__type_support.cpp"
 )
 

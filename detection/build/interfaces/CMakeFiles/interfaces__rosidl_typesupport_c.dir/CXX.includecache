@@ -6,25 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/dect__type_support.cpp
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/dect2__type_support.cpp
 cstddef
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/cstddef
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/cstddef
 rosidl_runtime_c/message_type_support_struct.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_runtime_c/message_type_support_struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_runtime_c/message_type_support_struct.h
 interfaces/msg/rosidl_typesupport_c__visibility_control.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/interfaces/msg/rosidl_typesupport_c__visibility_control.h
-interfaces/msg/detail/dect__struct.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/interfaces/msg/detail/dect__struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/interfaces/msg/rosidl_typesupport_c__visibility_control.h
+interfaces/msg/detail/dect2__struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/interfaces/msg/detail/dect2__struct.h
 rosidl_typesupport_c/identifier.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/identifier.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/identifier.h
 rosidl_typesupport_c/message_type_support_dispatch.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/message_type_support_dispatch.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/message_type_support_dispatch.h
 rosidl_typesupport_c/type_support_map.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/type_support_map.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/type_support_map.h
 rosidl_typesupport_c/visibility_control.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/visibility_control.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
-/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_interface/macros.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_interface/macros.h
+
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/dect__type_support.cpp
+cstddef
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_runtime_c/message_type_support_struct.h
+interfaces/msg/rosidl_typesupport_c__visibility_control.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/interfaces/msg/rosidl_typesupport_c__visibility_control.h
+interfaces/msg/detail/dect__struct.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/interfaces/msg/detail/dect__struct.h
+rosidl_typesupport_c/identifier.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/identifier.h
+rosidl_typesupport_c/message_type_support_dispatch.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/message_type_support_dispatch.h
+rosidl_typesupport_c/type_support_map.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/type_support_map.h
+rosidl_typesupport_c/visibility_control.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_c/visibility_control.h
+rosidl_typesupport_interface/macros.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c/interfaces/msg/rosidl_typesupport_interface/macros.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/visibility_control.h
@@ -65,6 +85,14 @@ cstddef
 /opt/ros/foxy/include/rosidl_typesupport_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+
+rosidl_generator_c/interfaces/msg/detail/dect2__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/interfaces/msg/detail/dect__struct.h
 stdbool.h

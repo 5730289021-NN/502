@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra -std=gnu99
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"interfaces\" -Dinterfaces__rosidl_typesupport_introspection_c__pyext_EXPORTS
 
-C_INCLUDES = -I/home/amejiyo/yolobot/build/interfaces/rosidl_generator_c -I/home/amejiyo/yolobot/build/interfaces/rosidl_generator_py -I/usr/include/python3.8 -I/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_c -I/home/amejiyo/yolobot/build/interfaces/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c -I/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py -I/usr/include/python3.8 -I/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_c -I/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
 

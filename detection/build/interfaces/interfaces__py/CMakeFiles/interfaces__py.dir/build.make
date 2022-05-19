@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amejiyo/yolobot/src/interfaces
+CMAKE_SOURCE_DIR = /home/amejiyo/GitHub/502/detection/src/interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amejiyo/yolobot/build/interfaces
+CMAKE_BINARY_DIR = /home/amejiyo/GitHub/502/detection/build/interfaces
 
 # Utility rule file for interfaces__py.
 
@@ -57,8 +57,10 @@ interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/_interf
 interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
 interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/msg/_dect.py
+interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/msg/_dect2.py
 interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/msg/__init__.py
 interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/msg/_dect_s.c
+interfaces__py/CMakeFiles/interfaces__py: rosidl_generator_py/interfaces/msg/_dect2_s.c
 
 
 rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -75,8 +77,9 @@ rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c:
 rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/interfaces/msg/Dect.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amejiyo/yolobot/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/amejiyo/yolobot/build/interfaces/interfaces__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/amejiyo/yolobot/build/interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/interfaces/msg/Dect2.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amejiyo/GitHub/502/detection/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/amejiyo/GitHub/502/detection/build/interfaces/interfaces__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
@@ -87,19 +90,27 @@ rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_g
 rosidl_generator_py/interfaces/msg/_dect.py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interfaces/msg/_dect.py
 
+rosidl_generator_py/interfaces/msg/_dect2.py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interfaces/msg/_dect2.py
+
 rosidl_generator_py/interfaces/msg/__init__.py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interfaces/msg/__init__.py
 
 rosidl_generator_py/interfaces/msg/_dect_s.c: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interfaces/msg/_dect_s.c
 
+rosidl_generator_py/interfaces/msg/_dect2_s.c: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interfaces/msg/_dect2_s.c
+
 interfaces__py: interfaces__py/CMakeFiles/interfaces__py
 interfaces__py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 interfaces__py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 interfaces__py: rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
 interfaces__py: rosidl_generator_py/interfaces/msg/_dect.py
+interfaces__py: rosidl_generator_py/interfaces/msg/_dect2.py
 interfaces__py: rosidl_generator_py/interfaces/msg/__init__.py
 interfaces__py: rosidl_generator_py/interfaces/msg/_dect_s.c
+interfaces__py: rosidl_generator_py/interfaces/msg/_dect2_s.c
 interfaces__py: interfaces__py/CMakeFiles/interfaces__py.dir/build.make
 
 .PHONY : interfaces__py
@@ -110,10 +121,10 @@ interfaces__py/CMakeFiles/interfaces__py.dir/build: interfaces__py
 .PHONY : interfaces__py/CMakeFiles/interfaces__py.dir/build
 
 interfaces__py/CMakeFiles/interfaces__py.dir/clean:
-	cd /home/amejiyo/yolobot/build/interfaces/interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/interfaces__py.dir/cmake_clean.cmake
+	cd /home/amejiyo/GitHub/502/detection/build/interfaces/interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/interfaces__py.dir/cmake_clean.cmake
 .PHONY : interfaces__py/CMakeFiles/interfaces__py.dir/clean
 
 interfaces__py/CMakeFiles/interfaces__py.dir/depend:
-	cd /home/amejiyo/yolobot/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/yolobot/src/interfaces /home/amejiyo/yolobot/build/interfaces/interfaces__py /home/amejiyo/yolobot/build/interfaces /home/amejiyo/yolobot/build/interfaces/interfaces__py /home/amejiyo/yolobot/build/interfaces/interfaces__py/CMakeFiles/interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amejiyo/GitHub/502/detection/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amejiyo/GitHub/502/detection/src/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces/interfaces__py /home/amejiyo/GitHub/502/detection/build/interfaces /home/amejiyo/GitHub/502/detection/build/interfaces/interfaces__py /home/amejiyo/GitHub/502/detection/build/interfaces/interfaces__py/CMakeFiles/interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interfaces__py/CMakeFiles/interfaces__py.dir/depend
 
