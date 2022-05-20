@@ -1,33 +1,67 @@
-# Detection on Gazebo
 
-detection <br />
---src (source code)  <br />
-> --yolobot_control  <br />
-  --yolobot_description  <br />
-  --yolobot_gazebo   <br />
-  >> --launch <br />
-  >>> --yolobot_launch.py  <br />
+# Fine Detection
+
+In this stage, it will perform only object classification in real time, and object point & yaw identification respected to camera frame.
  
- > --yolobot_recognition <br />
-  >>--scripts  <br />
-  >>> --ros_recognition_yolo.py  <br />
-  
- -- models (gazebo model) <br />
- 
- ## Setup
- 1. copy files inside models directory to .gazebo <br/>
- 2. ros2 launch yolobot_gazebo yolobot_launch.py <br/>
- 3. go to /yolobot/src/yolobot_recognition/scripts/ <br/>
- 4. run python3 ros_recognition_yolo.py </br>
 
 
-# unit run
+### Workspace Setting
 
-open gazebo<br/>
-ros2 launch yolobot_gazebo yolobot_launch.py
+Cloning respository
 
-run node (during maintenance)<br/>
-ros2 run yolobot_detection detect_talker
+```http
+  cd ~/<your_workspace_path>
+  git clone https://github.com/5730289021-NN/502/detection.git
+```
 
-go to ~/detection/src/yolobot_detection/yolobot_detection </br>
-run python detect.py
+Adding gazebo model into your gazebo Workspace
+```http
+  cp -R ~/usr/GitHub/502/detection/gazebo_model/* ~/.gazebo/models/
+```
+
+### Topics (Subscription)
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `rgb_cam/image_raw` | `uint array` | **Required**. webcam or depthcam |
+| `rgb_cam/depth/image_raw` | `uint array` | **Required**. depthcam |
+
+### Topics (Publishing)
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `msg/obj_point` | `float32 array` | **camera frame** object 3D point |
+| `msg/rotation` | `float32 array` | **camera frame** object 3D rotation |
+| `msg/goal_point` | `float32 array` | **camera frame** goal 3D point |
+| `msg/obj_class` | `string` | object class name |
+
+**Camera frame: x (wide), y (high), z (depth)**
+
+launch world
+
+```http
+  ros2 launch yolobot_gazebo yolobot_launch.py
+```
+
+run ros2 node
+```http
+  ros2 run yolobot_detection detect_talker
+```
+
+run only detection python file
+```http
+  cd /502/detection/src/yolobot_detection/yolobot_detection
+  python detect.py
+```
+
+Note: urdf of robot is in 
+```http
+502/detection/src/yolobot_description/robot/
+```
+
+
+## Screenshots
+
+![App Screenshot](https://github.com/5730289021-NN/502/blob/main/detection/Screenshot_from_2022-05-20_23-09-02.png)
+
+
