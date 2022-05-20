@@ -9,7 +9,7 @@ In this stage, it will perform only object classification in real time, and obje
 
 Cloning respository
 
-```http
+```
   cd ~/<your_workspace_path>
   git clone https://github.com/5730289021-NN/502/detection.git
 ```
@@ -39,23 +39,23 @@ Adding gazebo model into your gazebo Workspace
 
 launch world
 
-```http
+```
   ros2 launch yolobot_gazebo yolobot_launch.py
 ```
 
 run ros2 node
-```http
+```
   ros2 run yolobot_detection detect_talker
 ```
 
 run only detection python file
-```http
+```
   cd /502/detection/src/yolobot_detection/yolobot_detection
   python detect.py
 ```
 
 Note: urdf of robot is in 
-```http
+```
 502/detection/src/yolobot_description/robot/
 ```
 
