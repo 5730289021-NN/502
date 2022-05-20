@@ -1,10 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect2__type_support_c.cpp.o"
   "CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect__type_support_c.cpp.o"
   "libinterfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libinterfaces__rosidl_typesupport_fastrtps_c.so"
-  "rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect2__rosidl_typesupport_fastrtps_c.h"
-  "rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect2__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/interfaces/msg/detail/dect__type_support_c.cpp"
 )

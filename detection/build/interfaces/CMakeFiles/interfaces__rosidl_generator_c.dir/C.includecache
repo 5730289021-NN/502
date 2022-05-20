@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/dect2__functions.c
-interfaces/msg/detail/dect2__functions.h
-/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect2__functions.h
-assert.h
--
-stdbool.h
--
-stdlib.h
--
-string.h
--
-
 /home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/dect__functions.c
 interfaces/msg/detail/dect__functions.h
 /home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect__functions.h
@@ -29,8 +17,10 @@ stdlib.h
 -
 string.h
 -
-rosidl_runtime_c/string_functions.h
-/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/string_functions.h
+std_msgs/msg/detail/string__functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/std_msgs/msg/detail/string__functions.h
+std_msgs/msg/detail/float32_multi_array__functions.h
+/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_c/interfaces/msg/detail/std_msgs/msg/detail/float32_multi_array__functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h
@@ -46,35 +36,75 @@ stddef.h
 rosidl_runtime_c/primitives_sequence.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
-stddef.h
--
-rosidl_runtime_c/string.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/string.h
-rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
-
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
-rosidl_generator_c/interfaces/msg/detail/dect2__functions.h
+/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__functions.h
 stdbool.h
 -
 stdlib.h
 -
 rosidl_runtime_c/visibility_control.h
-rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
-interfaces/msg/rosidl_generator_c__visibility_control.h
-rosidl_generator_c/interfaces/msg/detail/interfaces/msg/rosidl_generator_c__visibility_control.h
-interfaces/msg/detail/dect2__struct.h
-rosidl_generator_c/interfaces/msg/detail/interfaces/msg/detail/dect2__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+std_msgs/msg/detail/float32_multi_array__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/float32_multi_array__struct.h
 
-rosidl_generator_c/interfaces/msg/detail/dect2__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.h
 stdbool.h
 -
 stddef.h
 -
 stdint.h
 -
+std_msgs/msg/detail/multi_array_layout__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/multi_array_layout__struct.h
+rosidl_runtime_c/primitives_sequence.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/primitives_sequence.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/multi_array_dimension__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/multi_array_layout__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+std_msgs/msg/detail/multi_array_dimension__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/multi_array_dimension__struct.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/string__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+std_msgs/msg/detail/string__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/string__struct.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/string__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
+
+/opt/ros/foxy/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
 
 rosidl_generator_c/interfaces/msg/detail/dect__functions.h
 stdbool.h
@@ -95,8 +125,10 @@ stddef.h
 -
 stdint.h
 -
-rosidl_runtime_c/string.h
-rosidl_generator_c/interfaces/msg/detail/rosidl_runtime_c/string.h
+std_msgs/msg/detail/string__struct.h
+rosidl_generator_c/interfaces/msg/detail/std_msgs/msg/detail/string__struct.h
+std_msgs/msg/detail/float32_multi_array__struct.h
+rosidl_generator_c/interfaces/msg/detail/std_msgs/msg/detail/float32_multi_array__struct.h
 
 rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h
 

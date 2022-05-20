@@ -9,8 +9,6 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c" "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/msg/__init__.py" "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/msg/_dect.py" "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/msg/_dect2.py" "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/msg/_dect2_s.c" "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/msg/_dect_s.c" "/home/amejiyo/GitHub/502/detection/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 

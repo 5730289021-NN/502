@@ -10,6 +10,14 @@
 #include <stdint.h>
 #include <type_traits>
 
+// Include directives for member types
+// Member 'obj_class'
+#include "std_msgs/msg/detail/string__traits.hpp"
+// Member 'obj_point'
+// Member 'goal_point'
+// Member 'rotation'
+#include "std_msgs/msg/detail/float32_multi_array__traits.hpp"
+
 namespace rosidl_generator_traits
 {
 
@@ -27,11 +35,11 @@ inline const char * name<interfaces::msg::Dect>()
 
 template<>
 struct has_fixed_size<interfaces::msg::Dect>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Float32MultiArray>::value && has_fixed_size<std_msgs::msg::String>::value> {};
 
 template<>
 struct has_bounded_size<interfaces::msg::Dect>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Float32MultiArray>::value && has_bounded_size<std_msgs::msg::String>::value> {};
 
 template<>
 struct is_message<interfaces::msg::Dect>

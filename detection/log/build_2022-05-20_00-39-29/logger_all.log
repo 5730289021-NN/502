@@ -1,0 +1,521 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f81b96bda60>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f81b96bda60>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f81b96c8040>)
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.142s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/amejiyo/GitHub/502/detection'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_gazebo_plugin) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense_gazebo_plugin' with type 'ros.catkin' and name 'realsense_gazebo_plugin'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_control) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolobot_control' with type 'ros.ament_cmake' and name 'yolobot_control'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_description) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolobot_description' with type 'ros.ament_cmake' and name 'yolobot_description'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_detection) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolobot_detection' with type 'ros.ament_python' and name 'yolobot_detection'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_gazebo) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolobot_gazebo' with type 'ros.ament_cmake' and name 'yolobot_gazebo'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolobot_recognition' with type 'ros.ament_cmake' and name 'yolobot_recognition'
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.245s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/amejiyo/GitHub/502/detection/install
+[0.247s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/foxy
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.308s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/interfaces', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_target' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.309s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_gazebo_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'cmake_target' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'yolobot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.310s] DEBUG:colcon.colcon_core.verb:Building package 'yolobot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/yolobot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/yolobot_control', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/yolobot_control', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.311s] DEBUG:colcon.colcon_core.verb:Building package 'yolobot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/yolobot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/yolobot_description', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/yolobot_description', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'yolobot_detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/yolobot_detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/yolobot_detection', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/yolobot_detection', 'symlink_install': False, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'yolobot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'yolobot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/yolobot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'yolobot_recognition' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition', 'merge_install': False, 'path': '/home/amejiyo/GitHub/502/detection/src/yolobot_recognition', 'symlink_install': False, 'test_result_base': None}
+[0.313s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.315s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.316s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/interfaces' with build type 'ament_cmake'
+[0.316s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amejiyo/GitHub/502/detection/src/interfaces'
+[0.321s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.321s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.329s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin' with build type 'catkin'
+[0.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amejiyo/GitHub/502/detection/src/realsense_gazebo_plugin'
+[0.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.344s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/yolobot_control' with build type 'ament_cmake'
+[0.345s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amejiyo/GitHub/502/detection/src/yolobot_control'
+[0.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.348s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.358s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/yolobot_description' with build type 'ament_cmake'
+[0.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amejiyo/GitHub/502/detection/src/yolobot_description'
+[0.360s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.368s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/yolobot_detection' with build type 'ament_python'
+[0.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_detection', 'ament_prefix_path')
+[0.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/hook/ament_prefix_path.ps1'
+[0.372s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/hook/ament_prefix_path.dsv'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/hook/ament_prefix_path.sh'
+[0.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.384s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/yolobot_gazebo' with build type 'ament_cmake'
+[0.385s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amejiyo/GitHub/502/detection/src/yolobot_gazebo'
+[0.386s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.387s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.396s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/amejiyo/GitHub/502/detection/src/yolobot_recognition' with build type 'ament_cmake'
+[0.396s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amejiyo/GitHub/502/detection/src/yolobot_recognition'
+[0.397s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.397s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
+[0.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin -- -j16 -l16
+[0.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_control -- -j16 -l16
+[0.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_description': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_description -- -j16 -l16
+[0.756s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/amejiyo/GitHub/502/detection/src/yolobot_detection'
+[0.758s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.758s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo -- -j16 -l16
+[0.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_recognition -- -j16 -l16
+[0.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
+[0.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin -- -j16 -l16
+[0.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_description -- -j16 -l16
+[0.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_control -- -j16 -l16
+[0.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_description': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_description
+[0.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_control
+[0.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_recognition -- -j16 -l16
+[0.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo -- -j16 -l16
+[0.900s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_description)
+[0.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_description
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description' for CMake module files
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description' for CMake config files
+[0.908s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_description', 'cmake_prefix_path')
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/hook/cmake_prefix_path.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/hook/cmake_prefix_path.dsv'
+[0.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/hook/cmake_prefix_path.sh'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/lib'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/bin'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/lib/pkgconfig/yolobot_description.pc'
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/lib/python3.8/site-packages'
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/bin'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.ps1'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.dsv'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.sh'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.bash'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.zsh'
+[0.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/colcon-core/packages/yolobot_description)
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/interfaces
+[0.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin
+[0.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_control)
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control' for CMake module files
+[0.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_control' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_control
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control' for CMake config files
+[0.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_control', 'cmake_prefix_path')
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/hook/cmake_prefix_path.ps1'
+[0.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/hook/cmake_prefix_path.dsv'
+[0.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/hook/cmake_prefix_path.sh'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/lib'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/bin'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/lib/pkgconfig/yolobot_control.pc'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/lib/python3.8/site-packages'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/bin'
+[0.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.ps1'
+[0.948s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.dsv'
+[0.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.sh'
+[0.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.bash'
+[0.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.zsh'
+[0.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/colcon-core/packages/yolobot_control)
+[0.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
+[0.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_description)
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description' for CMake module files
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description' for CMake config files
+[0.986s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_description', 'cmake_prefix_path')
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/hook/cmake_prefix_path.ps1'
+[0.988s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/hook/cmake_prefix_path.dsv'
+[0.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/hook/cmake_prefix_path.sh'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/lib'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/bin'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/lib/pkgconfig/yolobot_description.pc'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/lib/python3.8/site-packages'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_description/bin'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.ps1'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.dsv'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.sh'
+[0.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.bash'
+[0.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/yolobot_description/package.zsh'
+[0.995s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_description/share/colcon-core/packages/yolobot_description)
+[0.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo
+[0.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin
+[1.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_control)
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control' for CMake module files
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control' for CMake config files
+[1.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_control', 'cmake_prefix_path')
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/hook/cmake_prefix_path.ps1'
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/hook/cmake_prefix_path.dsv'
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/hook/cmake_prefix_path.sh'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/lib'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/bin'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/lib/pkgconfig/yolobot_control.pc'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/lib/python3.8/site-packages'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_control/bin'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.ps1'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.dsv'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.sh'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.bash'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/yolobot_control/package.zsh'
+[1.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_control/share/colcon-core/packages/yolobot_control)
+[1.024s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_recognition)
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition' for CMake module files
+[1.029s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition' for CMake config files
+[1.029s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_recognition', 'cmake_prefix_path')
+[1.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.ps1'
+[1.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.dsv'
+[1.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.sh'
+[1.033s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/bin'
+[1.033s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/lib/pkgconfig/yolobot_recognition.pc'
+[1.033s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/lib/python3.8/site-packages'
+[1.034s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/bin'
+[1.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.ps1'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.dsv'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.sh'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.bash'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.zsh'
+[1.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_recognition
+[1.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/colcon-core/packages/yolobot_recognition)
+[1.049s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_gazebo)
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo' for CMake module files
+[1.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/yolobot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/yolobot_gazebo
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo' for CMake config files
+[1.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_gazebo', 'cmake_prefix_path')
+[1.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/hook/cmake_prefix_path.ps1'
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/hook/cmake_prefix_path.dsv'
+[1.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/hook/cmake_prefix_path.sh'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/bin'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/lib/pkgconfig/yolobot_gazebo.pc'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/lib/python3.8/site-packages'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/bin'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.ps1'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.sh'
+[1.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.bash'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.zsh'
+[1.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/colcon-core/packages/yolobot_gazebo)
+[1.070s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces' for CMake module files
+[1.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/interfaces
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces' for CMake config files
+[1.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/lib'
+[1.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[1.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[1.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[1.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/bin'
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/lib/pkgconfig/interfaces.pc'
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages'
+[1.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'pythonpath')
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/pythonpath.ps1'
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/pythonpath.dsv'
+[1.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/pythonpath.sh'
+[1.084s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/bin'
+[1.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.ps1'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.dsv'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.sh'
+[1.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.bash'
+[1.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.zsh'
+[1.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/interfaces/share/colcon-core/packages/interfaces)
+[1.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'ros_package_path')
+[1.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ros_package_path.ps1'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ros_package_path.dsv'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ros_package_path.sh'
+[1.098s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'pkg_config_path')
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path.dsv'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path.sh'
+[1.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'pkg_config_path_multiarch')
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path_multiarch.ps1'
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path_multiarch.dsv'
+[1.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path_multiarch.sh'
+[1.112s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_gazebo_plugin)
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin' for CMake module files
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin' for CMake config files
+[1.115s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'cmake_prefix_path')
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.ps1'
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.dsv'
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.sh'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/lib'
+[1.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'ld_library_path_lib')
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.dsv'
+[1.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.sh'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/bin'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/lib/pkgconfig/realsense_gazebo_plugin.pc'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/lib/python3.8/site-packages'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/bin'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.ps1'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv'
+[1.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.sh'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.bash'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.zsh'
+[1.131s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin/share/colcon-core/packages/realsense_gazebo_plugin)
+[1.136s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_recognition)
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition' for CMake module files
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition' for CMake config files
+[1.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_recognition', 'cmake_prefix_path')
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.ps1'
+[1.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.dsv'
+[1.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.sh'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/bin'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/lib/pkgconfig/yolobot_recognition.pc'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/lib/python3.8/site-packages'
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/bin'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.ps1'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.dsv'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.sh'
+[1.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.bash'
+[1.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/yolobot_recognition/package.zsh'
+[1.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_recognition/share/colcon-core/packages/yolobot_recognition)
+[1.151s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_gazebo)
+[1.152s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo' for CMake module files
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo' for CMake config files
+[1.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_gazebo', 'cmake_prefix_path')
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/hook/cmake_prefix_path.ps1'
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/hook/cmake_prefix_path.dsv'
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/hook/cmake_prefix_path.sh'
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/bin'
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/lib/pkgconfig/yolobot_gazebo.pc'
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/lib/python3.8/site-packages'
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/bin'
+[1.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.ps1'
+[1.160s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.dsv'
+[1.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.sh'
+[1.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.bash'
+[1.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/yolobot_gazebo/package.zsh'
+[1.162s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo/share/colcon-core/packages/yolobot_gazebo)
+[1.192s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces' for CMake module files
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces' for CMake config files
+[1.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[1.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/lib'
+[1.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[1.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/bin'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/lib/pkgconfig/interfaces.pc'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages'
+[1.199s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'pythonpath')
+[1.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/pythonpath.ps1'
+[1.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/pythonpath.dsv'
+[1.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/hook/pythonpath.sh'
+[1.200s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/interfaces/bin'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.ps1'
+[1.202s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.dsv'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.sh'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.bash'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/package.zsh'
+[1.203s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/interfaces/share/colcon-core/packages/interfaces)
+[1.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amejiyo/GitHub/502/detection/src/yolobot_detection': PYTHONPATH=/home/amejiyo/GitHub/502/detection/install/yolobot_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolobot_detection build --build-base /home/amejiyo/GitHub/502/detection/build/yolobot_detection/build install --prefix /home/amejiyo/GitHub/502/detection/install/yolobot_detection --record /home/amejiyo/GitHub/502/detection/build/yolobot_detection/install.log --single-version-externally-managed
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection' for CMake module files
+[1.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amejiyo/GitHub/502/detection/src/yolobot_detection' returned '0': PYTHONPATH=/home/amejiyo/GitHub/502/detection/install/yolobot_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolobot_detection build --build-base /home/amejiyo/GitHub/502/detection/build/yolobot_detection/build install --prefix /home/amejiyo/GitHub/502/detection/install/yolobot_detection --record /home/amejiyo/GitHub/502/detection/build/yolobot_detection/install.log --single-version-externally-managed
+[1.775s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection' for CMake config files
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/lib'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/bin'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/lib/pkgconfig/yolobot_detection.pc'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/lib/python3.8/site-packages'
+[1.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_detection', 'pythonpath')
+[1.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/hook/pythonpath.ps1'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/hook/pythonpath.dsv'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/hook/pythonpath.sh'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/bin'
+[1.783s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_detection)
+[1.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/package.ps1'
+[1.785s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/package.dsv'
+[1.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/package.sh'
+[1.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/package.bash'
+[1.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/yolobot_detection/package.zsh'
+[1.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amejiyo/GitHub/502/detection/install/yolobot_detection/share/colcon-core/packages/yolobot_detection)
+[1.791s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.791s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.792s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.792s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.803s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.803s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.803s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.826s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.827s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amejiyo/GitHub/502/detection/install/local_setup.ps1'
+[1.830s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/amejiyo/GitHub/502/detection/install/_local_setup_util_ps1.py'
+[1.834s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amejiyo/GitHub/502/detection/install/setup.ps1'
+[1.836s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amejiyo/GitHub/502/detection/install/local_setup.sh'
+[1.837s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/amejiyo/GitHub/502/detection/install/_local_setup_util_sh.py'
+[1.839s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amejiyo/GitHub/502/detection/install/setup.sh'
+[1.841s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amejiyo/GitHub/502/detection/install/local_setup.bash'
+[1.842s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amejiyo/GitHub/502/detection/install/setup.bash'
+[1.844s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amejiyo/GitHub/502/detection/install/local_setup.zsh'
+[1.845s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amejiyo/GitHub/502/detection/install/setup.zsh'

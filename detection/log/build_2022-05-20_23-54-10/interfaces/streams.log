@@ -1,0 +1,28 @@
+[0.067s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
+[0.331s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.331s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.331s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.332s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.332s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.333s] CMake Warning (dev) at CMakeLists.txt:39:
+[0.334s]   Syntax Warning in cmake code at column 17
+[0.334s] 
+[0.335s]   Argument not separated from preceding token by whitespace.
+[0.335s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.336s] 
+[0.336s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.466s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.514s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.617s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.626s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.626s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[0.626s]   the CMAKE_CURRENT_SOURCE_DIR
+[0.626s]   '/home/amejiyo/GitHub/502/detection/src/interfaces'
+[0.627s] Call Stack (most recent call first):
+[0.627s]   CMakeLists.txt:38 (rosidl_generate_interfaces)
+[0.627s] 
+[0.627s] 
+[0.627s] -- Configuring incomplete, errors occurred!
+[0.628s] See also "/home/amejiyo/GitHub/502/detection/build/interfaces/CMakeFiles/CMakeOutput.log".
+[0.633s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[0.636s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '2': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16

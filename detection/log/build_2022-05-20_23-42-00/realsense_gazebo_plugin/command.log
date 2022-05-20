@@ -1,0 +1,4 @@
+Invoking command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin -- -j16 -l16
+Invoked command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin -- -j16 -l16
+Invoking command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin
+Invoked command in '/home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/amejiyo/GitHub/502/detection/build/realsense_gazebo_plugin

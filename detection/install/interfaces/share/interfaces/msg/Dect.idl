@@ -2,17 +2,19 @@
 // with input from interfaces/msg/Dect.msg
 // generated code does not contain a copyright notice
 
+#include "std_msgs/msg/Float32MultiArray.idl"
+#include "std_msgs/msg/String.idl"
 
 module interfaces {
   module msg {
     struct Dect {
-      string obj_class;
+      std_msgs::msg::String obj_class;
 
-      double cam_x;
+      std_msgs::msg::Float32MultiArray obj_point;
 
-      double cam_y;
+      std_msgs::msg::Float32MultiArray goal_point;
 
-      double cam_z;
+      std_msgs::msg::Float32MultiArray rotation;
     };
   };
 };

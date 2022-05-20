@@ -14,7 +14,17 @@
 
 // Include directives for member types
 // Member `obj_class`
-#include "rosidl_runtime_c/string_functions.h"
+#include "std_msgs/msg/string.h"
+// Member `obj_class`
+#include "std_msgs/msg/detail/string__rosidl_typesupport_introspection_c.h"
+// Member `obj_point`
+// Member `goal_point`
+// Member `rotation`
+#include "std_msgs/msg/float32_multi_array.h"
+// Member `obj_point`
+// Member `goal_point`
+// Member `rotation`
+#include "std_msgs/msg/detail/float32_multi_array__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -38,9 +48,9 @@ void Dect__rosidl_typesupport_introspection_c__Dect_fini_function(void * message
 static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[4] = {
   {
     "obj_class",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -52,14 +62,14 @@ static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesuppor
     NULL  // resize(index) function pointer
   },
   {
-    "cam_x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    "obj_point",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces__msg__Dect, cam_x),  // bytes offset in struct
+    offsetof(interfaces__msg__Dect, obj_point),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -67,14 +77,14 @@ static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesuppor
     NULL  // resize(index) function pointer
   },
   {
-    "cam_y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    "goal_point",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces__msg__Dect, cam_y),  // bytes offset in struct
+    offsetof(interfaces__msg__Dect, goal_point),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -82,14 +92,14 @@ static rosidl_typesupport_introspection_c__MessageMember Dect__rosidl_typesuppor
     NULL  // resize(index) function pointer
   },
   {
-    "cam_z",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    "rotation",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces__msg__Dect, cam_z),  // bytes offset in struct
+    offsetof(interfaces__msg__Dect, rotation),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -119,6 +129,14 @@ static rosidl_message_type_support_t Dect__rosidl_typesupport_introspection_c__D
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, interfaces, msg, Dect)() {
+  Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, String)();
+  Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Float32MultiArray)();
+  Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[2].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Float32MultiArray)();
+  Dect__rosidl_typesupport_introspection_c__Dect_message_member_array[3].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Float32MultiArray)();
   if (!Dect__rosidl_typesupport_introspection_c__Dect_message_type_support_handle.typesupport_identifier) {
     Dect__rosidl_typesupport_introspection_c__Dect_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

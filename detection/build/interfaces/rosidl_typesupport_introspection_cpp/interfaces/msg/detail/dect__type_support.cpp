@@ -40,9 +40,9 @@ void Dect_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_member_array[4] = {
   {
     "obj_class",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::String>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -54,14 +54,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "cam_x",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "obj_point",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Float32MultiArray>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, cam_x),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, obj_point),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -69,14 +69,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "cam_y",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "goal_point",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Float32MultiArray>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, cam_y),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, goal_point),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -84,14 +84,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Dect_message_
     nullptr  // resize(index) function pointer
   },
   {
-    "cam_z",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "rotation",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Float32MultiArray>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Dect, cam_z),  // bytes offset in struct
+    offsetof(interfaces::msg::Dect, rotation),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

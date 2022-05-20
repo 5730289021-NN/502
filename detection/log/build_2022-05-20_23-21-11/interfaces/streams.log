@@ -1,0 +1,21 @@
+[0.069s] Invoking command in '/home/amejiyo/GitHub/502/detection/build/interfaces': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16
+[0.349s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.349s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.349s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.349s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.480s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.480s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.481s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.641s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.667s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.667s]   rosidl_generate_interfaces() the passed file 'msg/Dect2.msg' doesn't exist
+[0.668s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.668s]   '/home/amejiyo/GitHub/502/detection/src/interfaces'
+[0.668s] Call Stack (most recent call first):
+[0.669s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[0.669s] 
+[0.669s] 
+[0.670s] -- Configuring incomplete, errors occurred!
+[0.670s] See also "/home/amejiyo/GitHub/502/detection/build/interfaces/CMakeFiles/CMakeOutput.log".
+[0.673s] make: *** [Makefile:988: cmake_check_build_system] Error 1
+[0.676s] Invoked command in '/home/amejiyo/GitHub/502/detection/build/interfaces' returned '2': CMAKE_PREFIX_PATH=/home/amejiyo/GitHub/502/detection/install/yolobot_recognition:/home/amejiyo/GitHub/502/detection/install/yolobot_gazebo:/home/amejiyo/GitHub/502/detection/install/yolobot_description:/home/amejiyo/GitHub/502/detection/install/yolobot_control:/home/amejiyo/GitHub/502/detection/install/yolobot_detection:/opt/ros/foxy:/home/amejiyo/GitHub/502/detection/install/realsense_gazebo_plugin:/home/amejiyo/GitHub/502/detection/install/interfaces /usr/bin/cmake --build /home/amejiyo/GitHub/502/detection/build/interfaces -- -j16 -l16

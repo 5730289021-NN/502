@@ -34,10 +34,36 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // obj_class
-#include "rosidl_runtime_c/string_functions.h"  // obj_class
+#include "std_msgs/msg/detail/float32_multi_array__functions.h"  // goal_point, obj_point, rotation
+#include "std_msgs/msg/detail/string__functions.h"  // obj_class
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
+size_t get_serialized_size_std_msgs__msg__Float32MultiArray(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
+size_t max_serialized_size_std_msgs__msg__Float32MultiArray(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
+size_t get_serialized_size_std_msgs__msg__String(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
+size_t max_serialized_size_std_msgs__msg__String(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, String)();
 
 
 using _Dect__ros_msg_type = interfaces__msg__Dect;
@@ -53,31 +79,58 @@ static bool _Dect__cdr_serialize(
   const _Dect__ros_msg_type * ros_message = static_cast<const _Dect__ros_msg_type *>(untyped_ros_message);
   // Field name: obj_class
   {
-    const rosidl_runtime_c__String * str = &ros_message->obj_class;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, String
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->obj_class, cdr))
+    {
       return false;
     }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
+  }
+
+  // Field name: obj_point
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->obj_point, cdr))
+    {
       return false;
     }
-    cdr << str->data;
   }
 
-  // Field name: cam_x
+  // Field name: goal_point
   {
-    cdr << ros_message->cam_x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->goal_point, cdr))
+    {
+      return false;
+    }
   }
 
-  // Field name: cam_y
+  // Field name: rotation
   {
-    cdr << ros_message->cam_y;
-  }
-
-  // Field name: cam_z
-  {
-    cdr << ros_message->cam_z;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->rotation, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -94,33 +147,58 @@ static bool _Dect__cdr_deserialize(
   _Dect__ros_msg_type * ros_message = static_cast<_Dect__ros_msg_type *>(untyped_ros_message);
   // Field name: obj_class
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->obj_class.data) {
-      rosidl_runtime_c__String__init(&ros_message->obj_class);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->obj_class,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'obj_class'\n");
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, String
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->obj_class))
+    {
       return false;
     }
   }
 
-  // Field name: cam_x
+  // Field name: obj_point
   {
-    cdr >> ros_message->cam_x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->obj_point))
+    {
+      return false;
+    }
   }
 
-  // Field name: cam_y
+  // Field name: goal_point
   {
-    cdr >> ros_message->cam_y;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->goal_point))
+    {
+      return false;
+    }
   }
 
-  // Field name: cam_z
+  // Field name: rotation
   {
-    cdr >> ros_message->cam_z;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->rotation))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -141,27 +219,21 @@ size_t get_serialized_size_interfaces__msg__Dect(
   (void)wchar_size;
 
   // field.name obj_class
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->obj_class.size + 1);
-  // field.name cam_x
-  {
-    size_t item_size = sizeof(ros_message->cam_x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name cam_y
-  {
-    size_t item_size = sizeof(ros_message->cam_y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name cam_z
-  {
-    size_t item_size = sizeof(ros_message->cam_z);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+
+  current_alignment += get_serialized_size_std_msgs__msg__String(
+    &(ros_message->obj_class), current_alignment);
+  // field.name obj_point
+
+  current_alignment += get_serialized_size_std_msgs__msg__Float32MultiArray(
+    &(ros_message->obj_point), current_alignment);
+  // field.name goal_point
+
+  current_alignment += get_serialized_size_std_msgs__msg__Float32MultiArray(
+    &(ros_message->goal_point), current_alignment);
+  // field.name rotation
+
+  current_alignment += get_serialized_size_std_msgs__msg__Float32MultiArray(
+    &(ros_message->rotation), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -190,33 +262,45 @@ size_t max_serialized_size_interfaces__msg__Dect(
   {
     size_t array_size = 1;
 
-    full_bounded = false;
+
     for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__String(
+        full_bounded, current_alignment);
     }
   }
-  // member: cam_x
+  // member: obj_point
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Float32MultiArray(
+        full_bounded, current_alignment);
+    }
   }
-  // member: cam_y
+  // member: goal_point
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Float32MultiArray(
+        full_bounded, current_alignment);
+    }
   }
-  // member: cam_z
+  // member: rotation
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Float32MultiArray(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

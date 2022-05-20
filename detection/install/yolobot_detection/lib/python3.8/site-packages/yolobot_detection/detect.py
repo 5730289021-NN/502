@@ -4,7 +4,8 @@ from turtle import right, shape
 from cv2 import Rodrigues
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image, CompressedImage, PointCloud2
+from sensor_msgs.msg import Image
+from std_msgs.msg import Float32MultiArray,String
 import random
 from cv_bridge import CvBridge, CvBridgeError
 from interfaces.msg import Dect
@@ -29,7 +30,7 @@ k = [[381.36246688113556, 0.0, 320.5],
 class FineDetect(Node):
     def __init__(self):
         super().__init__('camera_subscriber')
-        self.publisher_ = self.create_publisher(Dect, '/detection/yolov5', 10)
+        self.publisher_ = self.create_publisher(Dect, '/detection', 10)
         # self.timer = self.create_timer(timer_period, self.timer_callback)
         self.capture_index = 0
         self.color = self.create_subscription(Image,'rgb_cam/image_raw',self.camera_callback,10)
@@ -62,9 +63,16 @@ class FineDetect(Node):
             if center:
                 return 0.0,0.0,0.0
             else:
-                return (mid_pos[0]-320)*depth/381.36246688113556, (mid_pos[1]-240)*depth/381.36246688113556, float(depth)
+                x,y,z = (mid_pos[0]-k[0][2])*depth/k[0][0], (mid_pos[1]-k[1][2])*depth/k[1][1], float(depth)
+                return x,y,z
         except:
             return 0.0,0.0,0.0
+    
+    def get_rotation(self,coor):
+        try:
+            return [0.0,0.0, math.asin(coor[0]/coor[2])]
+        except:
+            return [0.0, 0.0, 0.0]
 
     def camera_callback_depth(self,data):
         # print(data.fields)
@@ -86,12 +94,16 @@ class FineDetect(Node):
             row = cord[i]
             if row[4] >= 0.3:
                 msg = Dect()
-                # msg.cam_x, msg.cam_y = float((row[0]+row[2])*x_shape/2), float((row[1]+row[3])*y_shape/2)
-                # print(msg.cam_x, msg.cam_y)
-                msg.cam_x, msg.cam_y,msg.cam_z= self.get_mid_pos(row,self.depth_img,24)
-                msg.obj_class = names[int(labels[i])]
+                msg.obj_point = Float32MultiArray()
+                msg.obj_point.data = self.get_mid_pos(row,self.depth_img,24)
+                msg.obj_class = String()
+                msg.obj_class.data = names[int(labels[i])]
+                msg.goal_point = Float32MultiArray()
+                msg.goal_point.data = [0.0, 0.0, 0.0]
+                msg.rotation = Float32MultiArray()
+                msg.rotation.data = self.get_rotation(msg.obj_point.data)
                 self.publisher_.publish(msg)
-                self.get_logger().info(msg.obj_class + ": " + str([msg.cam_x, msg.cam_y,msg.cam_z]))
+                self.get_logger().info(msg.obj_class.data + ": " + str(msg.obj_point.data) + str(msg.rotation.data))
 
 def main(args=None):
     rclpy.init(args=args)

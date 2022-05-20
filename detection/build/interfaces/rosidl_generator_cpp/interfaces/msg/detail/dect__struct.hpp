@@ -14,6 +14,14 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'obj_class'
+#include "std_msgs/msg/detail/string__struct.hpp"
+// Member 'obj_point'
+// Member 'goal_point'
+// Member 'rotation'
+#include "std_msgs/msg/detail/float32_multi_array__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__interfaces__msg__Dect __attribute__((deprecated))
 #else
@@ -33,67 +41,60 @@ struct Dect_
   using Type = Dect_<ContainerAllocator>;
 
   explicit Dect_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : obj_class(_init),
+    obj_point(_init),
+    goal_point(_init),
+    rotation(_init)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->obj_class = "";
-      this->cam_x = 0.0;
-      this->cam_y = 0.0;
-      this->cam_z = 0.0;
-    }
+    (void)_init;
   }
 
   explicit Dect_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : obj_class(_alloc)
+  : obj_class(_alloc, _init),
+    obj_point(_alloc, _init),
+    goal_point(_alloc, _init),
+    rotation(_alloc, _init)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->obj_class = "";
-      this->cam_x = 0.0;
-      this->cam_y = 0.0;
-      this->cam_z = 0.0;
-    }
+    (void)_init;
   }
 
   // field types and members
   using _obj_class_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
+    std_msgs::msg::String_<ContainerAllocator>;
   _obj_class_type obj_class;
-  using _cam_x_type =
-    double;
-  _cam_x_type cam_x;
-  using _cam_y_type =
-    double;
-  _cam_y_type cam_y;
-  using _cam_z_type =
-    double;
-  _cam_z_type cam_z;
+  using _obj_point_type =
+    std_msgs::msg::Float32MultiArray_<ContainerAllocator>;
+  _obj_point_type obj_point;
+  using _goal_point_type =
+    std_msgs::msg::Float32MultiArray_<ContainerAllocator>;
+  _goal_point_type goal_point;
+  using _rotation_type =
+    std_msgs::msg::Float32MultiArray_<ContainerAllocator>;
+  _rotation_type rotation;
 
   // setters for named parameter idiom
   Type & set__obj_class(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+    const std_msgs::msg::String_<ContainerAllocator> & _arg)
   {
     this->obj_class = _arg;
     return *this;
   }
-  Type & set__cam_x(
-    const double & _arg)
+  Type & set__obj_point(
+    const std_msgs::msg::Float32MultiArray_<ContainerAllocator> & _arg)
   {
-    this->cam_x = _arg;
+    this->obj_point = _arg;
     return *this;
   }
-  Type & set__cam_y(
-    const double & _arg)
+  Type & set__goal_point(
+    const std_msgs::msg::Float32MultiArray_<ContainerAllocator> & _arg)
   {
-    this->cam_y = _arg;
+    this->goal_point = _arg;
     return *this;
   }
-  Type & set__cam_z(
-    const double & _arg)
+  Type & set__rotation(
+    const std_msgs::msg::Float32MultiArray_<ContainerAllocator> & _arg)
   {
-    this->cam_z = _arg;
+    this->rotation = _arg;
     return *this;
   }
 
@@ -142,13 +143,13 @@ struct Dect_
     if (this->obj_class != other.obj_class) {
       return false;
     }
-    if (this->cam_x != other.cam_x) {
+    if (this->obj_point != other.obj_point) {
       return false;
     }
-    if (this->cam_y != other.cam_y) {
+    if (this->goal_point != other.goal_point) {
       return false;
     }
-    if (this->cam_z != other.cam_z) {
+    if (this->rotation != other.rotation) {
       return false;
     }
     return true;

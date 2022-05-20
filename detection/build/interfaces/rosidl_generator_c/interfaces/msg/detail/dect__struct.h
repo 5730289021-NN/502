@@ -19,15 +19,19 @@ extern "C"
 
 // Include directives for member types
 // Member 'obj_class'
-#include "rosidl_runtime_c/string.h"
+#include "std_msgs/msg/detail/string__struct.h"
+// Member 'obj_point'
+// Member 'goal_point'
+// Member 'rotation'
+#include "std_msgs/msg/detail/float32_multi_array__struct.h"
 
 // Struct defined in msg/Dect in the package interfaces.
 typedef struct interfaces__msg__Dect
 {
-  rosidl_runtime_c__String obj_class;
-  double cam_x;
-  double cam_y;
-  double cam_z;
+  std_msgs__msg__String obj_class;
+  std_msgs__msg__Float32MultiArray obj_point;
+  std_msgs__msg__Float32MultiArray goal_point;
+  std_msgs__msg__Float32MultiArray rotation;
 } interfaces__msg__Dect;
 
 // Struct for a sequence of interfaces__msg__Dect.

@@ -1,0 +1,9 @@
+CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'msg/Dect2.msg' doesn't exist
+  relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/amejiyo/GitHub/502/detection/src/interfaces'
+Call Stack (most recent call first):
+  CMakeLists.txt:37 (rosidl_generate_interfaces)
+
+
+make: *** [Makefile:988: cmake_check_build_system] Error 1

@@ -20,15 +20,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Dect_cam_z
+class Init_Dect_rotation
 {
 public:
-  explicit Init_Dect_cam_z(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_rotation(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  ::interfaces::msg::Dect cam_z(::interfaces::msg::Dect::_cam_z_type arg)
+  ::interfaces::msg::Dect rotation(::interfaces::msg::Dect::_rotation_type arg)
   {
-    msg_.cam_z = std::move(arg);
+    msg_.rotation = std::move(arg);
     return std::move(msg_);
   }
 
@@ -36,32 +36,32 @@ private:
   ::interfaces::msg::Dect msg_;
 };
 
-class Init_Dect_cam_y
+class Init_Dect_goal_point
 {
 public:
-  explicit Init_Dect_cam_y(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_goal_point(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  Init_Dect_cam_z cam_y(::interfaces::msg::Dect::_cam_y_type arg)
+  Init_Dect_rotation goal_point(::interfaces::msg::Dect::_goal_point_type arg)
   {
-    msg_.cam_y = std::move(arg);
-    return Init_Dect_cam_z(msg_);
+    msg_.goal_point = std::move(arg);
+    return Init_Dect_rotation(msg_);
   }
 
 private:
   ::interfaces::msg::Dect msg_;
 };
 
-class Init_Dect_cam_x
+class Init_Dect_obj_point
 {
 public:
-  explicit Init_Dect_cam_x(::interfaces::msg::Dect & msg)
+  explicit Init_Dect_obj_point(::interfaces::msg::Dect & msg)
   : msg_(msg)
   {}
-  Init_Dect_cam_y cam_x(::interfaces::msg::Dect::_cam_x_type arg)
+  Init_Dect_goal_point obj_point(::interfaces::msg::Dect::_obj_point_type arg)
   {
-    msg_.cam_x = std::move(arg);
-    return Init_Dect_cam_y(msg_);
+    msg_.obj_point = std::move(arg);
+    return Init_Dect_goal_point(msg_);
   }
 
 private:
@@ -74,10 +74,10 @@ public:
   Init_Dect_obj_class()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Dect_cam_x obj_class(::interfaces::msg::Dect::_obj_class_type arg)
+  Init_Dect_obj_point obj_class(::interfaces::msg::Dect::_obj_class_type arg)
   {
     msg_.obj_class = std::move(arg);
-    return Init_Dect_cam_x(msg_);
+    return Init_Dect_obj_point(msg_);
   }
 
 private:

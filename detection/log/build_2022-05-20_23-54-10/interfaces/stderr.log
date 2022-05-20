@@ -1,0 +1,15 @@
+CMake Warning (dev) at CMakeLists.txt:39:
+  Syntax Warning in cmake code at column 17
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+  the CMAKE_CURRENT_SOURCE_DIR
+  '/home/amejiyo/GitHub/502/detection/src/interfaces'
+Call Stack (most recent call first):
+  CMakeLists.txt:38 (rosidl_generate_interfaces)
+
+
+make: *** [Makefile:748: cmake_check_build_system] Error 1

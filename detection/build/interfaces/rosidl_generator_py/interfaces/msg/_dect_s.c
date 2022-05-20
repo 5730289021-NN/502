@@ -16,9 +16,22 @@
 #include "interfaces/msg/detail/dect__struct.h"
 #include "interfaces/msg/detail/dect__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__string__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__string__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__float32_multi_array__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__float32_multi_array__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__float32_multi_array__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__float32_multi_array__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__float32_multi_array__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__float32_multi_array__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool interfaces__msg__dect__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -58,41 +71,43 @@ bool interfaces__msg__dect__convert_from_py(PyObject * _pymsg, void * _ros_messa
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
+    if (!std_msgs__msg__string__convert_from_py(field, &ros_message->obj_class)) {
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->obj_class, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // cam_x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "cam_x");
+  {  // obj_point
+    PyObject * field = PyObject_GetAttrString(_pymsg, "obj_point");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->cam_x = PyFloat_AS_DOUBLE(field);
+    if (!std_msgs__msg__float32_multi_array__convert_from_py(field, &ros_message->obj_point)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
-  {  // cam_y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "cam_y");
+  {  // goal_point
+    PyObject * field = PyObject_GetAttrString(_pymsg, "goal_point");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->cam_y = PyFloat_AS_DOUBLE(field);
+    if (!std_msgs__msg__float32_multi_array__convert_from_py(field, &ros_message->goal_point)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
-  {  // cam_z
-    PyObject * field = PyObject_GetAttrString(_pymsg, "cam_z");
+  {  // rotation
+    PyObject * field = PyObject_GetAttrString(_pymsg, "rotation");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->cam_z = PyFloat_AS_DOUBLE(field);
+    if (!std_msgs__msg__float32_multi_array__convert_from_py(field, &ros_message->rotation)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
 
@@ -119,10 +134,7 @@ PyObject * interfaces__msg__dect__convert_to_py(void * raw_ros_message)
   interfaces__msg__Dect * ros_message = (interfaces__msg__Dect *)raw_ros_message;
   {  // obj_class
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->obj_class.data,
-      strlen(ros_message->obj_class.data),
-      "strict");
+    field = std_msgs__msg__string__convert_to_py(&ros_message->obj_class);
     if (!field) {
       return NULL;
     }
@@ -134,33 +146,42 @@ PyObject * interfaces__msg__dect__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // cam_x
+  {  // obj_point
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->cam_x);
+    field = std_msgs__msg__float32_multi_array__convert_to_py(&ros_message->obj_point);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "cam_x", field);
+      int rc = PyObject_SetAttrString(_pymessage, "obj_point", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // cam_y
+  {  // goal_point
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->cam_y);
+    field = std_msgs__msg__float32_multi_array__convert_to_py(&ros_message->goal_point);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "cam_y", field);
+      int rc = PyObject_SetAttrString(_pymessage, "goal_point", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // cam_z
+  {  // rotation
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->cam_z);
+    field = std_msgs__msg__float32_multi_array__convert_to_py(&ros_message->rotation);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "cam_z", field);
+      int rc = PyObject_SetAttrString(_pymessage, "rotation", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

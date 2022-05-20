@@ -11,7 +11,11 @@
 
 // Include directives for member types
 // Member `obj_class`
-#include "rosidl_runtime_c/string_functions.h"
+#include "std_msgs/msg/detail/string__functions.h"
+// Member `obj_point`
+// Member `goal_point`
+// Member `rotation`
+#include "std_msgs/msg/detail/float32_multi_array__functions.h"
 
 bool
 interfaces__msg__Dect__init(interfaces__msg__Dect * msg)
@@ -20,13 +24,25 @@ interfaces__msg__Dect__init(interfaces__msg__Dect * msg)
     return false;
   }
   // obj_class
-  if (!rosidl_runtime_c__String__init(&msg->obj_class)) {
+  if (!std_msgs__msg__String__init(&msg->obj_class)) {
     interfaces__msg__Dect__fini(msg);
     return false;
   }
-  // cam_x
-  // cam_y
-  // cam_z
+  // obj_point
+  if (!std_msgs__msg__Float32MultiArray__init(&msg->obj_point)) {
+    interfaces__msg__Dect__fini(msg);
+    return false;
+  }
+  // goal_point
+  if (!std_msgs__msg__Float32MultiArray__init(&msg->goal_point)) {
+    interfaces__msg__Dect__fini(msg);
+    return false;
+  }
+  // rotation
+  if (!std_msgs__msg__Float32MultiArray__init(&msg->rotation)) {
+    interfaces__msg__Dect__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -37,10 +53,13 @@ interfaces__msg__Dect__fini(interfaces__msg__Dect * msg)
     return;
   }
   // obj_class
-  rosidl_runtime_c__String__fini(&msg->obj_class);
-  // cam_x
-  // cam_y
-  // cam_z
+  std_msgs__msg__String__fini(&msg->obj_class);
+  // obj_point
+  std_msgs__msg__Float32MultiArray__fini(&msg->obj_point);
+  // goal_point
+  std_msgs__msg__Float32MultiArray__fini(&msg->goal_point);
+  // rotation
+  std_msgs__msg__Float32MultiArray__fini(&msg->rotation);
 }
 
 interfaces__msg__Dect *

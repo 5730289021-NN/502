@@ -55,9 +55,7 @@
 /home/amejiyo/GitHub/502/detection/install/interfaces/lib/python3.8/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
 /home/amejiyo/GitHub/502/detection/install/interfaces/lib/libinterfaces__python.so
 /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect.idl
-/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect2.idl
 /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect.msg
-/home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/msg/Dect2.msg
 /home/amejiyo/GitHub/502/detection/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
 /home/amejiyo/GitHub/502/detection/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
 /home/amejiyo/GitHub/502/detection/install/interfaces/share/interfaces/environment/ament_prefix_path.sh

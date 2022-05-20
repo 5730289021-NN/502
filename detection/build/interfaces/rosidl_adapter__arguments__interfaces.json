@@ -1,7 +1,6 @@
 {
   "package_name": "interfaces",
   "non_idl_tuples": [
-    "/home/amejiyo/GitHub/502/detection/src/interfaces:msg/Dect.msg",
-    "/home/amejiyo/GitHub/502/detection/src/interfaces:msg/Dect2.msg"
+    "/home/amejiyo/GitHub/502/detection/src/interfaces:msg/Dect.msg"
   ]
 }
