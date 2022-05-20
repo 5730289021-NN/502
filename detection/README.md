@@ -15,7 +15,7 @@ Cloning respository
 ```
 
 Adding gazebo model into your gazebo Workspace
-```http
+```
   cp -R ~/usr/GitHub/502/detection/gazebo_model/* ~/.gazebo/models/
 ```
 
