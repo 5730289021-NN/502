@@ -30,11 +30,10 @@ Adding gazebo model into your gazebo Workspace
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `msg/obj_point` | `float32 array` | **camera frame** object 3D point |
-| `msg/rotation` | `float32 array` | **camera frame** object 3D rotation |
-| `msg/goal_point` | `float32 array` | **camera frame** goal 3D point |
-| `msg/obj_class` | `string` | object class name |
-
+| `detection/obj_point` | `float32 array` | **camera frame** object 3D point |
+| `detection/rotation` | `float32 array` | **camera frame** object 3D rotation |
+| `detection/goal_point` | `float32 array` | **camera frame** goal 3D point |
+| `detection/obj_class` | `string` | object class name |detection
 **Camera frame: x (wide), y (high), z (depth)**
 
 launch world
