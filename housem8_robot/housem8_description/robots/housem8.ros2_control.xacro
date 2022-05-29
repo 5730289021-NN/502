@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+          <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+
+        <xacro:macro name="configure_joint" params="joint_name initial_position">
+          <joint name="${joint_name}">
+            <param name="initial_position">${initial_position}</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+          </joint>
+        </xacro:macro>
+        
+        <xacro:configure_joint joint_name="Mani_J0" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="Mani_J6" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="Mani_J1" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="Mani_J2" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="Mani_J3" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="Mani_J4" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="Mani_J5" initial_position="0.0"/>
+        
+        <!-- <xacro:configure_joint joint_name="wheel_left_joint" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="wheel_right_joint" initial_position="0.0"/> -->
+
+        <!-- <joint name="wheel_left_joint">
+          <command_interface name="velocity">
+          </command_interface>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </joint>
+        <joint name="wheel_right_joint">
+          <command_interface name="velocity">
+          </command_interface>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </joint> -->
+
+      </ros2_control>
+
+      
+    <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <parameters>$(find housem8)/config/housem8_ros_controllers.yaml</parameters>
+      </plugin>
+    </gazebo>
+
+    
+</robot>

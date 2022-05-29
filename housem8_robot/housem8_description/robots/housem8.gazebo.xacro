@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
+    <xacro:macro name="housem8_gazebo">
+        <xacro:macro name="arm_gazebo">
+            <gazebo reference="${link}">
+                <material>Gazebo/Black</material>
+                <kp>1000000.0</kp>
+                <kd>10.0</kd>
+                <mu1>0.8</mu1>
+                <mu2>0.8</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+            </gazebo>
+        </xacro:macro>
+
+        <xacro:macro name="hand_gazebo">
+            <gazebo reference="${link}">
+                <material>Gazebo/Grey</material>
+                <mu1>0.2</mu1>
+                <mu2>0.2</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+            </gazebo>
+        </xacro:macro>
+
+        <xacro:macro name="base">
+            <gazebo reference="${link}">
+                <material>Gazebo/Red</material>
+                <kp>1000000.0</kp>
+                <kd>10.0</kd>
+                <mu1>0.0</mu1>
+                <mu2>0.0</mu2>
+            </gazebo>
+        </xacro:macro>
+        
+        <xacro:macro name="wheel">
+            <gazebo reference="${link}">
+                <mu1>100000.0</mu1>
+                <mu2>100000.0</mu2>
+                <minDepth>0.01</minDepth>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+                <material>Gazebo/Blue</material>
+            </gazebo>
+        </xacro:macro>
+
+        <xacro:base link="mobilebaseI"/>
+        <xacro:base link="mobilebaseII"/>
+        <xacro:wheel link="Wheel_Right"/>
+        <xacro:wheel link="Wheel_Left"/>
+        <xacro:wheel link="wheel_left_joint"/>
+        <xacro:wheel link="wheel_right_joint"/>
+        <xacro:base link="CasterCase_Left"/>
+        <!-- <xacro:base link="CasterWheel_Left"/> -->
+        <xacro:base link="CasterCase_Right"/>
+        <!-- <xacro:base link="CasterWheel_Right"/> -->
+        <xacro:base link="mobilebaseIII"/>
+        <xacro:base link="mobilebaseIV"/>
+        <xacro:base link="Lidar_Front"/>
+        <xacro:base link="Lidar_Back"/>
+        <xacro:base link="Torsol"/>
+
+        <xacro:hand_gazebo link="FingerLeft"/>
+        <xacro:hand_gazebo link="FingerRight"/>
+        <xacro:hand_gazebo link="HandCamera"/>
+
+        <xacro:arm_gazebo link="LinearJoint"/>
+        <xacro:arm_gazebo link="Revlink1"/>
+        <xacro:arm_gazebo link="Revlink2"/>
+        <xacro:arm_gazebo link="Revlink3"/>
+        <xacro:arm_gazebo link="Revlink4"/>
+        <xacro:arm_gazebo link="Revlink5"/>
+        <xacro:arm_gazebo link="Hand"/>
+    </xacro:macro>
+
+
+    <!-- Body Camera -->
+    <gazebo reference="rgb_cam_camera_link_frame">
+        <sensor type="depth" name="rgb_cam">
+        <always_on>1</always_on>
+        <update_rate>10.0</update_rate>
+        <camera name="camera">
+            <pose>0 0 0 0 0 0</pose>
+            <horizontal_fov>1.3962634</horizontal_fov>
+            <image>
+                <width>640</width>
+                <height>480</height>
+                <format>R8G8B8</format>
+            </image>
+            <clip>
+                <near>0.005</near>
+                <far>10.0</far>
+            </clip>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+            <baseline>0.2</baseline>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>1.0</updateRate>
+            <cameraName>/housem8/body_cam</cameraName>
+            <imageTopicName>color/image_raw</imageTopicName>
+            <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+            <frameName>rgb_cam_camera_link_frame</frameName>
+            <hackBaseline>0.07</hackBaseline>
+        </plugin>
+        </sensor>
+    </gazebo>
+
+    <!-- Hand Camera -->
+    <gazebo reference="rgb_hand_cam_camera_link_frame">
+        <sensor type="depth" name="rgb_hand_cam">
+        <always_on>1</always_on>
+        <update_rate>10.0</update_rate>
+        <camera name="camera">
+            <pose>0 0 0 0 0 0</pose>
+            <horizontal_fov>1.3962634</horizontal_fov>
+            <image>
+                <width>640</width>
+                <height>480</height>
+                <format>R8G8B8</format>
+            </image>
+            <clip>
+                <near>0.005</near>
+                <far>10.0</far>
+            </clip>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+            <baseline>0.2</baseline>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>1.0</updateRate>
+            <cameraName>/housem8/hand_cam</cameraName>
+            <imageTopicName>color/image_raw</imageTopicName>
+            <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+            <frameName>rgb_hand_cam_camera_link_frame</frameName>
+            <hackBaseline>0.07</hackBaseline>
+        </plugin>
+        </sensor>
+    </gazebo>
+
+    <!-- imu -->
+	<!-- <gazebo reference="imu_link">
+        <gravity>true</gravity>
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>10</update_rate>
+            <visualize>true</visualize>
+            <topic>__default_topic__</topic>
+         <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+             <ros>
+                 <namespace>/housem8</namespace>
+                 <remapping>~/out:=imu</remapping>
+               </ros>
+         <topicName>imu</topicName>
+         <bodyName>imu_link</bodyName>
+         <updateRateHZ>10.0</updateRateHZ>
+         <gaussianNoise>0.0</gaussianNoise>
+         <xyzOffset>0 0 0</xyzOffset>
+         <rpyOffset>0 0 0</rpyOffset>
+         <frameName>imu_link</frameName>
+         <initialOrientationAsReference>false</initialOrientationAsReference>
+          </plugin>
+             <pose>0 0 0 0 0 0</pose>
+         </sensor>
+       </gazebo> -->
+
+    <!-- diff_drive -->
+  	<gazebo>
+        <plugin name='diff_drive' filename="libgazebo_ros_diff_drive.so">
+         <updateRate>10</updateRate>
+          <left_joint>wheel_left_joint</left_joint>
+          <right_joint>wheel_right_joint</right_joint>
+          <wheel_separation>0.380</wheel_separation>
+          <wheel_diameter>0.200</wheel_diameter>
+          <max_wheel_torque>15.0</max_wheel_torque>
+          <max_wheel_acceleration>5.0</max_wheel_acceleration>
+          <commandTopic>/housem8/cmd_vel</commandTopic>
+          <publish_odom>true</publish_odom>
+          <publish_odom_tf>true</publish_odom_tf>
+          <publish_wheel_tf>true</publish_wheel_tf>
+          <odometry_frame>odom</odometry_frame>
+          <robot_base_frame>base_footprint</robot_base_frame>
+
+        </plugin>
+      </gazebo>
+
+      
+      <!-- hokuyo laser-->
+	<gazebo reference="Lidar_Front">
+            <sensor type="ray" name="head_hokuyo_sensor">
+                <pose>0 0 0 0 0 0</pose>
+                <visualize>True</visualize>
+                <always_on>true</always_on>
+                <update_rate>40</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>720</samples>
+                            <resolution>1</resolution>
+                            <min_angle>-1.570796</min_angle>
+                            <max_angle>1.570796</max_angle>
+                        </horizontal>
+                    </scan>
+                    <range>
+                        <min>0.10</min>
+                        <max>10.0</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="lidar_controller" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <remapping>~/out:=scan/front</remapping>
+                      </ros>
+                    <output_type>sensor_msgs/LaserScan</output_type>
+                </plugin>
+            </sensor>
+            </gazebo>
+  
+    <!-- hokuyo laser-->
+    <gazebo reference="Lidar_Back">
+        <sensor type="ray" name="head_hokuyo_sensor2">
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>True</visualize>
+            <always_on>true</always_on>
+            <update_rate>40</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>720</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-1.570796</min_angle>
+                        <max_angle>1.570796</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.10</min>
+                    <max>10.0</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name="lidar_controller" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <remapping>~/out:=scan/back</remapping>
+                  </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+            </plugin>
+        </sensor>
+        </gazebo>
+
+
+</robot>
