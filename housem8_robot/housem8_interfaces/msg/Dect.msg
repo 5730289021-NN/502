@@ -1,0 +1,4 @@
+std_msgs/String obj_class
+std_msgs/Float32MultiArray obj_point
+std_msgs/Float32MultiArray goal_point
+std_msgs/Float32MultiArray rotation
