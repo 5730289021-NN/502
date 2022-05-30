@@ -32,7 +32,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 install(DIRECTORY
-  launch model
+  launch model world
   DESTINATION share/${PROJECT_NAME}/
 )
 
