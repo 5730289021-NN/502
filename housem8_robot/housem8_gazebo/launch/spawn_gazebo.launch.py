@@ -22,6 +22,15 @@ def generate_launch_description():
     # gazebo = ExecuteProcess(
     #         cmd=['gazebo', '--verbose', world, '-s', 'libgazebo_ros_init.so'],
     #         output='screen'),
+    
+    ###
+    world_file_name = 'house.sdf'
+    world = os.path.join(get_package_share_directory('housem8_gazebo'), 'world', world_file_name)
+
+    gazebo = ExecuteProcess(cmd=['gazebo', '--verbose', world, '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so'],output='screen')
+    ###
+    
+    
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
 
     xacro_file = "housem8.urdf.xacro"
