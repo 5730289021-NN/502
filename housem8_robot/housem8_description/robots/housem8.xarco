@@ -475,7 +475,7 @@
             <geometry name = "Camera">
                 <box size="0.03 0.08 0.03"/>
             </geometry>
-            <material name="black"></material>
+            <!--<material name="black"></material>-->
         </visual>
         <collision>
             <geometry name = "Camera">
@@ -489,7 +489,7 @@
         <parent link="mobilebaseIV"/>
         <child link="TorsolCamera"/>
         <axis xyz="0.0 1.0 0.0"/>
-        <limit effort="1000.0" lower="-1.ค" upper="1.8" velocity="0.5"/>
+        <limit effort="1000.0" lower="-1.8" upper="1.8" velocity="0.5"/>
     </joint>
 
 
