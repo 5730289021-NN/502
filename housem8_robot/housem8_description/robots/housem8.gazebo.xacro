@@ -212,7 +212,7 @@
                 </ray>
                 <plugin name="lidar_controller" filename="libgazebo_ros_ray_sensor.so">
                     <ros>
-                        <remapping>~/out:=scan/front</remapping>
+                        <remapping>~/out:=/housem8/scan/front</remapping>
                       </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
                 </plugin>
@@ -248,7 +248,7 @@
             </ray>
             <plugin name="lidar_controller" filename="libgazebo_ros_ray_sensor.so">
                 <ros>
-                    <remapping>~/out:=scan/back</remapping>
+                    <remapping>~/out:=/housem8/scan/back</remapping>
                   </ros>
                 <output_type>sensor_msgs/LaserScan</output_type>
             </plugin>
