@@ -1,0 +1,20 @@
+controller_list:
+  - name: arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - LinJ
+      - RevJ1
+      - RevJ2
+      - RevJ3
+      - RevJ4
+      - RevJ5
+      - HandGripper
+  - name: gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - FingerL
+      - FingerR
