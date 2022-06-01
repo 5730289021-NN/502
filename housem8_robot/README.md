@@ -21,7 +21,6 @@ Cloning respository
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-
 | `/housem8/body_cam/image_raw` | `sensor_msgs/Image.msg` | **Body Camera** RGB Camera Array |
 | `/housem8/body_cam/depth/image_raw` | `sensor_msgs/Range.msg` | **Body Camera** Depth Sensor Array |
 | `/housem8/hand_cam/image_raw` | `sensor_msgs/Image.msg` | **Hand Camera** RGB Camera Array |
@@ -29,7 +28,6 @@ Cloning respository
 | `/housem8/scan/front` | `sensor_msgs/LaserScan.msg` | **Front Lidar** Houkyo Lidar Laserscan |
 | `/housem8/scan/back` | `sensor_msgs/LaserScan.msg` | **Hand Camera** Houkyo Lidar Laserscan |
 | `/housem8/imu` | `sensor_msgs/Imu.msg` | **Hand Camera** Houkyo Lidar Laserscan |
-
 | `/housem8/odom` | `nav_msgs/Odometry.msg` | **Hand Camera** Odometry of Housem8 Robot |
 
 ### Action (Server)
