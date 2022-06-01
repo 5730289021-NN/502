@@ -37,7 +37,6 @@ install(DIRECTORY
   launch
   map
   param
-  scripts
   
   DESTINATION share/${PROJECT_NAME}/
 )
