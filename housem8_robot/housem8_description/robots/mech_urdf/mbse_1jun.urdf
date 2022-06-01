@@ -29,9 +29,9 @@
 
     <link name="mobilebaseII">
         <visual name="mobilebaseII">
+            <origin xyz="0.0 0.0 0.00" rpy="0.0 0.0 0.0"/>
             <geometry name = "mobilebaseII">
                 <box size="0.270 0.400 0.100"/>
-                <origin xyz="0.0 0.0 0.00" rpy="0.0 0.0 0.0"/>
             </geometry>
             <material name="white">
             </material>
