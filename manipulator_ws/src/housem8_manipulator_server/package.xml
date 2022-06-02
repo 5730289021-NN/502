@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>house8_manipulator_server</name>
+  <name>housem8_manipulator_server</name>
   <version>0.0.0</version>
-  <description>The house8_manipulator_server package</description>
+  <description>The housem8_manipulator_server package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
@@ -19,7 +19,7 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/house8_manipulator_server</url> -->
+  <!-- <url type="website">http://wiki.ros.org/housem8_manipulator_server</url> -->
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
@@ -53,6 +53,8 @@
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>std_srvs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
   <build_export_depend>control_msgs</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
@@ -61,6 +63,7 @@
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>std_srvs</exec_depend>
+  <depend>moveit_ros_planning_interface</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

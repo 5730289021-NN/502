@@ -11,7 +11,6 @@ Assumption:
  - The location of the object is known from "gazebo/model_states" topics with the name that sent from user
     - This in the future should be changed to one that provided from core module.
  - This action server will return false if object_name is not found.
- - This 
 */
 
 std::map<std::string, geometry_msgs::Pose> obj_map;
