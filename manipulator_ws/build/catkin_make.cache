@@ -1,0 +1,2 @@
+housem8_moveit_config
+-DCATKIN_DEVEL_PREFIX=/home/oak/502/manipulator_ws/devel -DCMAKE_INSTALL_PREFIX=/home/oak/502/manipulator_ws/install -G Unix Makefiles
