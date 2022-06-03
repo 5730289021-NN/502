@@ -21,9 +21,10 @@ void target_obj_cb(const geometry_msgs::Pose::ConstPtr &msg) {
     target_pose = *msg;
 }
 
-void prefer_direction_cb(const std_msgs::Int8 &msg) {
-    if(msg.data >= 0 && msg.data < UNDEFINED) {
-        gd = (GraspingDirection) msg.data;
+void preferred_dir_cb(const std_msgs::Int8::ConstPtr &msg) {
+    if(msg->data >= 0 && msg->data < UNDEFINED) {
+        gd = (GraspingDirection) msg->data;
+        ROS_INFO("Direction set to type %d", (int) gd);
     }
 }
 
@@ -42,7 +43,7 @@ bool plan_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &r
 
         case FRONT:
         {
-            q_rot = tf2::Quaternion(-0.5, -0.5, 0.5, -0.5);
+            q_rot = tf2::Quaternion(0.5, -0.5, -0.5, 0.5);
             q_ee = q_rot * q_obj;
             break;
         }
@@ -130,6 +131,7 @@ int main(int argc, char **argv) {
     gripper_move_group_interface = new moveit::planning_interface::MoveGroupInterface("gripper");
 
     ros::Subscriber target_object_sub = nh.subscribe<geometry_msgs::Pose>("/target_object", 1, target_obj_cb);
+    ros::Subscriber preferred_dir_sub = nh.subscribe<std_msgs::Int8>("/preferred_direction", 1, preferred_dir_cb);
     ros::ServiceServer plan_arm_srv = nh.advertiseService("/plan_arm", plan_arm_cb);
     ros::ServiceServer execute_arm_srv = nh.advertiseService("/execute_arm", execute_arm_cb);
     ros::ServiceServer close_gripper_srv = nh.advertiseService("/close_gripper", close_gripper_cb);
