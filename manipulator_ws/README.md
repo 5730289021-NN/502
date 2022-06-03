@@ -18,15 +18,15 @@ Ubuntu 20.04 with ROS Noetic
 A node that communicates with planner interface directly with move_group C++ API.
 
 ### Advertising Services
-1. `/plan_arm` (std_srvs/Trigger) [Partially]
+1. `/plan_arm` (std_srvs/Trigger) [Passed]
 2. `/execute_arm` (std_srvs/Trigger) [Passed]
 3. `/close_gripper` (std_srvs/Trigger) [Passed]
 4. `/open_gripper` (std_srvs/Trigger) [Passed]
 
 ### Subscribing Topics
 1. `/target_object` (geometry_msgs/Pose) [Passed]
-2. `/preferred_direction` (std_msgs/Int8) [Untested]
-3. `/camera` [Test REQUIRED]****
+2. `/preferred_direction` (std_msgs/Int8) [Passed]
+3. `/camera` [*WIP*]
 
 ### Action API
 1. `/arm_controller/follow_joint_trajectory` [Passed]
@@ -34,15 +34,15 @@ A node that communicates with planner interface directly with move_group C++ API
 
 ### Grasping Direction
 (quaternions in (x,y,z,w) convention)
-1. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
-2. UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
-3. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
+- Preferred Direction 0: UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Passed]
+- Preferred Direction 1. FRONT --- q_ee = (0.5, -0.5, -0.5, 0.5) * q_obj; [Passed]
+- Preferred Direction 2. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
 
 ## housem8_manipulator_server_node Test Procedure
 1. `rosservice call /open_gripper "{}"`
 2. `rosservice call /close_gripper "{}"`
 3. `rostopic pub /target_object geometry_msgs/Pose "position:
-  x: -0.0
+  x: -0.5
   y: 0.0
   z: 0.5
 orientation:
@@ -50,6 +50,6 @@ orientation:
   y: 0.0
   z: 0.0
   w: 1.0"`
-  Orientation could be anything, but position may require adjustment.
-4. `rosservice call /plan_arm "{}"`
-5. `rosservice call /execute_arm "{}"`
+4. `rostopic pub /preferred_direction std_msgs/Int8 "data: 2"` ...Check on Grasping Direction
+5. `rosservice call /plan_arm "{}"`
+6. `rosservice call /execute_arm "{}"`
