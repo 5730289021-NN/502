@@ -3,8 +3,10 @@
 ## Tested Environment
 Ubuntu 20.04 with ROS Noetic
 
-## Build
-`catkin build`
+## Build & Source
+1. `cd 502/manipulator_ws`
+2. `catkin build`
+3. `source ~/502/manipulator_ws/setup.bash`
 
 ## Running Standalone
 1. [Terminal A] Launch simulation with `roslaunch housem8_moveit_config gazebo.launch`
