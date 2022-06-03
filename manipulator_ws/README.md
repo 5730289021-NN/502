@@ -25,7 +25,7 @@ A node that communicates with planner interface directly with move_group C++ API
 
 ### Subscribing Topics
 1. `/target_object` (geometry_msgs/Pose) [Passed]
-2. `/preferred_direction` (std_msgs/Int8) [Untested]
+2. `/preferred_direction` (std_msgs/Int8) [Passed]
 3. `/camera` [Test REQUIRED]****
 
 ### Action API
@@ -34,10 +34,9 @@ A node that communicates with planner interface directly with move_group C++ API
 
 ### Grasping Direction
 (quaternions in (x,y,z,w) convention)
-Preferred Direction 0: UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
-Preferred Direction 1. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
-Preferred Direction 2. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
-
+- Preferred Direction 0: UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
+- Preferred Direction 1. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
+- Preferred Direction 2. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
 
 ## housem8_manipulator_server_node Test Procedure
 1. `rosservice call /open_gripper "{}"`
@@ -52,6 +51,6 @@ orientation:
   z: 0.0
   w: 1.0"`
   Orientation could be anything, but position may require adjustment.
-4. `rostopic pub 
+4. `rostopic pub /preferred_direction std_msgs/Int8 "data: 2" ...Check on Grasping Direction
 5. `rosservice call /plan_arm "{}"`
 6. `rosservice call /execute_arm "{}"`
