@@ -14,6 +14,10 @@ controller_list:
     joints:
       - FingerL
       - FingerR
+  - name: fake_torso_cam_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - BodyCam
 initial:  # Define initial robot poses per group
   - group: arm
     pose: hello

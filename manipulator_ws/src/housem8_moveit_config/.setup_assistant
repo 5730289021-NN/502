@@ -8,4 +8,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: kitti
     author_email: kitti@gmail.com
-    generated_timestamp: 1654153414
+    generated_timestamp: 1654272935

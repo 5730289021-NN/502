@@ -13,8 +13,8 @@ moveit::planning_interface::MoveGroupInterface *arm_move_group_interface;
 moveit::planning_interface::MoveGroupInterface *gripper_move_group_interface;
 moveit::planning_interface::MoveGroupInterface::Plan arm_plan;
 
-enum GraspingDirection { UP, FRONT, UNDEFINED };
-GraspingDirection gd = UP;
+enum GraspingDirection { UP_FIXED, UP, FRONT, UNDEFINED };
+GraspingDirection gd = UP_FIXED;
 geometry_msgs::Pose target_pose;
 
 void target_obj_cb(const geometry_msgs::Pose::ConstPtr &msg) {
@@ -33,9 +33,19 @@ bool plan_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &r
     tf2::fromMsg(target_pose.orientation, q_obj);
     switch(gd)
     {
+        case UP_FIXED:
+        {
+            q_ee.setX(0);
+            q_ee.setY(-0.7071068);
+            q_ee.setZ(0);
+            q_ee.setW(0.7071068);
+            break;
+        }
+
         case FRONT:
         {
             q_rot = tf2::Quaternion(-0.5, -0.5, 0.5, -0.5);
+            q_ee = q_rot * q_obj;
             break;
         }
                 
@@ -43,13 +53,21 @@ bool plan_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &r
         default:
         {
             q_rot = tf2::Quaternion(-0.7071068, 0.7071068, 0, 0);
+            q_ee = q_rot * q_obj;
             break;
         }
     }
-    q_ee = q_rot * q_obj;
+    ;
     target_pose.orientation = tf2::toMsg(q_ee);
     arm_move_group_interface->setPoseTarget(target_pose);
-    ROS_INFO("Planning...");
+    ROS_INFO("Planning... to (x,y,z | x,y,z,w) %f, %f, %f | %f, %f, %f, %f", 
+            target_pose.position.x,
+            target_pose.position.y,
+            target_pose.position.z,
+            q_ee.getX(),
+            q_ee.getY(),
+            q_ee.getZ(),
+            q_ee.getW());
     if(arm_move_group_interface->plan(arm_plan) == moveit::core::MoveItErrorCode::SUCCESS) {
         res.success = true;
         res.message = "Planning type " + std::to_string((int) gd) + " successful.";
@@ -77,7 +95,8 @@ bool execute_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response
 }
 
 bool open_gripper_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &res) {
-    if(gripper_move_group_interface->setNamedTarget("open")) {
+    gripper_move_group_interface->setJointValueTarget(gripper_move_group_interface->getNamedTargetValues("open"));
+    if(gripper_move_group_interface->move() == moveit::core::MoveItErrorCode::SUCCESS) {
         res.success = true;
         res.message = "Gripper open successful.";
         ROS_INFO_STREAM("Gripper open successful.");
@@ -90,7 +109,8 @@ bool open_gripper_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Respons
 }
 
 bool close_gripper_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &res) {
-    if(gripper_move_group_interface->setNamedTarget("close")) {
+    gripper_move_group_interface->setJointValueTarget(gripper_move_group_interface->getNamedTargetValues("close"));
+    if(gripper_move_group_interface->move() == moveit::core::MoveItErrorCode::SUCCESS) {
         res.success = true;
         res.message = "Gripper close successful.";
         ROS_INFO_STREAM("Gripper close successful.");
@@ -117,5 +137,18 @@ int main(int argc, char **argv) {
 
     ros::AsyncSpinner spinner(0); // use a thread for each CPU core.
     spinner.start();
-    ros::waitForShutdown();
+    ros::Rate r(0.5);
+    while(ros::ok()){
+        geometry_msgs::PoseStamped current_pose = arm_move_group_interface->getCurrentPose();
+        ROS_INFO("Current EE Pose: %f, %f, %f | %f, %f, %f, %f", 
+            current_pose.pose.position.x,
+            current_pose.pose.position.y,
+            current_pose.pose.position.z,
+            current_pose.pose.orientation.x,
+            current_pose.pose.orientation.y,
+            current_pose.pose.orientation.z,
+            current_pose.pose.orientation.w
+        );
+        r.sleep();
+    }
 }
