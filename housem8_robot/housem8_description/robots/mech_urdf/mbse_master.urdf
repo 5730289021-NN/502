@@ -281,7 +281,7 @@
         </collision>
     </link>
     <joint name="LidarF" type="fixed">
-        <origin xyz="-0.178 0.150 0.075" rpy="0.0 0.0 0.0" />
+        <origin xyz="-0.178 0.150 0.075" rpy="0.0 0.0 3.15159" />
         <parent link="mobilebaseIII" />
         <child link="Lidar_Front" />
         <axis xyz="1.0 0.0 0.0" />
@@ -359,7 +359,7 @@
         </collision>
     </link>
     <joint name="BodyCam" type="revolute">
-        <origin xyz="-0.05 0.182 0.85" rpy="0.0 0.0 0.0" />
+        <origin xyz="-0.05 0.182 0.85" rpy="0.0 0.0 3.15159" />
         <parent link="Torsol" />
         <child link="TorsolCamera" />
         <axis xyz="0.0 1.0 0.0" />
