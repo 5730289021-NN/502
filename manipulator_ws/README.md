@@ -35,7 +35,7 @@ A node that communicates with planner interface directly with move_group C++ API
 ### Grasping Direction
 (quaternions in (x,y,z,w) convention)
 - Preferred Direction 0: UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Passed]
-- Preferred Direction 1. FRONT --- q_ee = (0.5, -0.5, -0.5, 0.5) * q_obj; [Passed]
+- Preferred Direction 1. FRONT --- q_ee = (-0.5, -0.5, 0.5, 0.5) * q_obj; [Passed]
 - Preferred Direction 2. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
 
 ## housem8_manipulator_server_node Test Procedure
