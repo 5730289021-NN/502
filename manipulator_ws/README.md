@@ -49,8 +49,7 @@ orientation:
   x: 0.0
   y: 0.0
   z: 0.0
-  w: 1.0"`
-  Orientation could be anything, but position may require adjustment.
+  w: 1.0" `Orientation could be anything, but position may require adjustment.
 4. `rostopic pub /preferred_direction std_msgs/Int8 "data: 2" ...Check on Grasping Direction
 5. `rosservice call /plan_arm "{}"`
 6. `rosservice call /execute_arm "{}"`
