@@ -611,22 +611,14 @@
         <axis xyz="0.0 1.0 0.0" />
         <limit effort="1000.0" lower="-0.04" upper="0.025" velocity="0.5" />
     </joint>
-    <link name="FingerMiddle">
-        <visual>
-            <origin xyz="-0.080 0.0 0.0" rpy="0.0 0.0 0.0" />
-            <geometry name="FingerR">
-                <box size="0.160 0.040 0.080" />
-            </geometry>
-            <material name="Blue" />
-        </visual>
-    </link>
-    <joint name="FingerM" type="fixed">
-        <origin xyz="-0.0 0.00 0.1" rpy="0.0 1.57 0.0" />
+    
+    <link name="TipPoint"/>
+    <joint name="FixedTipJoint" type="fixed">
+        <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0" />
         <parent link="Hand" />
-        <child link="FingerMiddle" />
-        <axis xyz="0.0 1.0 0.0" />
-        <limit effort="1000.0" lower="-0.1" upper="0.02" velocity="0.5" />
+        <child link="TipPoint" />
     </joint>
+
     <link name="HandCamera">
         <inertial>
             <mass value="0.2" />
