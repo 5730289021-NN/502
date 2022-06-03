@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_srvs
   moveit_ros_planning_interface
   geometry_msgs
-  gazebo_msgs
+  tf2_geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -109,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES housem8_manipulator_server
- CATKIN_DEPENDS control_msgs roscpp std_msgs std_srvs
+ CATKIN_DEPENDS control_msgs roscpp std_msgs std_srvs moveit_ros_planning_interface geometry_msgs tf2_geometry_msgs
 #  DEPENDS system_lib
 )
 
