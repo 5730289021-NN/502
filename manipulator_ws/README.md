@@ -34,15 +34,16 @@ A node that communicates with planner interface directly with move_group C++ API
 
 ### Grasping Direction
 (quaternions in (x,y,z,w) convention)
-1. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
-2. UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
-3. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
+Preferred Direction 0: UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
+Preferred Direction 1. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
+Preferred Direction 2. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
+
 
 ## housem8_manipulator_server_node Test Procedure
 1. `rosservice call /open_gripper "{}"`
 2. `rosservice call /close_gripper "{}"`
 3. `rostopic pub /target_object geometry_msgs/Pose "position:
-  x: -0.0
+  x: -0.5
   y: 0.0
   z: 0.5
 orientation:
@@ -51,5 +52,6 @@ orientation:
   z: 0.0
   w: 1.0"`
   Orientation could be anything, but position may require adjustment.
-4. `rosservice call /plan_arm "{}"`
-5. `rosservice call /execute_arm "{}"`
+4. `rostopic pub 
+5. `rosservice call /plan_arm "{}"`
+6. `rosservice call /execute_arm "{}"`
