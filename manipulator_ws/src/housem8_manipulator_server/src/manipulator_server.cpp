@@ -33,12 +33,10 @@ bool plan_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &r
     tf2::fromMsg(target_pose.orientation, q_obj);
     switch(gd)
     {
-        case UP_FIXED:
+        case UP:
         {
-            q_ee.setX(0);
-            q_ee.setY(-0.7071068);
-            q_ee.setZ(0);
-            q_ee.setW(0.7071068);
+            q_rot = tf2::Quaternion(-0.7071068, 0.7071068, 0, 0);
+            q_ee = q_rot * q_obj;
             break;
         }
 
@@ -49,11 +47,13 @@ bool plan_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &r
             break;
         }
                 
-        case UP:
+        case UP_FIXED:
         default:
         {
-            q_rot = tf2::Quaternion(-0.7071068, 0.7071068, 0, 0);
-            q_ee = q_rot * q_obj;
+            q_ee.setX(-0.7071068);
+            q_ee.setY(0.7071068);
+            q_ee.setZ(0);
+            q_ee.setW(0);
             break;
         }
     }
