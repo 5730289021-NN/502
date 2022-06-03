@@ -34,9 +34,9 @@ A node that communicates with planner interface directly with move_group C++ API
 
 ### Grasping Direction
 (quaternions in (x,y,z,w) convention)
-- Preferred Direction 0: UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
-- Preferred Direction 1. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
-- Preferred Direction 2. UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
+- Preferred Direction 0: UP_FIXED --- q_ee = (-0.7071068, 0.7071068, 0, 0) [Passed]
+- Preferred Direction 1. UP --- q_ee = (-0.7071068, 0.7071068, 0, 0) * q_obj; [Failed]
+- Preferred Direction 2. FRONT --- q_ee = (-0.5, -0.5, 0.5, -0.5) * q_obj; [Failed]
 
 ## housem8_manipulator_server_node Test Procedure
 1. `rosservice call /open_gripper "{}"`
