@@ -11,17 +11,17 @@ from trajectory_msgs.msg import JointTrajectoryPoint
 # ros2 action info /joint_trajectory_controller/follow_joint_trajectory -t
 # ros2 interface show control_msgs/action/FollowJointTrajectory
 
-class SteeringActionClient(Node):
+class Joint_Trajectory(Node):
 
     def __init__(self):
-        super().__init__('wheel_steer_actionclient')
+        super().__init__('Joint_Trajectory')
         self._action_client = ActionClient(self, FollowJointTrajectory, '/joint_trajectory_controller/follow_joint_trajectory')
 
     def send_goal(self, angle):
         goal_msg = FollowJointTrajectory.Goal()
 
         # Fill in data for trajectory
-        joint_names = ["Mani_J0",
+        joint_names = [ "Mani_J0",
                         "Mani_J1",
                         "Mani_J2",
                         "Mani_J3",
@@ -35,7 +35,7 @@ class SteeringActionClient(Node):
 
         point2 = JointTrajectoryPoint()
         point2.time_from_start = Duration(seconds=3, nanoseconds=0).to_msg()
-        point2.positions = [0.65, 0.0, 0.0, angle, angle, angle, angle]
+        point2.positions = [0.65, 0.2, 0.0, angle, angle, angle, angle]
 
         points.append(point1)
         points.append(point2)
@@ -76,7 +76,7 @@ def main(args=None):
     
     rclpy.init()
 
-    action_client = SteeringActionClient()
+    action_client = Joint_Trajectory()
 
     # angle = float(sys.argv[1])
     angle = -0.4

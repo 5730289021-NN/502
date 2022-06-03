@@ -165,19 +165,25 @@
     <!-- diff_drive -->
   	<gazebo>
         <plugin name='diff_drive' filename="libgazebo_ros_diff_drive.so">
-         <updateRate>10</updateRate>
-          <left_joint>wheel_left_joint</left_joint>
-          <right_joint>wheel_right_joint</right_joint>
-          <wheel_separation>0.380</wheel_separation>
-          <wheel_diameter>0.200</wheel_diameter>
-          <max_wheel_torque>15.0</max_wheel_torque>
-          <max_wheel_acceleration>5.0</max_wheel_acceleration>
-          <commandTopic>/housem8/cmd_vel</commandTopic>
-          <publish_odom>true</publish_odom>
-          <publish_odom_tf>true</publish_odom_tf>
-          <publish_wheel_tf>true</publish_wheel_tf>
-          <odometry_frame>odom</odometry_frame>
-          <robot_base_frame>base_footprint</robot_base_frame>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>10</updateRate>
+            <left_joint>wheel_left_joint</left_joint>
+            <right_joint>wheel_right_joint</right_joint>
+            <wheel_separation>0.380</wheel_separation>
+            <wheel_diameter>0.200</wheel_diameter>
+            <max_wheel_torque>5.0</max_wheel_torque>
+            <max_wheel_acceleration>5.0</max_wheel_acceleration>
+            <commandTopic>cmd_vel</commandTopic>
+            <ros>
+                <namespace>/housem8</namespace>
+                <argument>/cmd_vel:=cmd_vel</argument>
+                <argument>/odom:=odom</argument>
+            </ros>
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_footprint</robot_base_frame>
 
         </plugin>
       </gazebo>
