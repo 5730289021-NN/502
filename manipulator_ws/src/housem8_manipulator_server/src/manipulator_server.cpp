@@ -43,7 +43,7 @@ bool plan_arm_cb(std_srvs::Trigger::Request &req, std_srvs::Trigger::Response &r
 
         case FRONT:
         {
-            q_rot = tf2::Quaternion(0.5, -0.5, -0.5, 0.5);
+            q_rot = tf2::Quaternion(-0.5, -0.5, 0.5, 0.5);
             q_ee = q_rot * q_obj;
             break;
         }
@@ -128,6 +128,7 @@ int main(int argc, char **argv) {
     ros::NodeHandle nh("~");
     ROS_INFO("Manipulator Server Started");
     arm_move_group_interface = new moveit::planning_interface::MoveGroupInterface("arm");
+    arm_move_group_interface->setEndEffectorLink("TipPoint");
     gripper_move_group_interface = new moveit::planning_interface::MoveGroupInterface("gripper");
 
     ros::Subscriber target_object_sub = nh.subscribe<geometry_msgs::Pose>("/target_object", 1, target_obj_cb);
@@ -141,7 +142,7 @@ int main(int argc, char **argv) {
     spinner.start();
     ros::Rate r(0.5);
     while(ros::ok()){
-        geometry_msgs::PoseStamped current_pose = arm_move_group_interface->getCurrentPose();
+        geometry_msgs::PoseStamped current_pose = arm_move_group_interface->getCurrentPose("TipPoint");
         ROS_INFO("Current EE Pose: %f, %f, %f | %f, %f, %f, %f", 
             current_pose.pose.position.x,
             current_pose.pose.position.y,
