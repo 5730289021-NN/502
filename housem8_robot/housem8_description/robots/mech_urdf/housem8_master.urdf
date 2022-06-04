@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml version="1.0"?> -->
-<robot name="mbse">
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
+    
+    <link name="base_footprint">
+    </link>  
+      
     <link name="mobilebaseI">
         <visual name="mobilebaseI">
             <origin xyz="0.0 0.0 0.080" rpy="0.0 0.0 0.0" />
@@ -386,7 +389,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="LinJ" type="prismatic">
+    <joint name="Mani_J0" type="prismatic">
         <origin xyz="-0.17 0.0 0.0275" rpy="0.0 0.0 0.0" />
         <parent link="Torsol" />
         <child link="LinearJoint" />
@@ -414,7 +417,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="RevJ1" type="revolute">
+    <joint name="Mani_J1" type="revolute">
         <origin xyz="0.0 0.0 0.125" rpy="0.0 0.0 3.14" />
         <parent link="LinearJoint" />
         <child link="Revlink1" />
@@ -442,7 +445,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="RevJ2" type="revolute">
+    <joint name="Mani_J2" type="revolute">
         <origin xyz="0.06 0.0 0.05" rpy="0.0 1.57 0.0" />
         <parent link="Revlink1" />
         <child link="Revlink2" />
@@ -470,7 +473,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="RevJ3" type="revolute">
+    <joint name="Mani_J3" type="revolute">
         <origin xyz="0.0 0.0 0.0" rpy="1.57 1.57 0.0" />
         <parent link="Revlink2" />
         <child link="Revlink3" />
@@ -498,7 +501,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="RevJ4" type="revolute">
+    <joint name="Mani_J4" type="revolute">
         <origin xyz="-0.350 0.0 0.0" rpy="0.0 0.0 0.0" />
         <parent link="Revlink3" />
         <child link="Revlink4" />
@@ -526,7 +529,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="RevJ5" type="revolute">
+    <joint name="Mani_J5" type="revolute">
         <origin xyz="-0.331 0.0 -0.0" rpy="0.0 0.0 0.0" />
         <parent link="Revlink4" />
         <child link="Revlink5" />
@@ -552,7 +555,7 @@
             </geometry>
         </collision>
     </link>
-    <joint name="HandGripper" type="revolute">
+    <joint name="Mani_J6" type="revolute">
         <origin xyz="-0.05 -0.0 -0.0" rpy="0.0 -1.57 0.0" />
         <parent link="Revlink5" />
         <child link="Hand" />
@@ -645,109 +648,5 @@
         <parent link="Hand" />
         <child link="HandCamera" />
     </joint>
-    <transmission name="trans_BodyCam">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="BodyCam">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="BodyCam_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_LinJ">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="LinJ">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="LinJ_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_RevJ1">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="RevJ1">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="RevJ1_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_RevJ2">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="RevJ2">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="RevJ2_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_RevJ3">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="RevJ3">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="RevJ3_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_RevJ4">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="RevJ4">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="RevJ4_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_RevJ5">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="RevJ5">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="RevJ5_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_HandGripper">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="HandGripper">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="HandGripper_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_FingerL">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="FingerL">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="FingerL_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_FingerR">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="FingerR">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="FingerR_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/</robotNamespace>
-        </plugin>
-    </gazebo>
+
 </robot>
