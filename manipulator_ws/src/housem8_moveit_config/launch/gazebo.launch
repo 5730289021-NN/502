@@ -13,7 +13,7 @@
   </include>
 
   <!-- send robot urdf to param server -->
-  <param name="robot_description" command="xacro  '$(find housem8_description)/robots/housem8_ros1.urdf.xacro'" />
+  <param name="robot_description" command="xacro '$(find housem8_moveit_config)/../../../housem8_robot/housem8_description/robots/housem8_ros1.urdf.xacro'" />
 
   <!-- unpause only after loading robot model -->
   <arg name="unpause" value="$(eval '' if arg('paused') else '-unpause')" />
@@ -28,5 +28,9 @@
   <node name="gazebo_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller" />
   <!-- Load ROS controllers -->
   <include file="$(dirname)/ros_controllers.launch"/>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+    <param name="publish_frequency" value="50.0"/>
+  </node>
 
 </launch>

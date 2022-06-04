@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
 
-  <xacro:include filename="$(find housem8_description)/robots/housem8.xarco"/>
+  <xacro:include filename="$(find housem8_description)/robots/housem8.xacro"/>
 
   <xacro:include filename="$(find housem8_description)/robots/housem8.ros2_control.xacro"/>
   <!-- <xacro:include filename="$(find housem8_description)/robots/housem8_base.ros2_control.xacro"/> -->

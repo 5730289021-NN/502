@@ -16,6 +16,6 @@ controller_list:
       - FingerR
 initial:  # Define initial robot poses per group
   - group: arm
-    pose: stow
+    pose: hello
   - group: gripper
     pose: close
