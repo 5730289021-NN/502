@@ -40,7 +40,7 @@
                 <minDepth>0.01</minDepth>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
-                <material>Gazebo/Blue</material>
+                <material>Gazebo/Blue</material> /housem8/cmd_vel
             </gazebo>
         </xacro:macro>
 
@@ -54,7 +54,7 @@
         <!-- <xacro:base link="CasterWheel_Left"/> -->
         <xacro:base link="CasterCase_Right"/>
         <!-- <xacro:base link="CasterWheel_Right"/> -->
-        <xacro:base link="mobilebaseIII"/>
+        <xacro:base link="mobilebaseIII"/> /housem8/cmd_vel
         <xacro:base link="mobilebaseIV"/>
         <xacro:base link="Lidar_Front"/>
         <xacro:base link="Lidar_Back"/>
@@ -80,7 +80,7 @@
         <always_on>1</always_on>
         <update_rate>10.0</update_rate>
         <camera name="camera">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 0 0 3.14</pose>
             <horizontal_fov>1.3962634</horizontal_fov>
             <image>
                 <width>640</width>
@@ -111,7 +111,7 @@
         <always_on>1</always_on>
         <update_rate>10.0</update_rate>
         <camera name="camera">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 -3.14 -1.57 3.14</pose>
             <horizontal_fov>1.3962634</horizontal_fov>
             <image>
                 <width>640</width>
