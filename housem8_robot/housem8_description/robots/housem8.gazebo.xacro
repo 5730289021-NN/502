@@ -176,8 +176,8 @@
             <commandTopic>cmd_vel</commandTopic>
             <ros>
                 <namespace>/housem8</namespace>
-                <argument>/cmd_vel:=cmd_vel</argument>
-                <argument>/odom:=odom</argument>
+                <argument>-r ~/cmd_vel:=cmd_vel</argument>
+                <argument>-r ~/odom:=odom</argument>
             </ros>
             <publish_odom>true</publish_odom>
             <publish_odom_tf>true</publish_odom_tf>

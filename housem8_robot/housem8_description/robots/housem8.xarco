@@ -483,7 +483,7 @@
         <child link="Revlink1"/>
         <axis xyz="0 0 1"/>
         <limit effort="87" lower="-1.3" upper="1.3" velocity="2.1750"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="Revlink2">
@@ -515,7 +515,7 @@
         <child link="Revlink2" />
         <axis xyz="0.0 0.0 1.0" />
         <limit effort="87" lower="-1.5" upper="1.5" velocity="2.1750"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="Revlink3">
@@ -547,7 +547,7 @@
         <child link="Revlink3"/>
         <axis xyz="0 0 1"/>
         <limit effort="87" lower="-1.2" upper="2.0" velocity="2.1750"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="Revlink4">
@@ -579,7 +579,7 @@
         <child link="Revlink4" />
         <axis xyz="0 0 1.0"/>
         <limit effort="87" lower="-1.9" upper="1.9" velocity="2.1750"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="Revlink5">
@@ -611,7 +611,7 @@
         <child link="Revlink5" />
         <axis xyz="0.0 0.0 1.0" />
         <limit effort="87" lower="-3.14" upper="3.14" velocity="2.1750"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="Hand">
@@ -641,7 +641,7 @@
         <child link="Hand" />
         <axis xyz="0.0 0.0 1.0" />
         <limit effort="87" lower="-3.14" upper="3.14" velocity="2.1750"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="FingerLeft">
@@ -671,7 +671,7 @@
         <child link="FingerLeft" />
         <axis xyz="0.0 1.0 0.0" />
         <limit effort="1000" lower="-0.025" upper="0.04" velocity="0.5"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="FingerRight">
@@ -701,7 +701,7 @@
         <child link="FingerRight" />
         <axis xyz="0 1 0"/>
         <limit effort="87" lower="-0.04" upper="0.025" velocity="0.5"/>
-        <!-- <dynamics damping="0.5" friction="0.2"/> -->
+        <dynamics damping="0.5" friction="0.2"/>
     </joint>
 
     <link name="TipPoint"/>
