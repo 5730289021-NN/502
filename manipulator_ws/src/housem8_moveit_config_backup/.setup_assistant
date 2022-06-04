@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
     package: housem8_moveit_config
-    relative_path: ../../../housem8_robot/housem8_description/robots/mech_urdf/housem8_master.urdf
+    relative_path: ../../../housem8_robot/housem8_description/robots/housem8_ros1.urdf.xacro
     xacro_args: ""
   SRDF:
     relative_path: config/mbse.srdf

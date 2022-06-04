@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
+
+  <xacro:include filename="$(find housem8_manipulator_server)/../../../housem8_robot/housem8_description/robots/housem8.xarco"/>
+
+  <xacro:include filename="$(find housem8_manipulator_server)/../../../housem8_robot/housem8_description/robots/housem8.ros1_control.xacro"/>
+
+</robot>
