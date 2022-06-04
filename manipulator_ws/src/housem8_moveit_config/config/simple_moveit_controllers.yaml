@@ -1,0 +1,20 @@
+controller_list:
+  - name: arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - Mani_J0
+      - Mani_J1
+      - Mani_J2
+      - Mani_J3
+      - Mani_J4
+      - Mani_J5
+      - Mani_J6
+  - name: gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - FingerL
+      - FingerR

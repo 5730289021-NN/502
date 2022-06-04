@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: housem8_description
+    relative_path: robots/housem8_ros1.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/housem8.srdf
+  CONFIG:
+    author_name: kitti
+    author_email: kitti@gmail.com
+    generated_timestamp: 1654331219

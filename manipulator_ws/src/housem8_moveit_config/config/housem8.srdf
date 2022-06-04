@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="housem8">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="arm">
+        <chain base_link="Torsol" tip_link="TipPoint"/>
+    </group>
+    <group name="gripper">
+        <link name="FingerLeft"/>
+        <link name="FingerRight"/>
+        <joint name="FingerL"/>
+        <joint name="FingerR"/>
+    </group>
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="stow" group="arm">
+        <joint name="Mani_J0" value="0"/>
+        <joint name="Mani_J1" value="-1.3"/>
+        <joint name="Mani_J2" value="1.5"/>
+        <joint name="Mani_J3" value="0.5149"/>
+        <joint name="Mani_J4" value="1.4381"/>
+        <joint name="Mani_J5" value="1.4746"/>
+        <joint name="Mani_J6" value="1.6828"/>
+    </group_state>
+    <group_state name="hello" group="arm">
+        <joint name="Mani_J0" value="0.3376"/>
+        <joint name="Mani_J1" value="0.5387"/>
+        <joint name="Mani_J2" value="0.2403"/>
+        <joint name="Mani_J3" value="1.4519"/>
+        <joint name="Mani_J4" value="-1.5851"/>
+        <joint name="Mani_J5" value="-0.6072"/>
+        <joint name="Mani_J6" value="1.2317"/>
+    </group_state>
+    <group_state name="close" group="gripper">
+        <joint name="FingerL" value="0.04"/>
+        <joint name="FingerR" value="-0.04"/>
+    </group_state>
+    <group_state name="open" group="gripper">
+        <joint name="FingerL" value="-0.025"/>
+        <joint name="FingerR" value="0.025"/>
+    </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="gripper" parent_link="Hand" group="gripper"/>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="odom_joint" type="fixed" parent_frame="odom" child_link="base_footprint"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="CasterCase_Left" link2="CasterCase_Right" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="CasterWheel_Left" reason="Adjacent"/>
+    <disable_collisions link1="CasterCase_Left" link2="CasterWheel_Right" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Lidar_Back" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Lidar_Front" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="mobilebaseII" reason="Adjacent"/>
+    <disable_collisions link1="CasterCase_Left" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="CasterCase_Left" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="CasterWheel_Left" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="CasterWheel_Right" reason="Adjacent"/>
+    <disable_collisions link1="CasterCase_Right" link2="Lidar_Back" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Lidar_Front" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="mobilebaseII" reason="Adjacent"/>
+    <disable_collisions link1="CasterCase_Right" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="CasterCase_Right" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="CasterWheel_Right" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Lidar_Back" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Lidar_Front" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Left" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Lidar_Back" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Lidar_Front" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="CasterWheel_Right" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="FingerLeft" link2="FingerRight" reason="Never"/>
+    <disable_collisions link1="FingerLeft" link2="Hand" reason="Adjacent"/>
+    <disable_collisions link1="FingerLeft" link2="HandCamera" reason="Never"/>
+    <disable_collisions link1="FingerLeft" link2="Revlink5" reason="Never"/>
+    <disable_collisions link1="FingerRight" link2="Hand" reason="Adjacent"/>
+    <disable_collisions link1="FingerRight" link2="HandCamera" reason="Never"/>
+    <disable_collisions link1="FingerRight" link2="Revlink5" reason="Never"/>
+    <disable_collisions link1="Hand" link2="HandCamera" reason="Adjacent"/>
+    <disable_collisions link1="Hand" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="Hand" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="Hand" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="Hand" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="Hand" link2="Revlink5" reason="Adjacent"/>
+    <disable_collisions link1="HandCamera" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="HandCamera" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="HandCamera" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="HandCamera" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="HandCamera" link2="Revlink5" reason="User"/>
+    <disable_collisions link1="Lidar_Back" link2="Lidar_Front" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="Revlink3" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="Lidar_Back" link2="mobilebaseII" reason="Default"/>
+    <disable_collisions link1="Lidar_Back" link2="mobilebaseIII" reason="Adjacent"/>
+    <disable_collisions link1="Lidar_Back" link2="mobilebaseIV" reason="Default"/>
+    <disable_collisions link1="Lidar_Front" link2="LinearJoint" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="Revlink1" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="Lidar_Front" link2="mobilebaseIII" reason="Adjacent"/>
+    <disable_collisions link1="Lidar_Front" link2="mobilebaseIV" reason="Default"/>
+    <disable_collisions link1="LinearJoint" link2="Revlink1" reason="Adjacent"/>
+    <disable_collisions link1="LinearJoint" link2="Revlink2" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="Revlink4" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="Revlink5" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="Torsol" reason="Adjacent"/>
+    <disable_collisions link1="LinearJoint" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="LinearJoint" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="Revlink2" reason="Adjacent"/>
+    <disable_collisions link1="Revlink1" link2="Revlink4" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="Revlink5" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="Torsol" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="Revlink1" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="Revlink3" reason="Adjacent"/>
+    <disable_collisions link1="Revlink2" link2="Revlink4" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="Revlink5" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="Torsol" reason="User"/>
+    <disable_collisions link1="Revlink2" link2="TorsolCamera" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="Revlink2" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="Revlink3" link2="Revlink4" reason="Adjacent"/>
+    <disable_collisions link1="Revlink3" link2="Revlink5" reason="Never"/>
+    <disable_collisions link1="Revlink3" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="Revlink3" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Revlink4" link2="Revlink5" reason="Adjacent"/>
+    <disable_collisions link1="Torsol" link2="TorsolCamera" reason="Adjacent"/>
+    <disable_collisions link1="Torsol" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="Torsol" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Torsol" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="Torsol" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="Torsol" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="Torsol" link2="mobilebaseIV" reason="Adjacent"/>
+    <disable_collisions link1="TorsolCamera" link2="Wheel_Left" reason="Never"/>
+    <disable_collisions link1="TorsolCamera" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="TorsolCamera" link2="mobilebaseI" reason="Never"/>
+    <disable_collisions link1="TorsolCamera" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="TorsolCamera" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="TorsolCamera" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="Wheel_Left" link2="Wheel_Right" reason="Never"/>
+    <disable_collisions link1="Wheel_Left" link2="mobilebaseI" reason="Adjacent"/>
+    <disable_collisions link1="Wheel_Left" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="Wheel_Left" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="Wheel_Left" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="Wheel_Right" link2="mobilebaseI" reason="Adjacent"/>
+    <disable_collisions link1="Wheel_Right" link2="mobilebaseII" reason="Never"/>
+    <disable_collisions link1="Wheel_Right" link2="mobilebaseIII" reason="Never"/>
+    <disable_collisions link1="Wheel_Right" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="mobilebaseI" link2="mobilebaseII" reason="Adjacent"/>
+    <disable_collisions link1="mobilebaseI" link2="mobilebaseIII" reason="Default"/>
+    <disable_collisions link1="mobilebaseI" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="mobilebaseII" link2="mobilebaseIII" reason="Adjacent"/>
+    <disable_collisions link1="mobilebaseII" link2="mobilebaseIV" reason="Never"/>
+    <disable_collisions link1="mobilebaseIII" link2="mobilebaseIV" reason="Adjacent"/>
+</robot>

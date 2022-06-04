@@ -1,0 +1,21 @@
+controller_list:
+  - name: fake_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - Mani_J0
+      - Mani_J1
+      - Mani_J2
+      - Mani_J3
+      - Mani_J4
+      - Mani_J5
+      - Mani_J6
+  - name: fake_gripper_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - FingerL
+      - FingerR
+initial:  # Define initial robot poses per group
+  - group: arm
+    pose: stow
+  - group: gripper
+    pose: close

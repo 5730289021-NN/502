@@ -738,19 +738,12 @@
     </link>
 
     <joint name="HandCam" type="fixed">
-        <origin xyz="-0.02 0.0 0.065" rpy="0.0 0.0 0.0"/>
-        <parent link="Hand"/>
-        <child link="HandCamera"/>
+        <origin xyz="-0.0625 0.0 0.03" rpy="0.0 0.0 0.0" />
+        <parent link="Hand" />
+        <child link="HandCamera" />
     </joint> 
 
-    <link name='rgb_cam_camera_link'>
-		<visual>
-			<origin xyz="0 0 0" rpy="0 0 0"/>
-			<geometry>
-				<box size="0.01 0.01 0.01"/>
-			</geometry>
-		</visual>
-	</link>
+    <link name='rgb_cam_camera_link'/>
 
     <joint name="rgb_cam_camera_link_joint" type="fixed">
 		<origin rpy="0 0 0" xyz="0.04 0.0 0.2"/>
@@ -758,8 +751,7 @@
 		<child link="rgb_cam_camera_link"/>
 	</joint>
 
-    <link name="rgb_cam_camera_link_frame">
-    </link>
+    <link name="rgb_cam_camera_link_frame"/>
 
     <joint name="rgb_cam_camera_frame_joint" type="fixed">
         <origin xyz="0.01 0 0" rpy="0 0 0" />
@@ -768,14 +760,7 @@
         <axis xyz="0 0 0"/>
      </joint>
 
-    <link name='rgb_hand_cam_camera_link'>
-		<visual>
-			<origin xyz="0 0 0" rpy="0 0 0"/>
-			<geometry>
-				<box size="0.01 0.01 0.01"/>
-			</geometry>
-		</visual>
-	</link>
+    <link name='rgb_hand_cam_camera_link'/>
 
     <joint name="rgb_hand_cam_camera_link_joint" type="fixed">
 		<origin rpy="0 0 0" xyz="0.04 0.0 0.2"/>
@@ -783,8 +768,7 @@
 		<child link="rgb_hand_cam_camera_link"/>
 	</joint>
 
-    <link name="rgb_hand_cam_camera_link_frame">
-    </link>
+    <link name="rgb_hand_cam_camera_link_frame"/>
 
     <joint name="rgb_hand_cam_camera_frame_joint" type="fixed">
         <origin xyz="0.01 0 0" rpy="0 0 0" />
@@ -792,7 +776,5 @@
         <child link="rgb_hand_cam_camera_link_frame" />
         <axis xyz="0 0 0"/>
      </joint>
-
-
 
 </robot>
