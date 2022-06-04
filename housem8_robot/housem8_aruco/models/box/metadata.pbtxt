@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "test"
+description: "test"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Hasbro"
+}
+annotations {
+  key: "gtin"
+  value: "00653569825586"
+}
+annotations {
+  key: "sku"
+  value: "18364517175246405283"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Consumer Goods"
+}
