@@ -1,0 +1,26 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    hand_trajectory_controller:
+      type: hand_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+      
+hand_trajectory_controller:
+  ros__parameters:
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    
+    joints:
+      - FingerR
+      - FingerL
+
+    gains:
+        Mani_J0: { p: 30000, d: 100, i: 0.02, i_clamp: 10000 }
+        Mani_J1: { p: 30000, d: 100, i: 0.02, i_clamp: 10000 }

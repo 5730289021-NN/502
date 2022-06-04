@@ -12,7 +12,7 @@
             </geometry>
         </visual>
         <inertial>
-            <mass value="10.0"/>
+            <mass value="20.0"/>
             <inertia ixx="0.3" ixy="0.0" ixz="0.0" 
                      iyy="0.3" iyz="0.0" izz="0.3"/>
         </inertial>
@@ -41,7 +41,7 @@
         </visual>
         
         <inertial>
-            <mass value="5.0" />
+            <mass value="10.0" />
             <inertia ixx="0.3" ixy="0.0" ixz="0.0" 
                      iyy="0.3" iyz="0.0" izz="0.3"/>
         </inertial>
@@ -242,7 +242,7 @@
 
     <link name="mobilebaseIII">
         <inertial>
-            <mass value="2.0" />
+            <mass value="6.0" />
             <inertia ixx="0.6" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.4" />
         </inertial>
 
@@ -320,7 +320,7 @@
     </link>
 
     <joint name="LidarF" type="fixed">
-        <origin xyz="-0.178 0.150 0.075" rpy="0.0 0.0 0.0" />
+        <origin xyz="-0.178 0.150 0.075" rpy="0.0 0.0 3.14" />
         <parent link="mobilebaseIII"/>
         <child link="Lidar_Front"/>
     </joint>
@@ -659,7 +659,7 @@
         </collision>
     </link>
 
-    <joint name="FingerL" type="fixed">
+    <joint name="FingerL" type="prismatic">
         <origin xyz="-0.0 -0.06 0.1" rpy="0.0 1.57 0.0" />
         <parent link="Hand" />
         <child link="FingerLeft" />
@@ -689,7 +689,7 @@
         </collision>
     </link>
 
-    <joint name="FingerR" type="fixed">
+    <joint name="FingerR" type="prismatic">
         <origin xyz="-0.0 0.06 0.1" rpy="0.0 1.57 0.0" />
         <parent link="Hand" />
         <child link="FingerRight" />

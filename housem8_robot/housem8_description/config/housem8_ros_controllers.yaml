@@ -1,24 +1,20 @@
 controller_manager:
   ros__parameters:
-    update_rate: 1000  # Hz
+    update_rate: 50  # Hz
 
-    joint_trajectory_controller:
+    arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-    # diff_drive_controller:
-    #   type: diff_drive_controller/DiffDriveController
-    #   left_wheel: ['wheel_left_joint']
-    #   right_wheel: ['wheel_right_joint']
-    #   wheel_separation: 0.66
-    #   wheel_radius: 0.1
-    #   cmd_vel_timeout: 0.25
-    #   enable_odom_tf: true
-
+    # arm_state_broadcaster:
+    #   type: joint_state_broadcaster/JointStateBroadcaster
+    
+    gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
-      
 
-joint_trajectory_controller:
+arm_controller:
   ros__parameters:
     interface_name: position
     command_interfaces:
@@ -44,23 +40,20 @@ joint_trajectory_controller:
         Mani_J4: { p: 12000, d: 70, i: 0.01, i_clamp: 1 }
         Mani_J5: { p: 7000, d: 50, i: 0.01, i_clamp: 1 }
         Mani_J6: { p: 18000, d: 70, i: 0.01, i_clamp: 10000 }
-        # wheel_left_joint: { p: 18000, d: 70, i: 0.01, i_clamp: 10000 }
-        # wheel_right_joint: { p: 18000, d: 70, i: 0.01, i_clamp: 10000 }
 
-# diff_drive_controller:
-#     left_wheel: ['wheel_left_joint']
-#     right_wheel: ['wheel_right_joint']
-#     wheel_separation: 0.66
-#     wheel_radius: 0.1
-#     cmd_vel_timeout: 0.25
-#     enable_odom_tf: true
-      
+gripper_controller:
+  ros__parameters:
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    
+    joints:
+      - FingerR
+      - FingerL
 
-# mobile_base_controller:
-#   enable_odom_tf: true
-#   odom_frame_id: odom
-#   publish_cmd: true
-#   type: diff_drive_controller/DiffDriveController
-#   left_wheel: wheel_left_joint
-#   right_wheel: wheel_right_joint
-#   # and so on, it works straight ahead so I won't paste whole file, params set are listed on wiki page
+    gains:
+        Mani_J0: { p: 30000, d: 100, i: 0.02, i_clamp: 10000 }
+        Mani_J1: { p: 30000, d: 100, i: 0.02, i_clamp: 10000 }

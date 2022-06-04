@@ -23,6 +23,9 @@
         <xacro:configure_joint joint_name="Mani_J5" initial_position="0.0"/>
         <xacro:configure_joint joint_name="Mani_J6" initial_position="0.0"/>
         
+        <xacro:configure_joint joint_name="FingerR" initial_position="0.0"/>
+        <xacro:configure_joint joint_name="FingerL" initial_position="0.0"/>
+
         <!-- <xacro:configure_joint joint_name="wheel_left_joint" initial_position="0.0"/>
         <xacro:configure_joint joint_name="wheel_right_joint" initial_position="0.0"/> -->
 
@@ -43,10 +46,16 @@
 
       
     <gazebo>
-      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control_arm">
         <parameters>$(find housem8_description)/config/housem8_ros_controllers.yaml</parameters>
       </plugin>
     </gazebo>
+
+    <!-- <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control_hand">
+        <parameters>$(find housem8_description)/config/housem8_ros_controllers_hand.yaml</parameters>
+      </plugin>
+    </gazebo> -->
 
     
 </robot>
