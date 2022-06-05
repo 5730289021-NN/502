@@ -74,13 +74,13 @@
     </xacro:macro>
 
 
-    <!-- Body Camera -->
+   <!-- Body Camera -->
     <gazebo reference="rgb_cam_camera_link_frame">
         <sensor type="depth" name="rgb_cam">
         <always_on>1</always_on>
         <update_rate>10.0</update_rate>
         <camera name="camera">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 0 0 3.14</pose>
             <horizontal_fov>1.3962634</horizontal_fov>
             <image>
                 <width>640</width>
@@ -111,7 +111,7 @@
         <always_on>1</always_on>
         <update_rate>10.0</update_rate>
         <camera name="camera">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 -3.14 -1.57 3.14</pose>
             <horizontal_fov>1.3962634</horizontal_fov>
             <image>
                 <width>640</width>
@@ -166,16 +166,16 @@
   	<gazebo>
         <plugin name='diff_drive' filename="libgazebo_ros_diff_drive.so">
             <alwaysOn>true</alwaysOn>
-            <updateRate>10</updateRate>
+            <updateRate>2000</updateRate>
             <left_joint>wheel_left_joint</left_joint>
             <right_joint>wheel_right_joint</right_joint>
             <wheel_separation>0.380</wheel_separation>
             <wheel_diameter>0.200</wheel_diameter>
-            <max_wheel_torque>5.0</max_wheel_torque>
-            <max_wheel_acceleration>5.0</max_wheel_acceleration>
+            <max_wheel_torque>50.0</max_wheel_torque>
+            <max_wheel_acceleration>20.0</max_wheel_acceleration>
             <commandTopic>cmd_vel</commandTopic>
             <ros>
-                <namespace>/housem8</namespace>
+                <namespace>/</namespace>
                 <argument>-r ~/cmd_vel:=cmd_vel</argument>
                 <argument>-r ~/odom:=odom</argument>
             </ros>

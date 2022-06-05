@@ -37,6 +37,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dect.msg"
+  "srv/Goaly.srv"
   DEPENDENCIES std_msgs
 )
 

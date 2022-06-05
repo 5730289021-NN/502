@@ -15,7 +15,7 @@ amcl:
     lambda_short: 0.1
     laser_likelihood_max_dist: 10.0
     laser_max_range: 10.0
-    laser_min_range: 0.0
+    laser_min_range: 0.1
     laser_model_type: "likelihood_field"
     max_beams: 60
     max_particles: 2000
@@ -97,16 +97,16 @@ controller_server:
       debug_trajectory_details: True
       min_vel_x: 0.0
       min_vel_y: 0.0
-      max_vel_x: 0.25 #0.15
+      max_vel_x: 0.45 #0.15
       # max_vel_x: 0.45 #0.15
       max_vel_y: 0.0
-      max_vel_theta: 0.8
+      max_vel_theta: 0.2
       min_speed_xy: 0.05
       max_speed_xy: 0.15
-      min_speed_theta: 0.0
+      min_speed_theta: 0.1
       # Add high threshold velocity for turtlebot 3 issue.
       # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
-      acc_lim_x: 2.0
+      acc_lim_x: 1.0
       acc_lim_y: 0.0
       acc_lim_theta: 2.0
       decel_lim_x: -2.5
@@ -115,7 +115,7 @@ controller_server:
       vx_samples: 100
       vy_samples: 0
       vtheta_samples: 40
-      sim_time: 0.46
+      sim_time: 0.5
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.05
@@ -126,7 +126,7 @@ controller_server:
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
       BaseObstacle.scale: 0.2
       PathAlign.scale: 30.0
-      PathAlign.forward_point_distance: 0.4
+      PathAlign.forward_point_distance: 0.05
       GoalAlign.scale: 24.0
       GoalAlign.forward_point_distance: 0.05
       PathDist.scale: 30.0
@@ -142,8 +142,8 @@ controller_server_rclcpp_node:
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 5.0
-      publish_frequency: 2.0
+      update_frequency: 2.0
+      publish_frequency: 1.0
       global_frame: odom
       # robot_base_frame: base_link
       robot_base_frame: "base_footprint"
@@ -157,8 +157,8 @@ local_costmap:
       plugins: [ "voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        inflation_radius: 1.85
-        cost_scaling_factor: 1.5
+        inflation_radius: 1.85 #1.85
+        cost_scaling_factor: 1.5 #1.5
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -177,7 +177,7 @@ local_costmap:
           marking: True
           data_type: "LaserScan"
           raytrace_min_range: 0.0
-          obstacle_max_range: 4.0
+          obstacle_max_range: 10.0
           obstacle_min_range: 0.0
           
       static_layer:

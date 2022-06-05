@@ -81,10 +81,6 @@ def main():
         #
         # Implement some code here for your application!
         #
-        ################################################
-
-        # Do something with the feedback
-        # i = i + 1
         feedback = navigator.getFeedback()
         # if feedback and i % 5 == 0:
         #     print('Estimated time of arrival: ' + '{0:.0f}'.format(
@@ -111,7 +107,10 @@ def main():
     else:
         print('Goal has an invalid return status!')
 
-    # navigator.lifecycleShutdown()
+    # navigator.lifecycleShutdown
+    initial_pose.pose.orientation.x = 0.0
+    initial_pose.pose.orientation.y = 0.0
+    initial_pose.pose.orientation.z = 0.0()
 
     # exit(0)
 

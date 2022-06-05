@@ -1,0 +1,9 @@
+# Default initial positions for the panda arm's ros2_control fake system
+initial_positions:
+  Mani_J0: 0.0
+  Mani_J1: 0.0
+  Mani_J2: 0.0
+  Mani_J3: 0.0
+  Mani_J4: 0.0
+  Mani_J5: 0.0
+  Mani_J6: 0.0

@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
     
     <link name="base_footprint">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14" />
     </link>
 
     <link name="mobilebaseI">
@@ -15,7 +16,7 @@
             </material>
         </visual>
         <inertial>
-            <mass value="10.0"/>
+            <mass value="20.0"/>
             <inertia ixx="0.3" ixy="0.0" ixz="0.0" 
                      iyy="0.3" iyz="0.0" izz="0.3"/>
         </inertial>
@@ -30,7 +31,7 @@
     <joint name="basefootprint_to_base" type="fixed">
         <parent link="base_footprint"/>
         <child link="mobilebaseI"/>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <origin rpy="0 0 3.14" xyz="0 0 0"/>
     </joint>
 
     <link name="mobilebaseII">
@@ -746,7 +747,7 @@
     <link name='rgb_cam_camera_link'/>
 
     <joint name="rgb_cam_camera_link_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0.04 0.0 0.2"/>
+		<origin rpy="0 0 0" xyz="0 0 0"/>
 		<parent link="TorsolCamera"/>
 		<child link="rgb_cam_camera_link"/>
 	</joint>
@@ -754,7 +755,7 @@
     <link name="rgb_cam_camera_link_frame"/>
 
     <joint name="rgb_cam_camera_frame_joint" type="fixed">
-        <origin xyz="0.01 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <parent link="rgb_cam_camera_link" />
         <child link="rgb_cam_camera_link_frame" />
         <axis xyz="0 0 0"/>
@@ -763,7 +764,7 @@
     <link name='rgb_hand_cam_camera_link'/>
 
     <joint name="rgb_hand_cam_camera_link_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0.04 0.0 0.2"/>
+		<origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
 		<parent link="HandCamera"/>
 		<child link="rgb_hand_cam_camera_link"/>
 	</joint>
@@ -771,7 +772,7 @@
     <link name="rgb_hand_cam_camera_link_frame"/>
 
     <joint name="rgb_hand_cam_camera_frame_joint" type="fixed">
-        <origin xyz="0.01 0 0" rpy="0 0 0" />
+        <origin xyz="0  0 0" rpy="0 0 0" />
         <parent link="rgb_hand_cam_camera_link" />
         <child link="rgb_hand_cam_camera_link_frame" />
         <axis xyz="0 0 0"/>
