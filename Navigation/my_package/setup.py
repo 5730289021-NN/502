@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_node = my_package.my_node:main'
+            'my_node = my_package.my_node:main',
+            'goal_server = my_package.housem8_goal_pose:main'
         ],
     },
 )

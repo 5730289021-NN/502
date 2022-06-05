@@ -63,9 +63,9 @@ def main():
     goal_pose = PoseStamped()
     goal_pose.header.frame_id = 'map'
     goal_pose.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose.pose.position.x = 3.0
-    goal_pose.pose.position.y = -5.5
-    goal_pose.pose.orientation.w = 1.0
+    goal_pose.pose.position.x = 1.5
+    goal_pose.pose.position.y = -1.5
+    goal_pose.pose.orientation.w = 0.0
 
     # sanity check a valid path exists
     # path = navigator.getPath(initial_pose, goal_pose)
@@ -81,10 +81,6 @@ def main():
         #
         # Implement some code here for your application!
         #
-        ################################################
-
-        # Do something with the feedback
-        # i = i + 1
         feedback = navigator.getFeedback()
         # if feedback and i % 5 == 0:
         #     print('Estimated time of arrival: ' + '{0:.0f}'.format(
@@ -111,7 +107,10 @@ def main():
     else:
         print('Goal has an invalid return status!')
 
-    # navigator.lifecycleShutdown()
+    # navigator.lifecycleShutdown
+    initial_pose.pose.orientation.x = 0.0
+    initial_pose.pose.orientation.y = 0.0
+    initial_pose.pose.orientation.z = 0.0()
 
     # exit(0)
 
