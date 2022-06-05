@@ -90,6 +90,13 @@ def generate_launch_description():
         output='screen'
     )
 
+    slam_toolbox_launch_file_dir = os.path.join(get_package_share_directory('slam_toolbox'), 'launch')
+    start_slam = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(slam_toolbox_launch_file_dir, 'online_async_launch.py')
+        )
+    )
+
     return LaunchDescription([
         # ExecuteProcess(
         #     cmd=['gazebo', '--verbose', world, '-s', 'libgazebo_ros_init.so'],
@@ -119,5 +126,7 @@ def generate_launch_description():
         gazebo,
         node_robot_state_publisher,
         spawn_entity
+
+        # start_slam
 
     ])

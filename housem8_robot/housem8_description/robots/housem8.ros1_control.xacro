@@ -1,112 +1,82 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="housem8">
 
-    <transmission name="trans_wheel_right_joint">
+    <transmission name="trans_BodyCam">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="wheel_right_joint">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="wheel_right_joint_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_wheel_left_joint">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="wheel_left_joint">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="wheel_left_joint_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_Casterwheel_left_joint">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Casterwheel_left_joint">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="Casterwheel_left_joint_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_Casterwheel_right_joint">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Casterwheel_right_joint">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="Casterwheel_right_joint_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_Mani_J0">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J0">
+        <joint name="BodyCam">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J0_motor">
+        <actuator name="BodyCam_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_Mani_J1">
+    <transmission name="trans_LinJ">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J1">
+        <joint name="LinJ">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J1_motor">
+        <actuator name="LinJ_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_Mani_J2">
+    <transmission name="trans_RevJ1">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J2">
+        <joint name="RevJ1">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J2_motor">
+        <actuator name="RevJ1_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_Mani_J3">
+    <transmission name="trans_RevJ2">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J3">
+        <joint name="RevJ2">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J3_motor">
+        <actuator name="RevJ2_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_Mani_J4">
+    <transmission name="trans_RevJ3">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J4">
+        <joint name="RevJ3">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J4_motor">
+        <actuator name="RevJ3_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_Mani_J5">
+    <transmission name="trans_RevJ4">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J5">
+        <joint name="RevJ4">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J5_motor">
+        <actuator name="RevJ4_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_Mani_J6">
+    <transmission name="trans_RevJ5">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="Mani_J6">
+        <joint name="RevJ5">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
-        <actuator name="Mani_J6_motor">
+        <actuator name="RevJ5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_HandGripper">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="HandGripper">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="HandGripper_motor">
             <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>

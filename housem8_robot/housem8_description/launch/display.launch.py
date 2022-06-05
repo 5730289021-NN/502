@@ -26,7 +26,7 @@ def generate_launch_description():
 
     pkg_share = get_package_share_directory('housem8_description')
     urdf_dir = os.path.join(pkg_share, 'robots')
-    urdf_file = os.path.join(urdf_dir, 'housem8.xacro')
+    urdf_file = os.path.join(urdf_dir, 'housem8.xarco')
     with open(urdf_file, 'r') as infp:
         robot_desc = infp.read()
 
