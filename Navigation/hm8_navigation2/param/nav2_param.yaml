@@ -1,10 +1,10 @@
 amcl:
   ros__parameters:
     use_sim_time: True
-    alpha1: 0.0001
-    alpha2: 0.0001
-    alpha3: 0.0001
-    alpha4: 0.0001
+    alpha1: 0.01
+    alpha2: 0.01
+    alpha3: 0.01
+    alpha4: 0.01
     alpha5: 0.0
     base_frame_id: "base_footprint"
     beam_skip_distance: 0.5
@@ -171,6 +171,7 @@ local_costmap:
         observation_sources: scan
         scan:
           topic: /scan
+          # topic: /housem8/scan/front
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -208,6 +209,7 @@ global_costmap:
         observation_sources: scan
         scan:
           topic: /scan
+          # topic: /housem8/scan/front
           max_obstacle_height: 2.0
           clearing: True
           marking: True
