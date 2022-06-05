@@ -1,0 +1,11 @@
+int64 task
+string objectclass
+int64 findingstate
+int64 graspstate
+int64 orderstate
+---
+int64 inputstate
+int64 objectx
+int64 objecty
+int64 findingstate
+int64 response

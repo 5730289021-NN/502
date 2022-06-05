@@ -1,0 +1,16 @@
+int64 goalx
+int64 goaly
+int64 goalheading
+int64 findingareax
+int64 findingareay
+int64 findingstate
+int64 objectx
+int64 objecty
+int64 headingdirection
+int64 graspstate
+---
+int64 currentx
+int64 currenty
+int64 currentheading
+int64 findingstate
+int64 response

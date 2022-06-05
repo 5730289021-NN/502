@@ -1,0 +1,10 @@
+int64 task
+int64 objectx
+int64 objecty
+int64 currentx
+int64 currenty
+int64 headingdirection
+int64 graspstate
+int64 objectclass
+---
+int64 graspstate
