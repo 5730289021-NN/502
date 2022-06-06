@@ -63,9 +63,9 @@ def main():
     goal_pose = PoseStamped()
     goal_pose.header.frame_id = 'map'
     goal_pose.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose.pose.position.x = 1.5
-    goal_pose.pose.position.y = -1.5
-    goal_pose.pose.orientation.w = 0.0
+    goal_pose.pose.position.x = 3.0
+    goal_pose.pose.position.y = -5.5
+    goal_pose.pose.orientation.w = 1.0
 
     # sanity check a valid path exists
     # path = navigator.getPath(initial_pose, goal_pose)
