@@ -1,4 +1,4 @@
-# Manipulator Section of HouseM8 Project
+# (ROS1 Version) Manipulator Section of HouseM8 Project
 
 ## Tested Environment
 Ubuntu 20.04 with ROS Noetic
